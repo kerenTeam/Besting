@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Amaze UI Admin index Examples</title>
-  <base href="<?=base_url();?>admin/"></base>
+  <base href="<?php echo base_url() ;?>admin/"/>
   <meta name="description" content="这是一个 index 页面">
   <meta name="keywords" content="index">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,6 +13,7 @@
   <link rel="icon" type="image/png" href="assets/i/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
   <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/amazeui.min.css"/>
   <link rel="stylesheet" href="assets/css/admin.css">
 </head>
@@ -24,9 +25,8 @@
 
 <header class="am-topbar admin-header">
   <div class="am-topbar-brand">
-    <strong>Amaze UI</strong> <small>后台管理模板</small>
+    <strong>BestingMedia</strong> <small>后台管理模板</small>
   </div>
-
 
 
   <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
@@ -55,35 +55,42 @@
   <div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
     <div class="am-offcanvas-bar admin-offcanvas-bar">
       <ul class="am-list admin-sidebar-list">
-        <li><a href="admin-index.html"><span class="am-icon-home"></span> 首页</a></li>
+        <li><a href="admin-index.html"><span class="am-icon-home"></span> 管理中心</a></li>
+
         <li class="admin-parent">
-          <a class="am-cf" data-am-collapse="{target: '#collapse-nav'}"><span class="am-icon-file"></span> 页面模块 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-          <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav">
-            <li><a href="admin-user.html" class="am-cf"><span class="am-icon-check"></span> 个人资料<span class="am-icon-star am-fr am-margin-right admin-icon-yellow"></span></a></li>
-            <li><a href="admin-help.html"><span class="am-icon-puzzle-piece"></span> 帮助页</a></li>
-            <li><a href="admin-gallery.html"><span class="am-icon-th"></span> 相册页面<span class="am-badge am-badge-secondary am-margin-right am-fr">24</span></a></li>
-            <li><a href="admin-log.html"><span class="am-icon-calendar"></span> 系统日志</a></li>
-            <li><a href="admin-404.html"><span class="am-icon-bug"></span> 404</a></li>
+          <a class="am-cf" href=""><i class="fa fa-desktop"></i> 官网-首页设置 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+        </li>
+
+        <li class="admin-parent">
+          <a class="am-cf" data-am-collapse="{target: '#collapse-nav2'}"><i class="fa fa-desktop"></i> 官网-内容管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+          <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav2">
+            <li><a href="admin-user.html" class="am-cf"><i class="fa fa-plus"></i> 新增</a></li>
+            <li><a href="admin-help.html"><i class="fa fa-pencil-square-o"></i> 修改</a></li>
           </ul>
         </li>
-        <li><a href="admin-table.html"><span class="am-icon-table"></span> 表格</a></li>
-        <li><a href="admin-form.html"><span class="am-icon-pencil-square-o"></span> 表单</a></li>
-        <li><a href="#"><span class="am-icon-sign-out"></span> 注销</a></li>
+
+        <li class="admin-parent">
+          <a class="am-cf" data-am-collapse="{target: '#collapse-nav3'}"><i class="fa fa-desktop"></i> 官网-图片管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+          <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav3">
+            <li><a href="admin-user.html" class="am-cf"><i class="fa fa-photo"></i>  banner</a></li>
+            <li><a href="admin-help.html"><i class="fa fa-users"></i> 合作伙伴</a></li>
+            <li><a href="admin-help.html"><i class="fa fa-file-image-o"></i> 页面图片修改</a></li>
+
+          </ul>
+        </li>
+
+        <li class="admin-parent">
+          <a class="am-cf" href=""><i class="fa fa-weixin"></i> 微信-banner图片管理 </a>
+        </li>
+        <li class="admin-parent">
+          <a class="am-cf" href=""><i class="fa fa-weixin"></i> 微信-分类管理 </a>
+        </li>
+        <li class="admin-parent">
+          <a class="am-cf" href=""><i class="fa fa-weixin"></i> 微信-广告管理 </a>
+        </li>
+
       </ul>
 
-      <div class="am-panel am-panel-default admin-sidebar-panel">
-        <div class="am-panel-bd">
-          <p><span class="am-icon-bookmark"></span> 公告</p>
-          <p>时光静好，与君语；细水流年，与君同。—— Amaze UI</p>
-        </div>
-      </div>
-
-      <div class="am-panel am-panel-default admin-sidebar-panel">
-        <div class="am-panel-bd">
-          <p><span class="am-icon-tag"></span> wiki</p>
-          <p>Welcome to the Amaze UI wiki!</p>
-        </div>
-      </div>
     </div>
   </div>
   <!-- sidebar end -->
