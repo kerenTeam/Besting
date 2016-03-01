@@ -19,32 +19,10 @@
   <link rel="stylesheet" href="assets/css/app.css">
   <link rel="stylesheet" href="assets/css/jPages.css">
   <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/css/wxapp.css">
 
 </head>
- <script type="text/javascript">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-28718218-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-  </script>
-<script>
-  $(function(){
-    $("div.holder").jPages({
-      containerID : "movies",
-      previous : "上一页",
-      next : "下一页",
-      perPage : 5,
-      delay : 5
-    });
-  });
-  </script>
 <body>
 <!--[if lte IE 9]>
 <p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，Amaze UI 暂不支持。 请 <a href="http://browsehappy.com/" target="_blank">升级浏览器</a>
@@ -83,26 +61,22 @@
   <div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
     <div class="am-offcanvas-bar admin-offcanvas-bar">
       <ul class="am-list admin-sidebar-list">
-        <li><a href="admin-index.html"><span class="am-icon-home"></span> 管理中心</a></li>
+        <li><a href="<?php echo site_url('pc_index/admin')?>"><span class="am-icon-home"></span> 管理中心</a></li>
 
         <li class="admin-parent">
           <a class="am-cf" href="<?php echo site_url('pc_index/index')?>"><i class="fa fa-desktop"></i> 官网-首页设置 </a>
         </li>
 
         <li class="admin-parent">
-          <a class="am-cf" href="<?php echo site_url('pc_index/containadd')?>"><i class="fa fa-desktop"></i> 官网-内容管理 </a>
-        <!--   <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav2">
-            <li><a href="<?php echo site_url('pc_index/containadd')?>" class="am-cf"><i class="fa fa-plus"></i> 新增</a></li>
-            <li><a href="admin-help.html"><i class="fa fa-pencil-square-o"></i> 修改</a></li>
-          </ul> -->
+          <a class="am-cf" href="<?php echo site_url('pc_index/content')?>"><i class="fa fa-desktop"></i> 官网-内容管理 </a> 
         </li>
 
         <li class="admin-parent">
           <a class="am-cf" data-am-collapse="{target: '#collapse-nav3'}"><i class="fa fa-desktop"></i> 官网-图片管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
           <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav3">
-            <li><a href="admin-user.html" class="am-cf"><i class="fa fa-photo"></i>  banner</a></li>
-            <li><a href="admin-help.html"><i class="fa fa-users"></i> 合作伙伴</a></li>
-            <li><a href="admin-help.html"><i class="fa fa-file-image-o"></i> 页面图片修改</a></li>
+            <li><a href="<?php echo site_url('pc_index/pcbanner')?>" class="am-cf"><i class="fa fa-photo"></i>  banner</a></li>
+            <li><a href="<?php echo site_url('pc_index/partner')?>"><i class="fa fa-users"></i> 合作伙伴</a></li>
+            <li><a href="<?php echo site_url('pc_index/pageimg')?>"><i class="fa fa-file-image-o"></i> 页面图片修改</a></li>
 
           </ul>
         </li>
@@ -111,7 +85,7 @@
           <a class="am-cf" href=""><i class="fa fa-weixin"></i> 微信-banner图片管理 </a>
         </li>
         <li class="admin-parent">
-          <a class="am-cf" href=""><i class="fa fa-weixin"></i> 微信-分类管理 </a>
+          <a class="am-cf" href="<?php echo site_url('wx_index/type')?>"><i class="fa fa-weixin"></i> 微信-分类管理 </a>
         </li>
         <li class="admin-parent">
           <a class="am-cf" href=""><i class="fa fa-weixin"></i> 微信-广告管理 </a>

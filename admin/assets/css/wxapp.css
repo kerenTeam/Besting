@@ -1,0 +1,35 @@
+.wx_input{
+
+}
+.wx_type_img{
+	position: relative;
+}
+.wx_type_img input{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+.wx_type_img img{
+	max-height: 100px;
+}
+.wx_type_img div#preview{
+	margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
