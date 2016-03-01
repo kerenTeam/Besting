@@ -21,5 +21,6 @@
 <script src="assets/js/amazeui.min.js"></script>
 <script src="assets/js/app.js"></script>
 <script src="assets/js/imgup.js"></script>
+<script src="assets/js/jPages.js"></script>
 </body>
 </html>
