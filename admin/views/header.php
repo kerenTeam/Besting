@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="assets/css/jPages.css">
   <link rel="stylesheet" href="assets/css/animate.css">
   <link rel="stylesheet" href="assets/css/wxapp.css">
+  <script src="assets/js/jquery.min.js"></script>
 
 </head>
 
