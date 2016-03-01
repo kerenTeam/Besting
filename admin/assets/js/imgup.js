@@ -23,7 +23,7 @@ function previewImage(file)
           }
           else //鍏煎IE
           {
-		  alert("123");
+		  //alert("123");
             var sFilter='filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale,src="';
             file.select();
             var src = document.selection.createRange().text;

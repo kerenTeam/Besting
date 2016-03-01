@@ -59,15 +59,15 @@
         <li><a href="admin-index.html"><span class="am-icon-home"></span> 管理中心</a></li>
 
         <li class="admin-parent">
-          <a class="am-cf" href="<?php echo site_url('pc_index/index')?>"><i class="fa fa-desktop"></i> 官网-首页设置 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+          <a class="am-cf" href="<?php echo site_url('pc_index/index')?>"><i class="fa fa-desktop"></i> 官网-首页设置 </a>
         </li>
 
         <li class="admin-parent">
-          <a class="am-cf" data-am-collapse="{target: '#collapse-nav2'}"><i class="fa fa-desktop"></i> 官网-内容管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-          <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav2">
+          <a class="am-cf" href="<?php echo site_url('pc_index/containadd')?>"><i class="fa fa-desktop"></i> 官网-内容管理 </a>
+        <!--   <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav2">
             <li><a href="<?php echo site_url('pc_index/containadd')?>" class="am-cf"><i class="fa fa-plus"></i> 新增</a></li>
             <li><a href="admin-help.html"><i class="fa fa-pencil-square-o"></i> 修改</a></li>
-          </ul>
+          </ul> -->
         </li>
 
         <li class="admin-parent">

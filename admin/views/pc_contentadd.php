@@ -1,7 +1,7 @@
 <!-- content start -->
   <div class="admin-content">
     <div class="am-cf am-padding">
-      <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">个人资料</strong> / <small>Personal information</small></div>
+      <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">内容管理</strong> / <small>新增</small></div>
     </div>
 
     <hr/>

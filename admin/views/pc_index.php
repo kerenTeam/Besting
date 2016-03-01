@@ -3,6 +3,10 @@
 
 <!-- content start -->
 <div class="admin-content">
+<div class="am-cf am-padding">
+    <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">首页设置</strong></div>
+  </div>
+
 <!-- 表单start -->
   <form action="" method="" enctype="multipart/form-data" class="am-form am-form-inline">
 
@@ -32,7 +36,14 @@
                 <input type="text" class="am-input-sm">
               </div>
             </div>
-
+           <div class="am-g am-margin-top">
+              <div class="am-u-sm-4 am-u-md-2 am-text-right">
+                版权
+              </div>
+              <div class="am-u-sm-8 am-u-md-4 am-u-end col-end">
+                <input type="text" class="am-input-sm">
+              </div>
+            </div>
             <div class="am-g am-margin-top">
               <div class="am-u-sm-4 am-u-md-2 am-text-right">
                 途悦二维码
@@ -49,7 +60,9 @@
                 百喜听二维码
               </div>
               <div class="am-u-sm-8 am-u-md-4 am-u-end col-end">
-                <input type="text" class="am-input-sm">
+                <input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
+                  <!-- 图片实时预览 -->
+                  <div id="preview"> <img style="border-radius: 3px;" src=" "> </div>
               </div>
             </div>
       </div>
