@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Amaze UI Admin index Examples</title>
+  <title>BestingMedia</title>
   <base href="<?php echo base_url() ;?>admin/"/>
   <meta name="description" content="这是一个 index 页面">
   <meta name="keywords" content="index">
