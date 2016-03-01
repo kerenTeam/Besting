@@ -1,7 +1,7 @@
    <!doctype html>
 <html class="no-js">
 <head>
-  <meta charset="utf-8">    
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Amaze UI Admin index Examples</title>
   <base href="<?=base_url();?>admin/"></base>
@@ -15,7 +15,7 @@
   <meta name="apple-mobile-web-app-title" content="Amaze UI" />
   <link rel="stylesheet" href="assets/css/amazeui.min.css"/>
   <link rel="stylesheet" href="assets/css/admin.css">
-</head>   
+</head>
 <body>
 <!--[if lte IE 9]>
 <p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，Amaze UI 暂不支持。 请 <a href="http://browsehappy.com/" target="_blank">升级浏览器</a>
@@ -26,8 +26,8 @@
   <div class="am-topbar-brand">
     <strong>Amaze UI</strong> <small>后台管理模板</small>
   </div>
- 
- <h1><?= base_url() ;?></h1>
+
+
 
   <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
 
