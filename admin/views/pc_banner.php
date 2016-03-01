@@ -16,9 +16,11 @@
           <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label">所属页面</label>
             <div class="am-u-sm-9">
-              <select data-am-selected="{btnSize: 'sm'}">
-            <option value="option1">首页</option>
-          </select>
+              <!-- <select data-am-selected="{btnSize: 'sm'}">
+                <option value="option1">首页</option>
+              </select> -->
+              <input type="text" placeholder="首页" readonly>
+
             </div>
           </div>
 
