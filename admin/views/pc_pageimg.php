@@ -1,7 +1,7 @@
  <!-- content start -->
   <div class="admin-content">
     <div class="am-cf am-padding">
-      <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">图片管理</strong> / <small>banner</small></div>
+      <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">图片管理</strong> / <small>页面图片管理</small></div>
     </div>
 
     <hr/>
@@ -16,11 +16,28 @@
           <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label">所属页面</label>
             <div class="am-u-sm-9">
-              <!-- <select data-am-selected="{btnSize: 'sm'}">
-                <option value="option1">首页</option>
-              </select> -->
-              <input type="text" placeholder="首页" readonly>
-
+              <select data-am-selected="{btnSize: 'sm'}">
+            <option value="dd">首页-中国高铁生态营销圈1</option>
+            <option value="dds ">首页-中国高铁生态营销圈2</option>
+            <option value="w ">首页-轮播1</option>
+            <option value=" f">首页-轮播2</option>
+            <option value="d ">首页-轮播3</option>
+            <option value=" ">高铁全媒体-中国高铁生态营销圈1</option>
+            <option value=" ">高铁全媒体-中国高铁生态营销圈2</option>
+            <option value=" ">火车站广告-火车站广告硬体1</option>
+            <option value=" ">火车站广告-火车站广告硬体2</option>
+            <option value=" ">高铁品牌-高铁品牌专列1</option>
+            <option value=" ">高铁品牌-高铁品牌专列2</option>
+            <option value=" ">途悦品牌-中国高铁融媒体-途悦1</option>
+            <option value=" ">途悦品牌-轮播1</option>
+            <option value=" ">途悦品牌-轮播2</option>
+            <option value=" ">途悦品牌-轮播3</option>
+            <option value=" ">创意中心</option>
+            <option value=" ">加入我们1</option>
+            <option value=" ">加入我们2</option>
+            <option value=" ">加入我们3</option>
+            <option value=" ">联系我们</option>
+          </select>
             </div>
           </div>
 
@@ -36,8 +53,8 @@
           <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label">图文内容</label>
             <div class="am-u-sm-9">
+            <!-- 编辑器 -->
                <link href="assets/uediter/themes/default/css/umeditor.css" type="text/css" rel="stylesheet">
-                  <script type="text/javascript" src="assets//uediter/third-party/jquery.min.js"></script> 
                   <script type="text/javascript" charset="utf-8" src="assets/uediter/umeditor.config.js"></script> 
                   <script type="text/javascript" charset="utf-8" src="assets/uediter/umeditor.js"></script> 
                   <script type="text/javascript" src="assets/uediter/lang/zh-cn/zh-cn.js"></script>

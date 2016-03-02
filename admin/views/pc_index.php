@@ -24,7 +24,7 @@
                 地址
               </div>
               <div class="am-u-sm-8 am-u-md-4 am-u-end col-end">
-                <input type="text" class="am-input-sm">
+                <input type="text" name="" value="" class="am-input-sm">
               </div>
             </div>
 
@@ -33,7 +33,7 @@
                 服务热线
               </div>
               <div class="am-u-sm-8 am-u-md-4 am-u-end col-end">
-                <input type="text" class="am-input-sm">
+                <input type="text" name="" value="" class="am-input-sm">
               </div>
             </div>
            <div class="am-g am-margin-top">
@@ -41,7 +41,7 @@
                 版权
               </div>
               <div class="am-u-sm-8 am-u-md-4 am-u-end col-end">
-                <input type="text" class="am-input-sm">
+                <input type="text" name="" value="" class="am-input-sm">
               </div>
             </div>
             <div class="am-g am-margin-top">
@@ -73,7 +73,7 @@
               SEO 标题
             </div>
             <div class="am-u-sm-8 am-u-md-4 am-u-end">
-              <input type="text" class="am-input-sm">
+              <input type="text" name="" value="" class="am-input-sm">
             </div>
           </div>
 
@@ -82,7 +82,7 @@
               SEO 关键字
             </div>
             <div class="am-u-sm-8 am-u-md-4 am-u-end">
-              <input type="text" class="am-input-sm">
+              <input type="text" name="" value="" class="am-input-sm">
             </div>
           </div>
 
@@ -91,7 +91,7 @@
               SEO 描述
             </div>
             <div class="am-u-sm-8 am-u-md-4 am-u-end">
-              <textarea rows="4"></textarea>
+              <textarea rows="4" name="" value=""></textarea>
             </div>
           </div>
       </div>

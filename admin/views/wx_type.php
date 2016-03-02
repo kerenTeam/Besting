@@ -21,7 +21,7 @@
               </tr>
           </thead>
           <tbody>
-          <form action="" method="" enctype="multipart/form-data">
+          <form action="" method="" enctype="multipart/form-data" class="am-form am-form-horizontal">
             <tr>
               <td>1</td>
               <td><input type="text" value="品牌街" class="wx_input" /></td>
@@ -43,7 +43,7 @@
               </td>
             </tr>
             </form>
-            <form action="" method="" enctype="multipart/form-data">
+            <form action="" method="" enctype="multipart/form-data" class="am-form am-form-horizontal">
             <tr>
               <td>2</td>
               <td><input type="text" value="途悦大赏" class="wx_input" /></td>
@@ -65,7 +65,7 @@
               </td>
             </tr>
             </form>
-            <form action="" method="" enctype="multipart/form-data">
+            <form action="" method="" enctype="multipart/form-data" class="am-form am-form-horizontal">
             <tr>
               <td>3</td>
               <td><input type="text" value="目的地" class="wx_input" /></td>
@@ -101,7 +101,7 @@
               </tr>
           </thead>
           <tbody>
-          <form action="" method="" enctype="multipart/form-data">
+          <form action="" method="" enctype="multipart/form-data" class="am-form am-form-horizontal">
             <tr>
               <td>1</td>
               <td><input type="text" value="悦活" class="wx_input" /></td>
@@ -123,7 +123,7 @@
               </td>
             </tr>
             </form>
-            <form action="" method="" enctype="multipart/form-data">
+            <form action="" method="" enctype="multipart/form-data" class="am-form am-form-horizontal">
             <tr>
               <td>2</td>
               <td><input type="text" value="悦品" class="wx_input" /></td>
@@ -145,7 +145,7 @@
               </td>
             </tr>
             </form>
-            <form action="" method="" enctype="multipart/form-data">
+            <form action="" method="" enctype="multipart/form-data" class="am-form am-form-horizontal">
             <tr>
               <td>3</td>
               <td><input type="text" value="悦享" class="wx_input" /></td>
