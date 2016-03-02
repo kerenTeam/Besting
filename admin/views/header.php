@@ -73,8 +73,8 @@
         </li>
 
         <li class="admin-parent">
-          <a class="am-cf" data-am-collapse="{target: '#collapse-nav3'}"><i class="fa fa-desktop"></i> 官网-图片管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-          <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav3">
+          <a class="am-cf" data-am-collapse="{target: '#collapse-nav'}"><i class="fa fa-desktop"></i> 官网-图片管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+          <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav">
             <li><a href="<?php echo site_url('pc_index/pcbanner')?>" class="am-cf"><i class="fa fa-photo"></i>  banner</a></li>
             <li><a href="<?php echo site_url('pc_index/partner')?>"><i class="fa fa-users"></i> 合作伙伴</a></li>
             <li><a href="<?php echo site_url('pc_index/pageimg')?>"><i class="fa fa-file-image-o"></i> 页面图片修改</a></li>
@@ -91,7 +91,20 @@
         <li class="admin-parent">
           <a class="am-cf" href=""><i class="fa fa-weixin"></i> 微信-广告管理 </a>
         </li>
-
+        <li class="admin-parent">
+          <a class="am-cf" data-am-collapse="{target: '#collapse-nav2'}"><i class="fa fa-weixin"></i> 微信-产品管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+          <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav2">
+            <li><a href="<?php echo site_url('pc_index/partner')?>"><i class="fa fa-users"></i> 时间银行</a></li>
+            <li><a href="<?php echo site_url('pc_index/pageimg')?>"><i class="fa fa-file-image-o"></i> 精品商城</a></li>
+          </ul>
+        </li>
+       <li class="admin-parent">
+          <a class="am-cf" data-am-collapse="{target: '#collapse-nav3'}"><i class="fa fa-weixin"></i> 微信-商家管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+          <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav3">
+            <li><a href="<?php echo site_url('pc_index/partner')?>"><i class="fa fa-users"></i> 时间银行</a></li>
+            <li><a href="<?php echo site_url('pc_index/pageimg')?>"><i class="fa fa-file-image-o"></i> 精品商城</a></li>
+          </ul>
+        </li>
       </ul>
 
     </div>

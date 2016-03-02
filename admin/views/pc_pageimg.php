@@ -17,11 +17,11 @@
             <label class="am-u-sm-3 am-form-label">所属页面</label>
             <div class="am-u-sm-9">
               <select data-am-selected="{btnSize: 'sm'}">
-            <option value="dd">首页-中国高铁生态营销圈1</option>
-            <option value="dds ">首页-中国高铁生态营销圈2</option>
-            <option value="w ">首页-轮播1</option>
-            <option value=" f">首页-轮播2</option>
-            <option value="d ">首页-轮播3</option>
+            <option value=" ">首页-中国高铁生态营销圈1</option>
+            <option value=" ">首页-中国高铁生态营销圈2</option>
+            <option value=" ">首页-轮播1</option>
+            <option value=" ">首页-轮播2</option>
+            <option value=" ">首页-轮播3</option>
             <option value=" ">高铁全媒体-中国高铁生态营销圈1</option>
             <option value=" ">高铁全媒体-中国高铁生态营销圈2</option>
             <option value=" ">火车站广告-火车站广告硬体1</option>
