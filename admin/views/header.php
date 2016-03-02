@@ -83,13 +83,13 @@
         </li>
 
         <li class="admin-parent">
-          <a class="am-cf" href=""><i class="fa fa-weixin"></i> 微信-banner图片管理 </a>
+          <a class="am-cf" href="<?php echo site_url('wx_index/pic')?>"><i class="fa fa-weixin"></i> 微信-banner图片管理 </a>
         </li>
         <li class="admin-parent">
           <a class="am-cf" href="<?php echo site_url('wx_index/type')?>"><i class="fa fa-weixin"></i> 微信-分类管理 </a>
         </li>
         <li class="admin-parent">
-          <a class="am-cf" href=""><i class="fa fa-weixin"></i> 微信-广告管理 </a>
+          <a class="am-cf" href="<?php echo site_url('wx_index/advert')?>"><i class="fa fa-weixin"></i> 微信-广告管理 </a>
         </li>
 
       </ul>

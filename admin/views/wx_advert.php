@@ -13,19 +13,19 @@
       <div class="am-tab-panel am-fade am-in am-active" id="tab1">
       <a href="<?php echo site_url('wx_index/bankadadd')?>" class="am-cf"><i class="fa fa-plus"></i> 新增</a>
       <form action="" method="" enctype="multipart/form-data">
-      <div id="container" class="clearfix">
+      <!-- <div id="container" class="clearfix">
 <div id="sidebar">
-    <div id="content" class="defaults">
+    <div id="content" class="defaults"> -->
       <table class="am-table am-table-striped am-table-hover table-main wx_input">
             <thead>
               <tr>
-                <th class="table-check"><input type="checkbox" id="allchexed"/></th><th class="table-id">ID</th><th class="table-title">商家名</th><th class="table-type">图片</th><th class="table-author">链接</th><th class="table-set">操作</th>
+                <th class="table-check"><input type="checkbox" class="allchexed"/></th><th class="table-id">ID</th><th class="table-title">商家名</th><th class="table-type">图片</th><th class="table-author">链接</th><th class="table-set">操作</th>
               </tr>
 
           </thead>
           <tbody id="movies">
               <tr>
-              <td><input type="checkbox" /></td>
+              <td><input type="checkbox" class="wx_bankcheck" /></td>
               <td>1</td>
               <td><input type="text" value="商家名" /></td>
               <td>
@@ -46,7 +46,7 @@
               </td>
             </tr>
             <tr>
-              <td><input type="checkbox" /></td>
+              <td><input type="checkbox" class="wx_bankcheck" /></td>
               <td>1</td>
               <td><input type="text" value="商家名" /></td>
               <td>
@@ -67,7 +67,7 @@
               </td>
             </tr>
             <tr>
-              <td><input type="checkbox" /></td>
+              <td><input type="checkbox" class="wx_bankcheck" /></td>
               <td>1</td>
               <td><input type="text" value="商家名" /></td>
               <td>
@@ -92,12 +92,12 @@
         </table>
         <div class="am-cf">
   共 15 条记录
-  <div class="am-fr">
+ <!--  <div class="am-fr">
     <div class="holder"></div> 
   </div>
 </div>
 </div>
-        </div>
+        </div> -->
         </div>
         <button type="button" class="am-btn am-btn-primary am-btn-xs wx_sub">提交保存</button>
 
@@ -109,19 +109,19 @@
       <div class="am-tab-panel am-fade" id="tab2">
         <a href="<?php echo site_url('wx_index/molladadd')?>" class="am-cf"><i class="fa fa-plus"></i> 新增</a>
       <form action="" method="" enctype="multipart/form-data">
-      	<div id="container" class="clearfix">
+      	<!-- <div id="container" class="clearfix">
 <div id="sidebar">
-    <div id="content" class="defaults">
+    <div id="content" class="defaults"> -->
       <table class="am-table am-table-striped am-table-hover table-main wx_input">
             <thead>
               <tr>
-                <th class="table-check"><input type="checkbox" onclick="allchexed(this)" /></th><th class="table-id">ID</th><th class="table-title">商家名</th><th class="table-type">图片</th><th class="table-author">链接</th><th class="table-set">操作</th>
+                <th class="table-check"><input type="checkbox" class="allchexed"/></th><th class="table-id">ID</th><th class="table-title">商家名</th><th class="table-type">图片</th><th class="table-author">链接</th><th class="table-set">操作</th>
               </tr>
 
           </thead>
           <tbody id="movies">
               <tr>
-              <td><input type="checkbox" /></td>
+              <td><input type="checkbox" class="wx_mollcheck" /></td>
               <td>1</td>
               <td><input type="text" value="商家名" /></td>
               <td>
@@ -142,7 +142,7 @@
               </td>
             </tr>
             <tr>
-              <td><input type="checkbox" /></td>
+              <td><input type="checkbox" class="wx_mollcheck" /></td>
               <td>1</td>
               <td><input type="text" value="商家名" /></td>
               <td>
@@ -163,7 +163,7 @@
               </td>
             </tr>
             <tr>
-              <td><input type="checkbox" /></td>
+              <td><input type="checkbox" class="wx_mollcheck" /></td>
               <td>1</td>
               <td><input type="text" value="商家名" /></td>
               <td>
@@ -183,17 +183,16 @@
                 </div>
               </td>
             </tr>
-
             </tbody>
         </table>
         <div class="am-cf">
   共 15 条记录
-  <div class="am-fr">
+  <!-- <div class="am-fr">
     <div class="holder"></div> 
-  </div>
+  </div> -->
+<!-- </div>
 </div>
-</div>
-        </div>
+        </div> -->
         </div>
         <button type="button" class="am-btn am-btn-primary am-btn-xs">提交保存</button>
         </form>
@@ -204,9 +203,19 @@
 <script type="text/javascript" src="assets/js/imgup.js"></script>
 <script type="text/javascript">
 	$(function (){
-		$('#allchexed').click(function(){
-			console.log($(this).checked())
-		})
+		$('.allchexed').click(function(){
+			$(this).parentsUntil('table').next('tbody').find('input[type="checkbox"]').prop("checked",this.checked);
+		});
+		var $subBox = $(".wx_bankcheck");
+		var $subBox2 = $(".wx_mollcheck");
+		var allsubbox = $subBox.parentsUntil('table').prev('thead').find('input[type="checkbox"]');
+		var allsubbox2 = $subBox2.parentsUntil('table').prev('thead').find('input[type="checkbox"]');
+            $subBox.click(function(){
+                allsubbox.prop("checked",$subBox.length == $(".wx_bankcheck:checked").length ? true : false);
+            });
+            $subBox2.click(function(){
+            	allsubbox2.prop("checked",$subBox2.length == $(".wx_mollcheck:checked").length ? true : false);
+            })
 	})
 </script>
-<!-- content end -->
+<!-- content end
