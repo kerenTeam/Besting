@@ -1,7 +1,7 @@
 <!-- content start -->
 <div class="admin-content">
   <div class="am-cf am-padding">
-    <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">图片管理</strong> / <small>banner</small></div>
+    <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">广告管理</strong> / <small>广告管理</small></div>
   </div>
   
   <div class="am-tabs am-margin" data-am-tabs>
