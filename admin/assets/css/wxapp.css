@@ -14,14 +14,19 @@
 	filter: alpha(opacity=0);
 }
 .wx_type_img img{
+	max-width: 100%;
 	max-height: 100px;
 }
 .wx_type_img div#preview{
 	margin: 0;
 }
+.wx_input input{
+	width: 80%;
 
-
-
+}
+.wx_sub{
+	margin-top: 10px;
+}
 
 
 
