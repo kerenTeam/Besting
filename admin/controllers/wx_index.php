@@ -16,5 +16,29 @@ class wx_index extends CI_Controller {
 	    $this->load->view('wx_type');
 	    $this->load->view('footer');
 	}
+	public function pic()
+	{
+		
+	    $this->load->view('wx_pic');
+	    $this->load->view('footer');
+	}
+	public function advert()
+	{
+		
+	    $this->load->view('wx_advert');
+	    $this->load->view('footer');
+	}
+	public function bankadadd()
+	{
+		
+	    $this->load->view('wx_bankadadd');
+	    $this->load->view('footer');
+	}
+	public function molladadd()
+	{
+		
+	    $this->load->view('wx_molladadd');
+	    $this->load->view('footer');
+	}
 	
 }
