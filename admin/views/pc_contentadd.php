@@ -32,7 +32,7 @@
             <div class="am-u-sm-9">
                <input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
                   <!-- 图片实时预览 -->
-                  <div id="preview"> <img style="border-radius: 3px;" src=" "> </div>
+                  <div id="preview"> <img style="border-radius: 3px;" alt="选择图片" src=" "> </div>
             </div>
           </div>
 
