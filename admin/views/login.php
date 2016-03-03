@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
   <meta charset="UTF-8">
-  <title>Login Page | Amaze UI Example</title>
+  <title>Login Page | BestingMedia</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
@@ -27,8 +27,8 @@
 <body>
 <div class="header">
   <div class="am-g">
-    <h1>Web ide</h1>
-    <p>Integrated Development Environment<br/>代码编辑，代码生成，界面设计，调试，编译</p>
+    <h1>百喜听</h1>
+    <p>管理员后台登录</p>
   </div>
   <hr />
 </div>
@@ -45,8 +45,8 @@
     <br>
 
     <form method="post" class="am-form">
-      <label for="email">邮箱:</label>
-      <input type="email" name="" id="email" value="">
+      <label for="admin">用户名:</label>
+      <input type="text" name="" id="admin" value="">
       <br>
       <label for="password">密码:</label>
       <input type="password" name="" id="password" value="">
@@ -62,7 +62,7 @@
       </div>
     </form>
     <hr>
-    <p>© 2014 AllMobilize, Inc. Licensed under MIT license.</p>
+    <p>Copyright©2012-2015 krrjgf.可人软件版权所有Power by krrjgf 蜀ICP备14021068号</p>
   </div>
 </div>
 </body>

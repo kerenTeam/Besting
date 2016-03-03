@@ -6,7 +6,7 @@
 
 <footer>
   <hr>
-  <p class="am-padding-left">© 2014 AllMobilize, Inc. Licensed under MIT license.</p>
+  <p class="am-padding-left"> Copyright 2015-2016 Besting Media. All Rights Reserved.</p>
 </footer>
 
 <!--[if lt IE 9]>

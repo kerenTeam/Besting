@@ -13,7 +13,6 @@
   <link rel="icon" type="image/png" href="assets/i/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
   <meta name="apple-mobile-web-app-title" content="Amaze UI" />
-  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/amazeui.min.css"/>
   <link rel="stylesheet" href="assets/css/admin.css">
   <link rel="stylesheet" href="assets/css/app.css">
@@ -62,50 +61,65 @@
   <div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
     <div class="am-offcanvas-bar admin-offcanvas-bar">
       <ul class="am-list admin-sidebar-list">
-        <li><a href="<?php echo site_url('pc_index/admin')?>"><span class="am-icon-home"></span> 管理中心</a></li>
+        <li class="admin-parent"><a href="<?php echo site_url('pc_index/admin')?>"><span class="am-icon-home"></span> 管理中心</a></li>
 
         <li class="admin-parent">
-          <a class="am-cf" href="<?php echo site_url('pc_index/index')?>"><i class="fa fa-desktop"></i> 官网-首页设置 </a>
+          <a class="am-cf" href="<?php echo site_url('pc_index/index')?>"><span class="am-icon-desktop"></span> 官网-首页设置 </a>
         </li>
 
         <li class="admin-parent">
-          <a class="am-cf" href="<?php echo site_url('pc_index/content')?>"><i class="fa fa-desktop"></i> 官网-内容管理 </a> 
+          <a class="am-cf" href="<?php echo site_url('pc_index/content')?>"><span class="am-icon-desktop"></span> 官网-内容管理 </a> 
         </li>
 
         <li class="admin-parent">
-          <a class="am-cf" data-am-collapse="{target: '#collapse-nav'}"><i class="fa fa-desktop"></i> 官网-图片管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+          <a class="am-cf" data-am-collapse="{target: '#collapse-nav'}"><span class="am-icon-desktop"></span> 官网-图片管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
           <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav">
-            <li><a href="<?php echo site_url('pc_index/pcbanner')?>" class="am-cf"><i class="fa fa-photo"></i>  banner</a></li>
-            <li><a href="<?php echo site_url('pc_index/partner')?>"><i class="fa fa-users"></i> 合作伙伴</a></li>
-            <li><a href="<?php echo site_url('pc_index/pageimg')?>"><i class="fa fa-file-image-o"></i> 页面图片修改</a></li>
+            <li><a href="<?php echo site_url('pc_index/pcbanner')?>" class="am-cf"><span class="am-icon-photo"></span> banner</a></li>
+            <li><a href="<?php echo site_url('pc_index/partner')?>"><span class="am-icon-users"></span> 合作伙伴</a></li>
+            <li><a href="<?php echo site_url('pc_index/pageimg')?>"><span class="am-icon-file-image-o"></span> 页面图片修改</a></li>
 
           </ul>
         </li>
 
         <li class="admin-parent">
-          <a class="am-cf" href="<?php echo site_url('wx_index/pic')?>"><i class="fa fa-weixin"></i> 微信-banner图片管理 </a>
+          <a class="am-cf" href="<?php echo site_url('wx_index/pic')?>"><span class="am-icon-weixin"></span> 微信-banner图片管理 </a>
         </li>
         <li class="admin-parent">
-          <a class="am-cf" href="<?php echo site_url('wx_index/type')?>"><i class="fa fa-weixin"></i> 微信-分类管理 </a>
+          <a class="am-cf" href="<?php echo site_url('wx_index/type')?>"><span class="am-icon-weixin"></span> 微信-分类管理 </a>
         </li>
         <li class="admin-parent">
-          <a class="am-cf" href="<?php echo site_url('wx_index/advert')?>"><i class="fa fa-weixin"></i> 微信-广告管理 </a>
+          <a class="am-cf" href="<?php echo site_url('wx_index/advert')?>"><span class="am-icon-weixin"></span> 微信-广告管理 </a>
         </li>
         <li class="admin-parent">
-          <a class="am-cf" data-am-collapse="{target: '#collapse-nav2'}"><i class="fa fa-weixin"></i> 微信-产品管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+          <a class="am-cf" data-am-collapse="{target: '#collapse-nav2'}"><span class="am-icon-weixin"></span> 微信-产品管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
           <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav2">
-            <li><a href="<?php echo site_url('pc_index/partner')?>"><i class="fa fa-users"></i> 时间银行</a></li>
-            <li><a href="<?php echo site_url('pc_index/pageimg')?>"><i class="fa fa-file-image-o"></i> 精品商城</a></li>
+            <li><a href="<?php echo site_url('pc_index/partner')?>"><span class="am-icon-credit-card-alt"></span> 时间银行</a></li>
+            <li><a href="<?php echo site_url('pc_index/pageimg')?>"><span class="am-icon-cart-arrow-down"></span> 精品商城</a></li>
           </ul>
         </li>
        <li class="admin-parent">
           <a class="am-cf" data-am-collapse="{target: '#collapse-nav3'}"><i class="fa fa-weixin"></i> 微信-商家管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
           <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav3">
-            <li><a href="<?php echo site_url('pc_index/partner')?>"><i class="fa fa-users"></i> 时间银行</a></li>
-            <li><a href="<?php echo site_url('pc_index/pageimg')?>"><i class="fa fa-file-image-o"></i> 精品商城</a></li>
+            <li><a href="<?php echo site_url('pc_index/partner')?>"><span class="am-icon-credit-card-alt"></span> 时间银行</a></li>
+            <li><a href="<?php echo site_url('pc_index/pageimg')?>"><span class="am-icon-cart-arrow-down"></span> 精品商城</a></li>
           </ul>
         </li>
       </ul>
+
+
+      <div class="am-panel am-panel-default admin-sidebar-panel">
+        <div class="am-panel-bd">
+          <p><span class="am-icon-bookmark"></span> 公告</p>
+          <p>时光静好，与君语；细水流年，与君同。—— BestingMedia</p>
+        </div>
+      </div>
+
+      <div class="am-panel am-panel-default admin-sidebar-panel">
+        <div class="am-panel-bd">
+          <p><span class="am-icon-tag"></span> wiki</p>
+          <p>Welcome to the BestingMedia wiki!</p>
+        </div>
+      </div>
 
     </div>
   </div>
