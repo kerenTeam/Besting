@@ -1,5 +1,5 @@
 <!-- content start -->
-<div class="admin-content">
+<div class="admin-content am-form wx_btn_txt">
   <div class="am-cf am-padding">
     <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">图片管理</strong> / <small>banner</small></div>
   </div>
@@ -30,7 +30,7 @@
         <!-- 图片实时预览 -->
         <div id="preview"> <img style="border-radius: 3px;" src="" alt="选择图片"> </div>
         </div>
-        <button type="button" class="am-btn am-btn-primary am-btn-xs">提交保存</button>
+        <button type="submit" class="am-btn am-btn-primary am-btn-xs">提交保存</button>
         </form>
       </div>
       <div class="am-tab-panel am-fade" id="tab2">
@@ -53,7 +53,7 @@
         <!-- 图片实时预览 -->
         <div id="preview"> <img style="border-radius: 3px;" src="" alt="选择图片"> </div>
         </div>
-        <button type="button" class="am-btn am-btn-primary am-btn-xs">提交保存</button>
+        <button type="submit" class="am-btn am-btn-primary am-btn-xs">提交保存</button>
         </form>
     </div>
   </div>

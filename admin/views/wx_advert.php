@@ -1,5 +1,5 @@
 <!-- content start -->
-<div class="admin-content">
+<div class="admin-content am-form wx_btn_txt">
   <div class="am-cf am-padding">
     <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">广告管理</strong> / <small>广告管理</small></div>
   </div>
@@ -99,7 +99,7 @@
 </div>
         </div> -->
         </div>
-        <button type="button" class="am-btn am-btn-primary am-btn-xs wx_sub">提交保存</button>
+        <button type="submit" class="am-btn am-btn-primary am-btn-xs wx_sub">提交保存</button>
 
         </form>
       </div>
@@ -194,7 +194,7 @@
 </div>
         </div> -->
         </div>
-        <button type="button" class="am-btn am-btn-primary am-btn-xs">提交保存</button>
+        <button type="submit" class="am-btn am-btn-primary am-btn-xs">提交保存</button>
         </form>
     </div>
   </div>

@@ -1,7 +1,7 @@
 
 
 <!-- content start -->
-<div class="admin-content">
+<div class="admin-content am-form wx_btn_txt">
 
   <div class="am-cf am-padding">
     <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">分类管理</strong> / <small>分类</small></div>
