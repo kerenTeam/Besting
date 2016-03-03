@@ -43,8 +43,8 @@
     </div>
     <br>
     <br>
-
-    <form method="post" class="am-form">
+ <!-- 表单 start -->
+    <form action="" method="" class="am-form">
       <label for="admin">用户名:</label>
       <input type="text" name="" id="admin" value="">
       <br>

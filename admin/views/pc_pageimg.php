@@ -12,6 +12,7 @@
       </div>
 
       <div class="am-u-sm-12 am-u-md-8 am-u-md-pull-4">
+       <!-- 表单 start -->
         <form action=" " method=" " enctype="multipart/form-data" class="am-form am-form-horizontal">
           <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label">所属页面</label>
