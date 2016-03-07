@@ -14,7 +14,7 @@
 .wx_type_img div#preview{
 	margin: 0;
 }
-.wx_input input{
+.wx_input input[type="text"],.wx_input input[type="url"]{
 	width: 80%;
 
 }
@@ -32,18 +32,29 @@
 .wx_sub{
 	margin-top: 10px;
 }
-<<<<<<< HEAD
 .del{
 	color: #dd514c!important;
-=======
-.wx_btn_txt input[type="text"]{
+}
+.wx_btn_txt input[type="text"],.wx_btn_txt input[type="url"]{
 	width: 80%;
 	padding: 3px 5px;
->>>>>>> b79571ae29ef73c7466553f3a3cc89435fa168c2
 }
 
-
-
+.wx_btn_txt .am-text-secondary,a.am-text-secondary:visited{
+	color: #3bb4f2;
+}
+.wx_btn_txt .am-text-danger,a.am-text-danger:visited{
+	color: #dd514c;
+}
+.wx_btn_txt a.am-btn{
+	background-color: white;
+}
+.wx_btn_txt .am-btn-default:focus,.wx_btn_txt .am-btn-default:hover{
+	background-color: #d4d4d4;
+}
+.wx_img{
+	padding-top: .6em;
+}
 
 
 

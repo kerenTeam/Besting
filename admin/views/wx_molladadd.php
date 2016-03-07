@@ -23,7 +23,7 @@
           <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label">链接地址</label>
             <div class="am-u-sm-9">
-              <input type="text" placeholder="链接地址">
+              <input type="url" placeholder="链接地址">
             </div>
           </div>
 

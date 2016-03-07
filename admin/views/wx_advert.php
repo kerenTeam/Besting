@@ -36,7 +36,7 @@
        			 </div>
               </td>
 
-              <td><input type="text" value="http://www.besting.com" /></td>
+              <td><input type="url" value="http://www.besting.com" /></td>
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">
@@ -57,7 +57,7 @@
        			 </div>
               </td>
 
-              <td><input type="text" value="http://www.besting.com" /></td>
+              <td><input type="url" value="http://www.besting.com" /></td>
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">
@@ -78,7 +78,7 @@
        			 </div>
               </td>
 
-              <td><input type="text" value="http://www.besting.com" /></td>
+              <td><input type="url" value="http://www.besting.com" /></td>
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">
@@ -132,7 +132,7 @@
        			 </div>
               </td>
 
-              <td><input type="text" value="http://www.besting.com" /></td>
+              <td><input type="url" value="http://www.besting.com" /></td>
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">
@@ -153,7 +153,7 @@
        			 </div>
               </td>
 
-              <td><input type="text" value="http://www.besting.com" /></td>
+              <td><input type="url" value="http://www.besting.com" /></td>
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">
@@ -174,7 +174,7 @@
        			 </div>
               </td>
 
-              <td><input type="text" value="http://www.besting.com" /></td>
+              <td><input type="url" value="http://www.besting.com" /></td>
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">

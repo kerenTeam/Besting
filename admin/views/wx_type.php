@@ -33,7 +33,7 @@
                   <div id="preview"> <img style="border-radius: 3px;" src="" alt="选择图片"> </div>
 				</div>
               </td>
-              <td class="am-hide-sm-only"><input type="text" value="http://www.bestingmedia.com/weixin/application/mall/" class="wx_input" /></td>
+              <td class="am-hide-sm-only"><input type="url" value="http://www.bestingmedia.com/weixin/application/mall/" class="wx_input" /></td>
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">
@@ -58,7 +58,7 @@
                   <div id="preview"> <img style="border-radius: 3px;" src="" alt="选择图片"> </div>
 				</div>
               </td>
-              <td class="am-hide-sm-only"><input type="text" value="http://www.bestingmedia.com/weixin/application/mall/" class="wx_input" /></td>
+              <td class="am-hide-sm-only"><input type="url" value="http://www.bestingmedia.com/weixin/application/mall/" class="wx_input" /></td>
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">
@@ -82,7 +82,7 @@
                   <div id="preview"> <img style="border-radius: 3px;" src="" alt="选择图片"> </div>
 				</div>
               </td>
-              <td class="am-hide-sm-only"><input type="text" value="http://www.bestingmedia.com/weixin/application/mall/" class="wx_input" /></td>
+              <td class="am-hide-sm-only"><input type="url" value="http://www.bestingmedia.com/weixin/application/mall/" class="wx_input" /></td>
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">
@@ -118,7 +118,7 @@
                   <div id="preview"> <img style="border-radius: 3px;" src="" alt="选择图片"> </div>
 				</div>
               </td>
-              <td class="am-hide-sm-only"><input type="text" value="http://www.bestingmedia.com/weixin/application/bank/" class="wx_input" /></td>
+              <td class="am-hide-sm-only"><input type="url" value="http://www.bestingmedia.com/weixin/application/bank/" class="wx_input" /></td>
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">
@@ -140,7 +140,7 @@
                   <div id="preview"> <img style="border-radius: 3px;" src="" alt="选择图片"> </div>
 				</div>
               </td>
-              <td class="am-hide-sm-only"><input type="text" value="http://www.bestingmedia.com/weixin/application/bank/" class="wx_input" /></td>
+              <td class="am-hide-sm-only"><input type="url" value="http://www.bestingmedia.com/weixin/application/bank/" class="wx_input" /></td>
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">
@@ -162,7 +162,7 @@
                   <div id="preview"> <img style="border-radius: 3px;" src="" alt="选择图片"> </div>
 				</div>
               </td>
-              <td class="am-hide-sm-only"><input type="text" value="http://www.bestingmedia.com/weixin/application/bank/" class="wx_input" /></td>
+              <td class="am-hide-sm-only"><input type="url" value="http://www.bestingmedia.com/weixin/application/bank/" class="wx_input" /></td>
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">

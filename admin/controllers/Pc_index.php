@@ -15,6 +15,12 @@ class Pc_index extends CI_Controller {
 	    $this->load->view('admin');
 	    $this->load->view('footer');
 	}
+	public function login()
+	{
+		
+	    $this->load->view('login');
+	    $this->load->view('footer');
+	}
 	public function index()
 	{
 		
