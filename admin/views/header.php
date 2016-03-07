@@ -97,8 +97,21 @@
             <li><a href=""><span class="am-icon-cart-arrow-down"></span> 精品商城</a></li>
           </ul>
         </li>
+        <li class="admin-parent">
+          <a class="am-cf" data-am-collapse="{target: '#collapse-nav3'}"><span class="am-icon-weixin"></span> 微信-交易记录 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+          <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav3">
+            <li><a href=""><span class="am-icon-credit-card-alt"></span> 商城订单</a></li>
+            <li><a href=""><span class="am-icon-cart-arrow-down"></span> 积分兑换</a></li>
+          </ul>
+        </li>
        <li class="admin-parent">
           <a class="am-cf" href="<?php echo site_url('wx_index/shop')?>"><span class="am-icon-weixin"></span> 微信-商家管理 </a>
+        </li>
+        <li class="admin-parent">
+          <a class="am-cf" href="<?php echo site_url('wx_index/users')?>"><span class="am-icon-weixin"></span> 微信-用户管理 </a>
+        </li>
+        <li class="admin-parent">
+          <a class="am-cf" href="<?php echo site_url('wx_index/suggestion')?>"><span class="am-icon-weixin"></span> 微信-意见管理 </a>
         </li>
       </ul>
 

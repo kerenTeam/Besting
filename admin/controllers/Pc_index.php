@@ -52,6 +52,12 @@ class Pc_index extends CI_Controller {
 	    $this->load->view('pc_partner');
 	    $this->load->view('footer');
 	}
+		public function partneradd()
+	{
+		
+	    $this->load->view('pc_partneradd');
+	    $this->load->view('footer');
+	}
 		public function pageimg()
 	{
 		
