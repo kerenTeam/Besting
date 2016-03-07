@@ -75,7 +75,7 @@
       <!-- 新闻中心列表 -->
       <div class="am-tab-panel am-fade" id="tab2">
       <!-- 新增 -->
-      <a href="<?php echo site_url('pc_index/contentadd')?>" class="am-cf"><i class="fa fa-plus"></i> 新增</a>
+      <a href="<?php echo site_url('pc_index/contentadd')?>" class="am-cf"><span class="am-icon-plus"></span> 新增</a>
       <div id="container" class="clearfix">
 <div id="sidebar">
     <div id="content" class="defaults">
