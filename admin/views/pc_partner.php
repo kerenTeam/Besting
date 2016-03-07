@@ -43,7 +43,7 @@ newEmailTD.innerHTML = "<div class='wx_type_img'><input type='file' id='imgUploa
 //添加列:删除按钮
 var newDeleteTD=newTR.insertCell(3);
 //添加列内容
-newDeleteTD.innerHTML = "<div class='am-btn-toolbar'><div class='am-btn-group am-btn-group-xs'><button type='submit' class='am-btn am-btn-default am-btn-xs am-text-secondary'><span class='am-icon-pencil-square-o'></span> 修改保存</button><a href='' class='am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only acadd'><span class='am-icon-trash-o'></span> 删除</a></div></div>";
+newDeleteTD.innerHTML = "<div class='am-btn-toolbar'><div class='am-btn-group am-btn-group-xs'><button type='submit' class='am-btn am-btn-default am-btn-xs am-text-secondary'><span class='am-icon-pencil-square-o'></span> 修改保存</button><a href='' class='am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only acadd del'><span class='am-icon-trash-o'></span> 删除</a></div></div>";
 
 //将行号推进下一行
 txtTRLastIndex.value = (rowID + 1).toString() ;
@@ -83,9 +83,9 @@ AddSignRow();
 }
 }
 </script>
-    <div class="am-g">
+    <div class="am-g  cm">
       <!-- <i class="fa fa-plus"></i><input type="button" name="Submit" value="添加" onclick="AddSignRow()" />  -->
-             <a href="javascript:" class="am-cf acadd" onclick="AddSignRow()"><i class="fa fa-plus"></i> 新增</a>
+             <a href="javascript:" class="am-cf acadd" onclick="AddSignRow()"><span class="am-icon-plus"></span> 新增</a>
                  <input name='txtTRLastIndex' type='hidden' id='txtTRLastIndex' value="1" />
        <div id="container" class="clearfix">
 <div id="sidebar">
@@ -97,6 +97,7 @@ AddSignRow();
               </tr>
           </thead>
           <tbody id="movies">
+          <!-- 表单stat -->
         <form action="" method="" enctype="multipart/form-data" class="am-form am-form-horizontal">
             <tr>
               <td>1</td>
@@ -115,7 +116,30 @@ AddSignRow();
 
                     <button type="submit" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 修改保存</button>
 
-                     <a href="" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only acadd"><span class="am-icon-trash-o"></span> 删除</a>
+                     <a href="" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only acadd del"><span class="am-icon-trash-o"></span> 删除</a>
+                   <!-- 这儿的链接确定了的话，上面的js中的a标签也需要添加一个 -->
+                  </div>
+                </div>
+              </td>
+            </tr>
+             <tr>
+              <td>2</td>
+              <td><input type="text" name="ptname" value="阿里音乐" class='am-input-sm' /></td>
+              <!-- 这儿如果改了name值得话，上面的js也需要改 -->
+              <td>
+              <div class="wx_type_img">
+                 <input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
+                  <!-- 图片实时预览 -->
+                  <div id="preview"> <img style="border-radius: 3px;" src="" alt="选择图片"> </div>
+        </div>
+              </td>
+              <td>
+                <div class="am-btn-toolbar">
+                  <div class="am-btn-group am-btn-group-xs">
+
+                    <button type="submit" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 修改保存</button>
+
+                     <a href="" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only acadd del"><span class="am-icon-trash-o"></span> 删除</a>
                    <!-- 这儿的链接确定了的话，上面的js中的a标签也需要添加一个 -->
                   </div>
                 </div>

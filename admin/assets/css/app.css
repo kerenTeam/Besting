@@ -9,9 +9,18 @@
 	margin-left: 15px!important;
 }
 footer{
-	
+	text-align:center;
+	position:fixed;
+	width:100%;
+	bottom:0;
 	text-align: center;
 }
 .admin-content{
 	padding-bottom: 10%;
+}
+.del{
+	color:#dd514c!important;
+}
+.cm{
+	margin: 0 15px;
 }
