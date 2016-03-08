@@ -73,8 +73,10 @@ section .am-panel-bd{
 	margin-top:2rem;
 }
 .info{
+	margin-left: 16rem;
 	border: 1px solid rgba(0,0,0,0.1);
     border-radius: 5px;
     padding: 20px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    background:rgba(238, 238, 238, 0.17);
 }
