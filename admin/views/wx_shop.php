@@ -1,7 +1,7 @@
  <!-- content start -->
   <div class="admin-content">
     <div class="am-cf am-padding">
-      <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">图片管理</strong> / <small>合作伙伴</small></div>
+      <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">商家管理</strong> / <small>shop</small></div>
     </div>
 
     <hr/>
@@ -32,7 +32,7 @@
                   <!-- 图片实时预览 -->
                   <div id="preview"> <img style="border-radius: 3px;" src="" alt="选择图片"> </div>
 				</div>
-              </td>
+              </td> 
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">

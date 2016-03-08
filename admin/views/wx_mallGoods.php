@@ -2,36 +2,43 @@
 <div class="admin-content am-form wx_btn_txt">
   <div class="am-cf am-padding">
     <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">商品管理</strong> / <small>精品商城</small></div>
+  </div> 
+
+   <div class="am-u-sm-12 am-u-md-6">
+    <form action="" method="" >
+      <div class="am-input-group am-input-group-sm">
+        <input type="text" class="am-form-field">
+        <span class="am-input-group-btn">
+          <button class="am-btn am-btn-default" type="button"><span class="am-icon-search"></span>搜索</button>
+        </span>
+      </div>
+    </form>
   </div>
-  
-  
-  <a href="<?php echo site_url('wx_index/bankadadd')?>" class="am-cf"><i class="fa fa-plus"></i> 新增</a> 
-  
+
     <div id="container" class="clearfix">
       <div id="sidebar">
         <div id="content" class="defaults">
+
+          <a href="<?php echo site_url('wx_index/malladd')?>" class="am-cf"><span class="am-icon-plus"></span> 新增</a> 
           <table class="am-table am-table-striped am-table-hover table-main wx_input">
             <thead>
               <tr>
-                <th class="table-check"><input type="checkbox" class="allchexed"/></th><th class="table-id">ID</th><th class="table-title">商家名</th><th class="table-type">图片</th><th class="table-author">链接</th><th class="table-set">操作</th>
+                <th class="table-check"><input type="checkbox" class="allchexed"/></th><th class="table-id">ID</th><th class="table-title">商品名</th><th class="table-type am-hide-sm-only">图片</th><th class="table-author am-hide-sm-only">商家</th><th class="table-author am-hide-sm-only">分类</th><th class="table-author am-hide-sm-only">价格</th><th class="table-set">操作</th>
               </tr>
             </thead>
             <tbody id="movies">
               <tr>
                 <td><input type="checkbox" class="wx_bankcheck" /></td>
                 <td>1</td>
-                <td><input type="text" value="商家名" /></td>
+                <td>野生草莓</td>
                 <td>
-                  <div class="wx_type_img">
-                    <input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
-                    <!-- 图片实时预览 -->
-                    <div id="preview"> <img style="border-radius: 3px;" src="" alt="选择图片"> </div>
-                  </div>
+                <img src="assets/image/img3.png" class="userimg" alt="besting">
                 </td>
-                <td><input type="text" value="http://www.besting.com" /></td>
+                <td>大凉山</td>
                 <td>
                   <div class="am-btn-toolbar">
                     <div class="am-btn-group am-btn-group-xs">
+                    <a href="<?php echo site_url('wx_index/malledit')?>" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</a>
                       <a href="" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only del"><span class="am-icon-trash-o"></span> 删除</a>
                     </div>
                   </div>
@@ -48,7 +55,6 @@
         </div>
       </div>
     </div>
-    <button type="submit" class="am-btn am-btn-primary am-btn-xs wx_sub">提交保存</button>
   </form>
  <script type="text/javascript">
   $(function (){
