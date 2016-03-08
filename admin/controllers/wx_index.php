@@ -49,5 +49,17 @@ class wx_index extends CI_Controller {
 	    $this->load->view('wx_shop');
 	    $this->load->view('footer');
 	}
+	public function users()
+	{
+		
+	    $this->load->view('wx_users');
+	    $this->load->view('footer');
+	}
+	public function suggestion()
+	{
+		
+	    $this->load->view('wx_suggestion');
+	    $this->load->view('footer');
+	}
 	
 }

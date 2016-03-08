@@ -98,7 +98,13 @@
           </ul>
         </li>
        <li class="admin-parent">
-          <a class="am-cf" href="<?php echo site_url('wx_index/shop')?>"><span class="am-icon-weixin"></span> 微信-商家管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+          <a class="am-cf" href="<?php echo site_url('wx_index/shop')?>"><span class="am-icon-weixin"></span> 微信-商家管理 </a>
+        </li>
+        <li class="admin-parent">
+          <a class="am-cf" href="<?php echo site_url('wx_index/users')?>"><span class="am-icon-weixin"></span> 微信-用户管理 </a>
+        </li>
+        <li class="admin-parent">
+          <a class="am-cf" href="<?php echo site_url('wx_index/suggestion')?>"><span class="am-icon-weixin"></span> 微信-意见反馈管理 </a>
         </li>
       </ul>
 
