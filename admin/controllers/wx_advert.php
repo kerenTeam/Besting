@@ -83,6 +83,7 @@ class wx_advert extends MY_Controller
 			var_dump($_POST);
 		}else{
 			$data['pid'] = $_GET['id'];
+			
 			$this->load->view('wx_bankadup',$data);
 			$this->load->view('footer');
 		}

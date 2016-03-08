@@ -74,7 +74,7 @@
             <a class="am-cf" href="<?php echo site_url('wx_cate/index')?>"><span class="am-icon-weixin"></span> 微信-分类管理 </a>
           </li>
           <li class="admin-parent">
-            <a class="am-cf" href="<?php echo site_url('wx_index/advert')?>"><span class="am-icon-weixin"></span> 微信-广告管理 </a>
+            <a class="am-cf" href="<?php echo site_url('wx_advert/index')?>"><span class="am-icon-weixin"></span> 微信-广告管理 </a>
           </li>
           <li class="admin-parent">
             <a class="am-cf" data-am-collapse="{target: '#collapse-nav2'}"><span class="am-icon-weixin"></span> 微信-商品管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>

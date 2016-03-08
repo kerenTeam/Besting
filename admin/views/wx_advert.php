@@ -37,7 +37,7 @@
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">
-                    <a href="<?php echo site_url('pc_index/cotentedit')?>" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</a>
+                    <a href="<?php echo site_url('wx_advert/updata?id=').$advert['id']?>" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</a>
                     <a href="" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only del"><span class="am-icon-trash-o"></span> 删除</a>
                   </div>
                 </div>
@@ -63,52 +63,14 @@
 
           </thead>
           <tbody id="movies">
-<<<<<<< HEAD
-              <?php if(!empty($adverts)):?>
+            <?php if(!empty($adverts)):?>
           <?php foreach($adverts as $advert):?>
               <?php if($advert['pid'] == 2):?>
               <tr>
-=======
-             <tr>
-              <td><input type="checkbox" class="wx_bankcheck" /></td>
-              <td>1</td>
-              <td>商家名</td>
-              <td><img style="border-radius: 3px;" src="" alt="商家图片">
-              </td>
-
-              <td>http://www.besting.com</td>
-              <td>
-                <div class="am-btn-toolbar">
-                  <div class="am-btn-group am-btn-group-xs">
-                    <a href="<?php echo site_url('pc_index/cotentedit')?>" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</a>
-                    <a href="" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only del"><span class="am-icon-trash-o"></span> 删除</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td><input type="checkbox" class="wx_bankcheck" /></td>
-              <td>1</td>
-              <td>商家名</td>
-              <td><img style="border-radius: 3px;" src=""  class="userimg" alt="商家图片">
-              </td>
-
-              <td>http://www.besting.com</td>
-              <td>
-                <div class="am-btn-toolbar">
-                  <div class="am-btn-group am-btn-group-xs">
-                    <a href="<?php echo site_url('pc_index/cotentedit')?>" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</a>
-                    <a href="" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only del"><span class="am-icon-trash-o"></span> 删除</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
->>>>>>> df54615aeffd1bd5b74d44d7e4a0822c8c41454b
               <td><input type="checkbox" class="wx_bankcheck" /></td>
               <td><?=$advert['id'];?></td>
               <td><?=$advert['merchantname'];?></td>
-              <td><img style="border-radius: 3px;" src="<?=base_url($advert['advertpic']);?>" alt="商家图片">
+              <td><img style="border-radius: 3px;" src="<?=base_url($advert['advertpic']);?>"  class="userimg" alt="商家图片">
               </td>
 
               <td><?=$advert['linkurl'];?></td>
@@ -124,6 +86,7 @@
            <?php endif;?>
           <?php endforeach;?>
         <?php endif;?> 
+             
             </tbody>
         </table>
 
