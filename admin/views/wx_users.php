@@ -1,7 +1,7 @@
 <!-- content start -->
 <div class="admin-content am-form wx_btn_txt">
   <div class="am-cf am-padding">
-    <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">用户管理</strong><small>useradmin</small></div>
+    <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">用户管理</strong> / <small>useradmin</small></div>
   </div>
   
   
@@ -20,7 +20,7 @@
               
               <td>1</td>
               <td>wf</td>
-              <td class="am-hide-sm-only"><img src="http://img.hb.aicdn.com/f561f23b688b91127b801c40388a40b0f925e308280d1-v6UQvc_fw658" class="userimg"  alt="用户头像"></td>
+              <td class="am-hide-sm-only"><img src="assets/image/user.jpg" class="userimg"  alt="用户头像"></td>
               <td class="am-hide-sm-only">12345678901</td>
               <td class="am-hide-sm-only">2014年9月4日 7:28:47</td>
               <td class="am-hide-sm-only">200积分</td>

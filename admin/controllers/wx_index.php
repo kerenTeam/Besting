@@ -8,8 +8,6 @@ class wx_index extends CI_Controller {
         parent::__construct();
         $this->load->view('header');
     }
-
-
 	public function type()
 	{
 		

@@ -30,7 +30,7 @@
               <div class="wx_type_img">
               	 <input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
                   <!-- 图片实时预览 -->
-                  <div id="preview"> <img style="border-radius: 3px;" src="" alt="选择图片"> </div>
+                  <div id="preview"> <img style="border-radius: 3px;" src="assets/image/user.jpg" alt="选择图片"> </div>
 				</div>
               </td>
               <td class="am-hide-sm-only"><input type="url" value="http://www.bestingmedia.com/weixin/application/mall/" class="wx_input" /></td>

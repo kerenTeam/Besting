@@ -31,7 +31,7 @@
 
 <header class="am-topbar admin-header">
   <div class="am-topbar-brand">
-    <strong>BestingMedia</strong> <small>后台管理模板</small>
+    <strong>BestingMedia</strong> / <small>后台管理模板</small>
   </div>
 
 
