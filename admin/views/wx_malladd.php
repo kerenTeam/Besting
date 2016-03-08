@@ -71,44 +71,59 @@
             <label for="user-intro" class="am-u-sm-3 am-form-label">简介</label>
             <div class="am-u-sm-9">
               <textarea class="" rows="5" id="user-intro" placeholder="输入个人简介"></textarea>
-              <small>250字以内写出你的一生...</small>
+              <small>250字以内对商品进行简介...</small>
+            </div>
+          </div> 
+
+           <div class="am-form-group">
+            <label for="user-intro" class="am-u-sm-3 am-form-label">颜色</label>
+            <div class="am-u-sm-9">
+              <label class="am-checkbox-inline">
+                <input type="checkbox"  value="" data-am-ucheck> 红色
+              </label>
+              <label class="am-checkbox-inline">
+                <input type="checkbox"  value="" data-am-ucheck> 白色
+              </label>
+              <label class="am-checkbox-inline">
+                <input type="checkbox"  value="" data-am-ucheck> 黑色
+              </label>
+              <label class="am-checkbox-inline">
+                <input type="checkbox"  value="" data-am-ucheck> 银色
+              </label>
+              <label class="am-checkbox-inline">
+                <input type="checkbox"  value="" data-am-ucheck> 绿色
+              </label>
             </div>
           </div>
-
-
-          <div class="am-g am-margin-top">
-          <div class="am-u-sm-4 am-u-md-2 am-text-right">推荐类型</div>
-          <div class="am-u-sm-8 am-u-md-10">
-            <div class="am-btn-group" data-am-button>
-              <label class="am-btn am-btn-default am-btn-xs">
-                <input type="checkbox"> 允许评论
-              </label>
-              <label class="am-btn am-btn-default am-btn-xs">
-                <input type="checkbox"> 置顶
-              </label>
-              <label class="am-btn am-btn-default am-btn-xs">
-                <input type="checkbox"> 推荐
-              </label>
-              <label class="am-btn am-btn-default am-btn-xs">
-                <input type="checkbox"> 热门
-              </label>
-              <label class="am-btn am-btn-default am-btn-xs">
-                <input type="checkbox"> 轮播图
-              </label>
-            </div>
-          </div>
-        </div>
-
 
           <div class="am-form-group">
-            <label class="am-u-sm-3 am-form-label">图片</label>
+            <label class="am-u-sm-3 am-form-label">缩略图片</label>
             <div class="am-u-sm-9">
                <input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
                   <!-- 图片实时预览 -->
                   <div id="preview"> <img style="border-radius: 3px;" src=" "> </div>
             </div>
           </div>
-
+          <div class="am-form-group">
+            <label class="am-u-sm-3 am-form-label">详情图片</label>
+            <div class="am-u-sm-9">
+                <div>
+                  <input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
+                  <!-- 图片实时预览 -->
+                  <div id="preview"> <img style="border-radius: 3px;" src=" "> </div>
+                </div>
+                <div>
+                  <input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
+                  <!-- 图片实时预览 -->
+                  <div id="preview"> <img style="border-radius: 3px;" src=" "> </div>
+                </div>
+                <div>
+                  <input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
+                  <!-- 图片实时预览 -->
+                  <div id="preview"> <img style="border-radius: 3px;" src=" "> </div>
+                </div>
+            </div>
+          </div>
           
 
 
