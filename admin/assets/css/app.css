@@ -10,9 +10,7 @@
 }
 footer{
 	text-align:center;
-	position:fixed;
 	width:100%;
-	bottom:0;
 	text-align: center;
 }
 .admin-content{
@@ -30,4 +28,10 @@ footer{
 section .am-panel-bd{
 	display:inline-block;
 	width:100%;
+}
+.amlogo{
+    padding: 10px 10px!important;
+}
+#topbar-collapse{
+	padding: 15px;
 }

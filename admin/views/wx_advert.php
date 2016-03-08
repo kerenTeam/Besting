@@ -200,7 +200,6 @@
   </div>
 </div>
 </div>
-<script type="text/javascript" src="assets/js/imgup.js"></script>
 <script type="text/javascript">
 	$(function (){
 		$('.allchexed').click(function(){

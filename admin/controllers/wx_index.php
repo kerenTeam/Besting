@@ -49,6 +49,18 @@ class wx_index extends CI_Controller {
 	    $this->load->view('wx_shop');
 	    $this->load->view('footer');
 	}
+	public function bank()
+	{
+		
+	    $this->load->view('wx_bankGoods');
+	    $this->load->view('footer');
+	}
+	public function mall()
+	{
+		
+	    $this->load->view('wx_mallGoods');
+	    $this->load->view('footer');
+	}
 	public function users()
 	{
 		
@@ -68,5 +80,6 @@ class wx_index extends CI_Controller {
 				$data['wait'] = 1200;
 				$data['url'] = site_url('wx_cate/index');
 				$this->load->view('message',$data);
+				$this->load->view('footer');
 	}
 }

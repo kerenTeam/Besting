@@ -5,14 +5,15 @@
   </div>
   
   <div class="am-u-sm-12 am-u-md-6">
-        <div class="am-input-group am-input-group-sm">
-          <input type="text" class="am-form-field">
-          <span class="am-input-group-btn">
-            <button class="am-btn am-btn-default" type="button"><span class="am-icon-search"></span>搜索</button>
-          </span>
-        </div>
+    <form action="" method="" >
+      <div class="am-input-group am-input-group-sm">
+        <input type="text" class="am-form-field">
+        <span class="am-input-group-btn">
+          <button class="am-btn am-btn-default" type="button"><span class="am-icon-search"></span>搜索</button>
+        </span>
       </div>
-
+    </form>
+  </div>
   <div id="container" class="clearfix">
     <div id="sidebar">
       <div id="content" class="defaults">
@@ -43,17 +44,17 @@
               </td>
             </tr>
             
-        </tbody>
-      </table>
-      <div class="am-cf">
-        共 1 条记录
-        <div class="am-fr">
-          <div class="holder"></div>
+          </tbody>
+        </table>
+        <div class="am-cf">
+          共 1 条记录
+          <div class="am-fr">
+            <div class="holder"></div>
+          </div>
         </div>
+        
       </div>
-      
     </div>
   </div>
-</div>
 </div>
 <!-- content end -->
