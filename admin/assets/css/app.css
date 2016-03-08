@@ -22,6 +22,9 @@ footer{
 	margin: 0 15px;
 }
 .userimg{
+	width:6rem;
+}
+.userimg2{
 	width:8rem;
 }
 section .am-panel-bd{

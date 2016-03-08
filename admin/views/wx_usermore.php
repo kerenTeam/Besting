@@ -14,7 +14,7 @@
           </header>
           <div class="am-panel-bd">
              <div class="am-u-sm-6 am-u-md-3">
-               <img src="assets/image/user.jpg" class="userimg" alt="用户头像">
+               <img src="assets/image/user.jpg" class="userimg2" alt="用户头像">
              </div>
              <div class="am-u-sm-6 am-u-md-3">
                <p>用 户 名：wf</p>
