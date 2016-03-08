@@ -4,7 +4,15 @@
     <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">用户管理</strong> / <small>useradmin</small></div>
   </div>
   
-  
+  <div class="am-u-sm-12 am-u-md-6">
+        <div class="am-input-group am-input-group-sm">
+          <input type="text" class="am-form-field">
+          <span class="am-input-group-btn">
+            <button class="am-btn am-btn-default" type="button"><span class="am-icon-search"></span>搜索</button>
+          </span>
+        </div>
+      </div>
+
   <div id="container" class="clearfix">
     <div id="sidebar">
       <div id="content" class="defaults">
