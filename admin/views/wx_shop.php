@@ -32,7 +32,7 @@
                   <!-- 图片实时预览 -->
                   <div id="preview"> <img style="border-radius: 3px;" src="" alt="选择图片"> </div>
 				</div>
-              </td>
+              </td> 
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">

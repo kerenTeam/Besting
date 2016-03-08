@@ -62,10 +62,22 @@ class wx_index extends CI_Controller {
 	    $this->load->view('wx_mallGoods');
 	    $this->load->view('footer');
 	}
+	public function malladd()
+	{
+		
+	    $this->load->view('wx_malladd');
+	    $this->load->view('footer');
+	}
 	public function users()
 	{
 		
 	    $this->load->view('wx_users');
+	    $this->load->view('footer');
+	}
+	public function usermore()
+	{
+		
+	    $this->load->view('wx_usermore');
 	    $this->load->view('footer');
 	}
 	public function suggestion()

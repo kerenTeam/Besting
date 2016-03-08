@@ -50,3 +50,10 @@ section .am-panel-bd{
 .admin-content .am-g{
 	width:96%;
 }
+ #content{
+  width: 98%;
+    margin: auto;
+ }
+ .am-input-group-btn {
+    left: -9rem;
+}
