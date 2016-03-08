@@ -1,7 +1,7 @@
  <!-- content start -->
   <div class="admin-content">
     <div class="am-cf am-padding">
-      <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">精品商城</strong> / <small>新增</small></div>
+      <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">精品商城</strong> / <small>编辑</small></div>
     </div>
 
     <hr/>
@@ -17,26 +17,26 @@
           <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label">商品名</label>
             <div class="am-u-sm-9">
-              <input type="text" placeholder="">
+              <input type="text" placeholder="野生草莓">
             </div>
           </div>
           <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label">计量单位</label>
             <div class="am-u-sm-9">
-              <input type="text" placeholder="">
+              <input type="text" placeholder="斤">
             </div>
           </div>
           <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label">价格（元）</label>
             <div class="am-u-sm-9">
-              <input type="text" placeholder="">
+              <input type="text" placeholder="20">
             </div>
           </div>
 
           <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label">库存</label>
             <div class="am-u-sm-9">
-              <input type="text" placeholder="">
+              <input type="text" placeholder="10000">
             </div>
           </div>
 
@@ -44,7 +44,7 @@
             <label class="am-u-sm-3 am-form-label">商家名</label>
             <div class="am-u-sm-9"> 
                 <select data-am-selected="{btnSize: 'sm'}">
-                  <option value="option1">大凉山</option>
+                  <option value="option1" selected>大凉山</option>
                   <option value="option1">优客逸家</option>
                 </select>
               </div> 
@@ -54,7 +54,7 @@
             <label class="am-u-sm-3 am-form-label">分类</label>
             <div class="am-u-sm-9"> 
                 <select data-am-selected="{btnSize: 'sm'}">
-                   <option value="option1">品牌街</option>
+                   <option value="option1" selected>品牌街</option>
                   <option value="option1">途悦大赏</option>
                   <option value="option1">目的地</option>
                 </select> 
@@ -66,13 +66,13 @@
           <div class="am-form-group">
             <label for="user-intro" class="am-u-sm-3 am-form-label">简介</label>
             <div class="am-u-sm-9">
-              <textarea class="" rows="5" id="user-intro" placeholder="输入商品简介"></textarea>
+              <textarea class="" rows="5" id="user-intro" placeholder="asfdfadsfadfadfadsfasdf"></textarea>
               <small>250字以内对商品进行简介...</small>
             </div>
           </div> 
 
            <div class="am-form-group">
-            <label for="user-intro" class="am-u-sm-3 am-form-label">颜色</label>
+            <label for="user-intro" class="am-u-sm-3 am-form-label">颜色(没有则不选)</label>
             <div class="am-u-sm-9">
               <label class="am-checkbox-inline">
                 <input type="checkbox"  value="" data-am-ucheck> 红色
@@ -97,7 +97,7 @@
             <div class="am-u-sm-9">
                <input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
                   <!-- 图片实时预览 -->
-                  <div id="preview"> <img style="border-radius: 3px;" src=" "> </div>
+                  <div id="preview"> <img style="border-radius: 3px;" src="assets/image/img3.png"> </div>
             </div>
           </div>
           <div class="am-form-group">
@@ -106,17 +106,17 @@
                 <div>
                   <input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
                   <!-- 图片实时预览 -->
-                  <div id="preview"> <img style="border-radius: 3px;" src=" "> </div>
+                  <div id="preview"> <img style="border-radius: 3px;" src="assets/image/zm1.jpg"> </div>
                 </div>
                 <div>
                   <input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
                   <!-- 图片实时预览 -->
-                  <div id="preview"> <img style="border-radius: 3px;" src=" "> </div>
+                  <div id="preview"> <img style="border-radius: 3px;" src="assets/image/zm2.jpg"> </div>
                 </div>
                 <div>
                   <input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
                   <!-- 图片实时预览 -->
-                  <div id="preview"> <img style="border-radius: 3px;" src=" "> </div>
+                  <div id="preview"> <img style="border-radius: 3px;" src="assets/image/zm3.jpg"> </div>
                 </div>
             </div>
           </div> 

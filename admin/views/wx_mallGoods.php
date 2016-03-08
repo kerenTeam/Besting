@@ -14,16 +14,16 @@
       </div>
     </form>
   </div>
-
+<br>
     <div id="container" class="clearfix">
       <div id="sidebar">
         <div id="content" class="defaults">
-
+         <br>
           <a href="<?php echo site_url('wx_index/malladd')?>" class="am-cf"><span class="am-icon-plus"></span> 新增</a> 
           <table class="am-table am-table-striped am-table-hover table-main wx_input">
             <thead>
               <tr>
-                <th class="table-check"><input type="checkbox" class="allchexed"/></th><th class="table-id">ID</th><th class="table-title">商品名</th><th class="table-type am-hide-sm-only">图片</th><th class="table-author am-hide-sm-only">商家</th><th class="table-author am-hide-sm-only">分类</th><th class="table-author am-hide-sm-only">价格</th><th class="table-set">操作</th>
+                <th class="table-check"><input type="checkbox" class="allchexed"/></th><th class="table-id">ID</th><th class="table-title">商品名</th><th class="table-type am-hide-sm-only">图片</th><th class="table-author am-hide-sm-only">商家</th><th class="table-author am-hide-sm-only">分类</th><th class="table-author am-hide-sm-only">价格（元）</th><th class="table-set">操作</th>
               </tr>
             </thead>
             <tbody id="movies">
@@ -35,6 +35,8 @@
                 <img src="assets/image/img3.png" class="userimg" alt="besting">
                 </td>
                 <td>大凉山</td>
+                <td>品牌街</td>
+                <td>25</td>
                 <td>
                   <div class="am-btn-toolbar">
                     <div class="am-btn-group am-btn-group-xs">
@@ -43,9 +45,12 @@
                     </div>
                   </div>
                 </td>
-              </tr> 
+              </tr>
+              
             </tbody>
           </table>
+          <a href="" class="am-text-danger del"><span class="am-icon-trash-o"></span> 删除</a>
+
           <div class="am-cf">
             共 15 条记录
             <div class="am-fr">
