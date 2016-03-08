@@ -1,7 +1,7 @@
  <!-- content start -->
   <div class="admin-content">
     <div class="am-cf am-padding">
-      <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">图片管理</strong> / <small>合作伙伴</small></div>
+      <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">商家管理</strong> / <small>shop</small></div>
     </div>
 
     <hr/>

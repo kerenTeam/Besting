@@ -14,11 +14,6 @@ class wx_index extends CI_Controller {
 	    $this->load->view('wx_type');
 	    $this->load->view('footer');
 	}
-
-
-
-
-	
 	public function pic()
 	{
 		
@@ -47,6 +42,12 @@ class wx_index extends CI_Controller {
 	{
 		
 	    $this->load->view('wx_shop');
+	    $this->load->view('footer');
+	}
+	public function shopadd()
+	{
+		
+	    $this->load->view('wx_shopadd');
 	    $this->load->view('footer');
 	}
 	public function bank()

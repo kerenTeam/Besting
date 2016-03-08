@@ -5,15 +5,15 @@
   </div>
   
   
-  <a href="<?php echo site_url('wx_index/bankadadd')?>" class="am-cf"><i class="fa fa-plus"></i> 新增</a> 
-  
+  <a href="<?php echo site_url('wx_index/bankadadd')?>" class="am-cf"><span class="am-icon-plus"></span> 新增</a> 
+
     <div id="container" class="clearfix">
       <div id="sidebar">
         <div id="content" class="defaults">
           <table class="am-table am-table-striped am-table-hover table-main wx_input">
             <thead>
               <tr>
-                <th class="table-check"><input type="checkbox" class="allchexed"/></th><th class="table-id">ID</th><th class="table-title">商家名</th><th class="table-type">图片</th><th class="table-author">链接</th><th class="table-set">操作</th>
+                <th class="table-check"><input type="checkbox" class="allchexed"/></th><th class="table-id">ID</th><th class="table-title">商品名</th><th class="table-type">图片</th><th class="table-author">链接</th><th class="table-set">操作</th>
               </tr>
             </thead>
             <tbody id="movies">

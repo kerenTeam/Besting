@@ -33,6 +33,7 @@ section .am-panel-bd{
 }
 .amlogo img{
 	width:15rem;
+	margin-left: 1.2rem;
 }
 #topbar-collapse{
 	padding: 10px;
@@ -45,4 +46,7 @@ section .am-panel-bd{
 }
 .am-topbar a:hover,.am-topbar a:focus{
 	background:none!important;
+}
+.admin-content .am-g{
+	width:96%;
 }
