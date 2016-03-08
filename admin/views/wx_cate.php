@@ -52,8 +52,6 @@
           </tbody>
         </table>
 
-   
-
       </div>
 
       <div class="am-tab-panel am-fade" id="tab2">
@@ -93,9 +91,6 @@
           </tbody>
         </table>
       </div>
-
-
-
     </div>
   </div>
 

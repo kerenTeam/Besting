@@ -11,9 +11,8 @@
     </ul>
     <div class="am-tabs-bd">
       <div class="am-tab-panel am-fade am-in am-active" id="tab1">
-      <a href="<?php echo site_url('wx_index/bankadadd')?>" class="am-cf"><span class="am-icon-plus"></span> 新增</a>
-      <form action="" method="" enctype="multipart/form-data">
-      <!-- <div id="container" class="clearfix">
+      <a href="<?php echo site_url('wx_index/bankadadd?id=1')?>" class="am-cf"><span class="am-icon-plus"></span> 新增</a>
+       <!-- <div id="container" class="clearfix">
 <div id="sidebar">
     <div id="content" class="defaults"> -->
       <table class="am-table am-table-striped am-table-hover table-main wx_input">
@@ -24,14 +23,16 @@
 
           </thead>
           <tbody id="movies">
+          <?php foreach($adverts as $advert):?>
+              <?php if($advert['pid'] == 1):?>
               <tr>
               <td><input type="checkbox" class="wx_bankcheck" /></td>
-              <td>1</td>
-              <td>商家名</td>
-              <td><img style="border-radius: 3px;" src="" alt="商家图片">
+              <td><?=$advert['id'];?></td>
+              <td><?=$advert['merchantname'];?></td>
+              <td><img style="border-radius: 3px;" src="<?=base_url($advert['advertpic']);?>" alt="商家图片">
               </td>
 
-              <td>http://www.besting.com</td>
+              <td><?=$advert['linkurl'];?></td>
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">
@@ -41,45 +42,14 @@
                 </div>
               </td>
             </tr>
-            <tr>
-              <td><input type="checkbox" class="wx_bankcheck" /></td>
-              <td>1</td>
-              <td>商家名</td>
-              <td><img style="border-radius: 3px;" src="" alt="商家图片">
-              </td>
-
-              <td>http://www.besting.com</td>
-              <td>
-                <div class="am-btn-toolbar">
-                  <div class="am-btn-group am-btn-group-xs">
-                    <a href="<?php echo site_url('pc_index/cotentedit')?>" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</a>
-                    <a href="" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only del"><span class="am-icon-trash-o"></span> 删除</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td><input type="checkbox" class="wx_bankcheck" /></td>
-              <td>1</td>
-              <td>商家名</td>
-              <td><img style="border-radius: 3px;" src="" alt="商家图片">
-              </td>
-
-              <td>http://www.besting.com</td>
-              <td>
-                <div class="am-btn-toolbar">
-                  <div class="am-btn-group am-btn-group-xs">
-                    <a href="<?php echo site_url('pc_index/cotentedit')?>" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</a>
-                    <a href="" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only del"><span class="am-icon-trash-o"></span> 删除</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-
+           <?php endif;?>
+          <?php endforeach;?>
+            
+          
             </tbody>
         </table>
         <div class="am-cf">
-  共 15 条记录
+ 
  <!--  <div class="am-fr">
     <div class="holder"></div> 
   </div>
@@ -88,13 +58,12 @@
         </div> -->
         </div>
 
-        </form>
       </div>
 
 
 
       <div class="am-tab-panel am-fade" id="tab2">
-        <a href="<?php echo site_url('wx_index/molladadd')?>" class="am-cf"><span class="am-icon-plus"></span> 新增</a>
+        <a href="<?php echo site_url('wx_index/molladadd?id=2')?>" class="am-cf"><span class="am-icon-plus"></span> 新增</a>
       <form action="" method="" enctype="multipart/form-data">
       	<!-- <div id="container" class="clearfix">
 <div id="sidebar">

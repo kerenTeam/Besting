@@ -14,7 +14,8 @@ class wx_cate extends MY_Controller {
     public function index(){
 
     	$data['cates'] = $this->wxcate_model->list_cate();
-    	$this->load->view('wx_cate',$data);
+    	$this->load->view('wx_type',$data);
+    	$this->load->view('footer');
     }
 
 
