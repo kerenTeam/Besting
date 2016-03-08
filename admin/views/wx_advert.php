@@ -29,7 +29,7 @@
               <td><input type="checkbox" class="wx_bankcheck" /></td>
               <td><?=$advert['id'];?></td>
               <td><?=$advert['merchantname'];?></td>
-              <td><img style="border-radius: 3px;" src="<?=base_url($advert['advertpic']);?>" alt="商家图片">
+              <td><img style="border-radius: 3px;" src="<?=base_url($advert['advertpic']);?>"  class="userimg" alt="商家图片">
               </td>
 
               <td><?=$advert['linkurl'];?></td>
@@ -97,7 +97,7 @@
               <td><input type="checkbox" class="wx_bankcheck" /></td>
               <td>1</td>
               <td>商家名</td>
-              <td><img style="border-radius: 3px;" src="" alt="商家图片">
+              <td><img style="border-radius: 3px;" src=""  class="userimg" alt="商家图片">
               </td>
 
               <td>http://www.besting.com</td>
