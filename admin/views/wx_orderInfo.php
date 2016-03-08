@@ -6,12 +6,9 @@
 
     <hr/>
 
-    <div class="am-g">
+    <div class="am-g"> 
 
-      <div class="am-u-sm-12 am-u-md-4 am-u-md-push-8">
-      </div>
-
-      <div class="am-u-sm-12 am-u-md-8 am-u-md-pull-4 info"> 
+      <div class="am-u-sm-12 am-u-md-8 info"> 
           <div class="am-form-group am-cf">
             <label class="am-u-sm-3 am-form-label">订单号：</label>
             <div class="am-u-sm-9">
@@ -34,7 +31,12 @@
           <div class="am-form-group am-cf">
             <label class="am-u-sm-3 am-form-label">商品名：</label>
             <div class="am-u-sm-9">
-              优自红酒<br>
+              优自红酒
+            </div>
+          </div> 
+          <div class="am-form-group am-cf">
+            <label class="am-u-sm-3 am-form-label">商品图片：</label>
+            <div class="am-u-sm-9">
                <img src="assets/image/img8.png" class="userimg" alt="besting">
             </div>
           </div> 
@@ -65,6 +67,13 @@
             <label class="am-u-sm-3 am-form-label">价格：</label>
             <div class="am-u-sm-9"> 
                 200元
+            </div>
+          </div>
+
+          <div class="am-form-group am-cf">
+            <label class="am-u-sm-3 am-form-label">支付方式：</label>
+            <div class="am-u-sm-9"> 
+               微信支付
             </div>
           </div>
 
