@@ -1,12 +1,11 @@
 <!-- content start -->
 <div class="admin-content am-form wx_btn_txt">
   <div class="am-cf am-padding">
-    <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">商品管理</strong> / <small>时间银行</small></div>
+    <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">交易记录</strong> / <small>精品商城</small></div>
   </div> 
 
    <div class="am-u-sm-12 am-u-md-6">
-    <form action="" method="" >
-    
+    <form action="" method="" > 
       <div class="am-input-group am-input-group-sm">
         <input type="text" class="am-form-field">
         <span class="am-input-group-btn">
@@ -20,32 +19,57 @@
       <div id="sidebar">
         <div id="content" class="defaults">
          <br>
-          <a href="<?php echo site_url('wx_index/bankadd')?>" class="am-cf"><span class="am-icon-plus"></span> 新增</a> 
           <table class="am-table am-table-striped am-table-hover table-main wx_input">
             <thead>
               <tr>
-                <th class="table-check"><input type="checkbox" class="allchexed"/></th><th class="table-id">ID</th><th class="table-title">商品名</th><th class="table-type am-hide-sm-only">图片</th><th class="table-author am-hide-sm-only">商家</th><th class="table-author am-hide-sm-only">分类</th><th class="table-author am-hide-sm-only">积分</th><th class="table-set">操作</th>
+                <th class="table-check"><input type="checkbox" class="allchexed"/></th><th class="table-id">订单号</th><th class="table-author am-hide-sm-only">交易时间</th><th class="table-type am-hide-sm-only">用户名</th><th class="table-title">商品名</th><th class="table-type am-hide-sm-only">图片</th><th class="table-author am-hide-sm-only">数量</th><th class="table-author am-hide-sm-only">价格</th><th class="table-author am-hide-sm-only">详情</th><th class="table-set">操作</th>
               </tr>
             </thead>
             <tbody id="movies">
               <tr>
                 <td><input type="checkbox" class="wx_bankcheck" /></td>
-                <td>1</td>
+                <td>1624545643</td>
+                <td>2016年3月1日</td>
+                <td>wf</td>
                 <td>优自红酒</td>
                 <td>
                 <img src="assets/image/img8.png" class="userimg" alt="besting">
                 </td>
-                <td>优自西方</td>
-                <td>悦品</td>
-                <td>500</td>
+                <td>1瓶</td>
+                <td>500元</td>
+                <td><a href="<?php echo site_url('wx_index/orderInfo')?>">查看</a></td>
                 <td>
                   <div class="am-btn-toolbar">
                     <div class="am-btn-group am-btn-group-xs">
-                    <a href="<?php echo site_url('wx_index/bankedit')?>" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</a>
+                     <a href="" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-exclamation"></span> 处理</a>
+                    <!-- 交易未完成则显示：处理，点击进行处理。交易已经完成则显示：已完成 部分代码：<span class="am-icon-check"></span> 已完成-->
                       <a href="" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only del"><span class="am-icon-trash-o"></span> 删除</a>
                     </div>
                   </div>
                 </td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" class="wx_bankcheck" /></td>
+                <td>1624545643</td>
+                <td>2016年3月1日</td>
+                <td>wf</td>
+                <td>优自红酒</td>
+                <td>
+                <img src="assets/image/img8.png" class="userimg" alt="besting">
+                </td>
+                <td>1瓶</td>
+                <td>500元</td>
+                <td><a href="<?php echo site_url('wx_index/orderInfo')?>">查看</a></td>
+                <td>
+                  <div class="am-btn-toolbar">
+                    <div class="am-btn-group am-btn-group-xs">
+                     <a href="" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-check"></span> 已完成</a>
+                    <!-- 交易未完成则显示：处理，点击进行处理。交易已经完成则显示：已完成 部分代码：<span class="am-icon-check"></span> 已完成-->
+                      <a href="" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only del"><span class="am-icon-trash-o"></span> 删除</a>
+                    </div>
+                  </div>
+                </td>
+
               </tr>
               
             </tbody>
@@ -53,7 +77,7 @@
           <a href="" class="am-text-danger del"><span class="am-icon-trash-o"></span> 删除</a>
 
           <div class="am-cf">
-            共 15 条记录
+            共 2 条记录
             <div class="am-fr">
               <div class="holder"></div>
             </div>

@@ -86,6 +86,27 @@ class wx_index extends CI_Controller {
 	    $this->load->view('wx_malledit');
 	    $this->load->view('footer');
 	}
+	// 商城订单
+	public function order()
+	{
+		
+	    $this->load->view('wx_order');
+	    $this->load->view('footer');
+	}
+	//订单详情
+	public function orderInfo()
+	{
+		
+	    $this->load->view('wx_orderInfo');
+	    $this->load->view('footer');
+	}
+	// 时间银行兑换
+	public function change()
+	{
+		
+	    $this->load->view('wx_change');
+	    $this->load->view('footer');
+	}
 	public function users()
 	{
 		

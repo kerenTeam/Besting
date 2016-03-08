@@ -1,7 +1,7 @@
  <!-- content start -->
   <div class="admin-content">
     <div class="am-cf am-padding">
-      <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">精品商城</strong> / <small>新增</small></div>
+      <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">时间银行</strong> / <small>新增</small></div>
     </div>
 
     <hr/>
@@ -41,12 +41,12 @@
             </div>
           </div>
 
-          <div class="am-form-group">
+       <!--    <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label">库存</label>
             <div class="am-u-sm-9">
               <input type="text" placeholder="">
             </div>
-          </div>
+          </div> -->
 
           <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label">商家名</label>

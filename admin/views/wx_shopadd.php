@@ -17,7 +17,7 @@
           </div>
         </div>
         <div class="am-form-group">
-          <label class="am-u-sm-3 am-form-label">图片上传</label>
+          <label class="am-u-sm-3 am-form-label">商家logo</label>
           <div class="am-u-sm-9">
             <input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
             <!-- 图片实时预览 -->

@@ -103,7 +103,7 @@
             <div class="am-u-sm-9">
                <input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
                   <!-- 图片实时预览 -->
-                  <div id="preview"> <img style="border-radius: 3px;" src="assets/image/img3.png"> </div>
+                  <div id="preview"> <img style="border-radius: 3px;" src="assets/image/img8.png"> </div>
             </div>
           </div>
           <div class="am-form-group">
@@ -112,7 +112,7 @@
                 <div>
                   <input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
                   <!-- 图片实时预览 -->
-                  <div id="preview"> <img style="border-radius: 3px;width: 50%;" src="assets/image/img8.png"> </div>
+                  <div id="preview"> <img style="border-radius: 3px;width: 50%;" src="assets/image/zg1.png"> </div>
                 </div>
                 <div>
                   <input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">

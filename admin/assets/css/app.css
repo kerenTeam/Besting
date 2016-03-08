@@ -2,6 +2,10 @@
 #preview{
 	margin-top: 15px;
 }
+#preview img{
+	max-width:100%;
+
+}
 .upload-add{
 	margin-top:10px;
 }
@@ -9,6 +13,8 @@
 	margin-left: 15px!important;
 }
 footer{
+	    position: absolute;
+    top: 100%; 
 	width:100%;
 	text-align: center;
 }
@@ -59,4 +65,10 @@ section .am-panel-bd{
  }
  .am-input-group-btn {
     left: -9rem;
+}
+.amst td{
+	border:none;
+}
+.amst td .am-btn-toolbar{
+	margin-top:2rem;
 }
