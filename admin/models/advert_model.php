@@ -8,8 +8,8 @@ class Advert_model extends CI_Model
 	const TBL_ADVERT = 'advert';
 	#获取广告列表
 	public function listadvert(){
-
-
+		$query = $this->db->get(self::TBL_ADVERT);
+		return $query->result_array();
 	}	
 
 	#新增广告列表

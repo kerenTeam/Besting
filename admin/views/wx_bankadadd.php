@@ -12,36 +12,33 @@
       </div>
 
       <div class="am-u-sm-12 am-u-md-8 am-u-md-pull-4">
-        <form action=" " method=" " enctype="multipart/form-data" class="am-form am-form-horizontal">
+        <form action="<?=site_url('wx_advert/addadvert');?>" method="post" enctype="multipart/form-data" class="am-form am-form-horizontal">
           <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label">商家名</label>
             <div class="am-u-sm-9">
-              <input type="text" placeholder="标题">
+              <input type="text" placeholder="标题" name='merchantname'>
             </div>
           </div>
 
           <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label">链接地址</label>
             <div class="am-u-sm-9">
-              <input type="text" placeholder="链接地址">
+              <input type="text" placeholder="链接地址" name='linkurl'>
             </div>
           </div>
 
           <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label">图片</label>
             <div class="am-u-sm-9">
-               <input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
+               <input type="file" id="imgUpload" name="imgfile" onchange="previewImage(this)" class="upload-add">
                   <!-- 图片实时预览 -->
                   <div id="preview"> <img style="border-radius: 3px;" src=" "> </div>
             </div>
           </div>
 
-          
-
-
-
           <div class="am-form-group">
             <div class="am-u-sm-9 am-u-sm-push-3">
+            <input type="hidden" value='<?=$pid;?>' name='pid'>
               <button type="submit" class="am-btn am-btn-primary">保存修改</button>
             </div>
           </div>

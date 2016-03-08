@@ -17,8 +17,8 @@ class wx_advert extends MY_Controller
 
 	//广告列表
 	public function index(){
-
-		$this->load->view('wx_advert');
+		$data['adverts'] = $this->advert_model->listadvert();
+		$this->load->view('wx_advert',$data);
 		$this->load->view('footer');
 	}
 
@@ -75,6 +75,18 @@ class wx_advert extends MY_Controller
 		    $this->load->view('footer');
 		}
 	}
+
+	public function updata(){
+		if($_POST){
+
+			var_dump($_POST);
+		}else{
+			$data['pid'] = $_GET['id'];
+			$this->load->view('wx_bankadup',$data);
+			$this->load->view('footer');
+		}
+	}
+
 		
 }
 
