@@ -14,6 +14,11 @@ class wx_index extends CI_Controller {
 	    $this->load->view('wx_type');
 	    $this->load->view('footer');
 	}
+
+
+
+
+	
 	public function pic()
 	{
 		
@@ -24,12 +29,6 @@ class wx_index extends CI_Controller {
 	{
 		
 	    $this->load->view('wx_advert');
-	    $this->load->view('footer');
-	}
-	public function shop()
-	{
-		
-	    $this->load->view('wx_shop');
 	    $this->load->view('footer');
 	}
 	public function bankadadd()
@@ -44,29 +43,5 @@ class wx_index extends CI_Controller {
 	    $this->load->view('wx_molladadd');
 	    $this->load->view('footer');
 	}
-	public function shopadd()
-	{
-		
-	    $this->load->view('wx_shopadd');
-	    $this->load->view('footer');
-	}
-    public function users()
-	{
-		
-	    $this->load->view('wx_users');
-	    $this->load->view('footer');
-	}
-	public function usermore()
-	{
-		
-	    $this->load->view('wx_usermore');
-	    $this->load->view('footer');
-	}
-	public function suggestion()
-	{
-		
-	    $this->load->view('wx_suggestion');
-	    $this->load->view('footer');
-	}
-
+	
 }

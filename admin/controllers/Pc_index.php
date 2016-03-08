@@ -1,4 +1,7 @@
 <?php
+/*
+*   静态页面
+*/
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Pc_index extends CI_Controller {
@@ -13,12 +16,6 @@ class Pc_index extends CI_Controller {
 	{
 		
 	    $this->load->view('admin');
-	    $this->load->view('footer');
-	}
-	public function login()
-	{
-		
-	    $this->load->view('login');
 	    $this->load->view('footer');
 	}
 	public function index()
@@ -45,29 +42,25 @@ class Pc_index extends CI_Controller {
 	    $this->load->view('pc_contentadd');
 	    $this->load->view('footer');
 	}
-		public function pcbanner()
+	public function pcbanner()
 	{
 		
 	    $this->load->view('pc_banner');
 	    $this->load->view('footer');
 	}
 
-		public function partner()
+	public function partner()
 	{
 		
 	    $this->load->view('pc_partner');
 	    $this->load->view('footer');
 	}
-		public function partneradd()
-	{
-		
-	    $this->load->view('pc_partneradd');
-	    $this->load->view('footer');
-	}
-		public function pageimg()
+	public function pageimg()
 	{
 		
 	    $this->load->view('pc_pageimg');
 	    $this->load->view('footer');
 	}
+
+
 }
