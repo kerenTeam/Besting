@@ -1,7 +1,7 @@
  <!-- content start -->
   <div class="admin-content">
     <div class="am-cf am-padding">
-      <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">精品商城</strong> / <small>编辑</small></div>
+      <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">精品商城</strong> / <small>订单详情</small></div>
     </div>
 
     <hr/>
@@ -11,7 +11,7 @@
       <div class="am-u-sm-12 am-u-md-4 am-u-md-push-8">
       </div>
 
-      <div class="am-u-sm-12 am-u-md-8 am-u-md-pull-4"> 
+      <div class="am-u-sm-12 am-u-md-8 am-u-md-pull-4 info"> 
           <div class="am-form-group am-cf">
             <label class="am-u-sm-3 am-form-label">订单号：</label>
             <div class="am-u-sm-9">

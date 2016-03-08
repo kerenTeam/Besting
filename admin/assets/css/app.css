@@ -72,3 +72,9 @@ section .am-panel-bd{
 .amst td .am-btn-toolbar{
 	margin-top:2rem;
 }
+.info{
+	border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
