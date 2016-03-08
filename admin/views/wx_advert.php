@@ -24,78 +24,58 @@
 
           </thead>
           <tbody id="movies">
-          <form action=" " method=" " enctype="multipart/form-data" >
               <tr>
               <td><input type="checkbox" class="wx_bankcheck" /></td>
               <td>1</td>
-              <td><input type="text" value="商家名" /></td>
-              <td>
-				<div class="wx_type_img">
-        		<input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
-        		<!-- 图片实时预览 -->
-        		<div id="preview"> <img style="border-radius: 3px;" src="" alt="选择图片"> </div>
-       			 </div>
+              <td>商家名</td>
+              <td><img style="border-radius: 3px;" src="" alt="商家图片">
               </td>
 
-              <td><input type="text" value="http://www.besting.com" /></td>
+              <td>http://www.besting.com</td>
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">
-                    <button type="submit" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>
+                    <a href="<?php echo site_url('pc_index/cotentedit')?>" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</a>
                     <a href="" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only del"><span class="am-icon-trash-o"></span> 删除</a>
                   </div>
                 </div>
               </td>
             </tr>
-            </form>
-            <form action=" " method=" " enctype="multipart/form-data" >
             <tr>
               <td><input type="checkbox" class="wx_bankcheck" /></td>
               <td>1</td>
-              <td><input type="text" value="商家名" /></td>
-              <td>
-				<div class="wx_type_img">
-        		<input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
-        		<!-- 图片实时预览 -->
-        		<div id="preview"> <img style="border-radius: 3px;" src="" alt="选择图片"> </div>
-       			 </div>
+              <td>商家名</td>
+              <td><img style="border-radius: 3px;" src="" alt="商家图片">
               </td>
 
-              <td><input type="text" value="http://www.besting.com" /></td>
+              <td>http://www.besting.com</td>
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">
-                    <button type="submit" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>
+                    <a href="<?php echo site_url('pc_index/cotentedit')?>" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</a>
                     <a href="" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only del"><span class="am-icon-trash-o"></span> 删除</a>
                   </div>
                 </div>
               </td>
             </tr>
-            </form>
-            <form action=" " method=" " enctype="multipart/form-data" >
             <tr>
               <td><input type="checkbox" class="wx_bankcheck" /></td>
               <td>1</td>
-              <td><input type="text" value="商家名" /></td>
-              <td>
-				<div class="wx_type_img">
-        		<input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
-        		<!-- 图片实时预览 -->
-        		<div id="preview"> <img style="border-radius: 3px;" src="" alt="选择图片"> </div>
-       			 </div>
+              <td>商家名</td>
+              <td><img style="border-radius: 3px;" src="" alt="商家图片">
               </td>
 
-              <td><input type="text" value="http://www.besting.com" /></td>
+              <td>http://www.besting.com</td>
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">
-                    <button type="submit" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>
+                    <a href="<?php echo site_url('pc_index/cotentedit')?>" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</a>
                     <a href="" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only del"><span class="am-icon-trash-o"></span> 删除</a>
                   </div>
                 </div>
               </td>
             </tr>
-            </form>
+
             </tbody>
         </table>
         <div class="am-cf">
@@ -127,78 +107,57 @@
 
           </thead>
           <tbody id="movies">
-          <form action=" " method=" " enctype="multipart/form-data" >
-              <tr>
-              <td><input type="checkbox" class="wx_mollcheck" /></td>
+             <tr>
+              <td><input type="checkbox" class="wx_bankcheck" /></td>
               <td>1</td>
-              <td><input type="text" value="商家名" /></td>
-              <td>
-				<div class="wx_type_img">
-        		<input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
-        		<!-- 图片实时预览 -->
-        		<div id="preview"> <img style="border-radius: 3px;" src="" alt="选择图片"> </div>
-       			 </div>
+              <td>商家名</td>
+              <td><img style="border-radius: 3px;" src="" alt="商家图片">
               </td>
 
-              <td><input type="text" value="http://www.besting.com" /></td>
+              <td>http://www.besting.com</td>
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">
-                    <button type="submit" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>
+                    <a href="<?php echo site_url('pc_index/cotentedit')?>" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</a>
                     <a href="" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only del"><span class="am-icon-trash-o"></span> 删除</a>
                   </div>
                 </div>
               </td>
             </tr>
-            </form>
-            <form action=" " method=" " enctype="multipart/form-data" >
             <tr>
-              <td><input type="checkbox" class="wx_mollcheck" /></td>
+              <td><input type="checkbox" class="wx_bankcheck" /></td>
               <td>1</td>
-              <td><input type="text" value="商家名" /></td>
-              <td>
-				<div class="wx_type_img">
-        		<input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
-        		<!-- 图片实时预览 -->
-        		<div id="preview"> <img style="border-radius: 3px;" src="" alt="选择图片"> </div>
-       			 </div>
+              <td>商家名</td>
+              <td><img style="border-radius: 3px;" src="" alt="商家图片">
               </td>
 
-              <td><input type="text" value="http://www.besting.com" /></td>
+              <td>http://www.besting.com</td>
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">
-                    <button type="submit" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>
+                    <a href="<?php echo site_url('pc_index/cotentedit')?>" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</a>
                     <a href="" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only del"><span class="am-icon-trash-o"></span> 删除</a>
                   </div>
                 </div>
               </td>
             </tr>
-            </form>
-            <form action=" " method=" " enctype="multipart/form-data" >
             <tr>
-              <td><input type="checkbox" class="wx_mollcheck" /></td>
+              <td><input type="checkbox" class="wx_bankcheck" /></td>
               <td>1</td>
-              <td><input type="text" value="商家名" /></td>
-              <td>
-				<div class="wx_type_img">
-        		<input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
-        		<!-- 图片实时预览 -->
-        		<div id="preview"> <img style="border-radius: 3px;" src="" alt="选择图片"> </div>
-       			 </div>
+              <td>商家名</td>
+              <td><img style="border-radius: 3px;" src="" alt="商家图片">
               </td>
 
-              <td><input type="text" value="http://www.besting.com" /></td>
+              <td>http://www.besting.com</td>
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">
-                    <button type="submit" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>
+                    <a href="<?php echo site_url('pc_index/cotentedit')?>" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</a>
                     <a href="" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only del"><span class="am-icon-trash-o"></span> 删除</a>
                   </div>
                 </div>
               </td>
             </tr>
-            </form>
             </tbody>
         </table>
         <div class="am-cf">
