@@ -43,5 +43,11 @@ class wx_index extends CI_Controller {
 	    $this->load->view('wx_molladadd');
 	    $this->load->view('footer');
 	}
+	public function shop()
+	{
+		
+	    $this->load->view('wx_shop');
+	    $this->load->view('footer');
+	}
 	
 }
