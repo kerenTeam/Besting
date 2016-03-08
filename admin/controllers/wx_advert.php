@@ -71,6 +71,7 @@ class wx_advert extends MY_Controller
 			}
 		}else{
 		    $data['pid'] = $_GET['id'];
+
 		    $this->load->view('wx_bankadadd',$data);
 		    $this->load->view('footer');
 		}
