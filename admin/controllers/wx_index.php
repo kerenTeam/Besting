@@ -62,4 +62,11 @@ class wx_index extends CI_Controller {
 	    $this->load->view('footer');
 	}
 	
+
+	public function message(){
+				$data['message'] = '修改成功';
+				$data['wait'] = 1200;
+				$data['url'] = site_url('wx_cate/index');
+				$this->load->view('message',$data);
+	}
 }
