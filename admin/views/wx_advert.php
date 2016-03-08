@@ -11,7 +11,7 @@
     </ul>
     <div class="am-tabs-bd">
       <div class="am-tab-panel am-fade am-in am-active" id="tab1">
-      <a href="<?php echo site_url('wx_index/bankadadd')?>" class="am-cf"><span class="am-icon-plus"></span> 新增</a>
+      <a href="<?php echo site_url('wx_index/bankadadd')?>" class="am-cf"><i class="fa fa-plus"></i> 新增</a>
       <form action="" method="" enctype="multipart/form-data">
       <!-- <div id="container" class="clearfix">
 <div id="sidebar">
@@ -36,7 +36,7 @@
        			 </div>
               </td>
 
-              <td><input type="url" value="http://www.besting.com" /></td>
+              <td><input type="text" value="http://www.besting.com" /></td>
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">
@@ -57,7 +57,7 @@
        			 </div>
               </td>
 
-              <td><input type="url" value="http://www.besting.com" /></td>
+              <td><input type="text" value="http://www.besting.com" /></td>
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">
@@ -78,7 +78,7 @@
        			 </div>
               </td>
 
-              <td><input type="url" value="http://www.besting.com" /></td>
+              <td><input type="text" value="http://www.besting.com" /></td>
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">
@@ -107,7 +107,7 @@
 
 
       <div class="am-tab-panel am-fade" id="tab2">
-        <a href="<?php echo site_url('wx_index/molladadd')?>" class="am-cf"><span class="am-icon-plus"></span> 新增</a>
+        <a href="<?php echo site_url('wx_index/molladadd')?>" class="am-cf"><i class="fa fa-plus"></i> 新增</a>
       <form action="" method="" enctype="multipart/form-data">
       	<!-- <div id="container" class="clearfix">
 <div id="sidebar">
@@ -132,7 +132,7 @@
        			 </div>
               </td>
 
-              <td><input type="url" value="http://www.besting.com" /></td>
+              <td><input type="text" value="http://www.besting.com" /></td>
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">
@@ -153,7 +153,7 @@
        			 </div>
               </td>
 
-              <td><input type="url" value="http://www.besting.com" /></td>
+              <td><input type="text" value="http://www.besting.com" /></td>
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">
@@ -174,7 +174,7 @@
        			 </div>
               </td>
 
-              <td><input type="url" value="http://www.besting.com" /></td>
+              <td><input type="text" value="http://www.besting.com" /></td>
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">
