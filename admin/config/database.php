@@ -75,9 +75,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => 'root',
+        'hostname' => '211.149.195.183',
+	'username' => 'bestingmedia',
+	'password' => 'N2J6Q8h2',
 	'database' => 'bestingmedia',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => 'wd_',
