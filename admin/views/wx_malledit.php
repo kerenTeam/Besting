@@ -106,17 +106,17 @@
                 <div>
                   <input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
                   <!-- 图片实时预览 -->
-                  <div id="preview"> <img style="border-radius: 3px;" src="assets/image/zm1.jpg"> </div>
+                  <div id="preview"> <img style="border-radius: 3px;width: 50%;" src="assets/image/zm1.jpg"> </div>
                 </div>
                 <div>
                   <input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
                   <!-- 图片实时预览 -->
-                  <div id="preview"> <img style="border-radius: 3px;" src="assets/image/zm2.jpg"> </div>
+                  <div id="preview"> <img style="border-radius: 3px;width: 50%;" src="assets/image/zm2.jpg"> </div>
                 </div>
                 <div>
                   <input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
                   <!-- 图片实时预览 -->
-                  <div id="preview"> <img style="border-radius: 3px;" src="assets/image/zm3.jpg"> </div>
+                  <div id="preview"> <img style="border-radius: 3px;width: 50%;" src="assets/image/zm3.jpg"> </div>
                 </div>
             </div>
           </div> 
