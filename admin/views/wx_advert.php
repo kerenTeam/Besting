@@ -24,6 +24,7 @@
 
           </thead>
           <tbody id="movies">
+          <form action=" " method=" " enctype="multipart/form-data" >
               <tr>
               <td><input type="checkbox" class="wx_bankcheck" /></td>
               <td>1</td>
@@ -40,11 +41,14 @@
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">
+                    <button type="submit" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>
                     <a href="" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only del"><span class="am-icon-trash-o"></span> 删除</a>
                   </div>
                 </div>
               </td>
             </tr>
+            </form>
+            <form action=" " method=" " enctype="multipart/form-data" >
             <tr>
               <td><input type="checkbox" class="wx_bankcheck" /></td>
               <td>1</td>
@@ -61,11 +65,14 @@
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">
+                    <button type="submit" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>
                     <a href="" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only del"><span class="am-icon-trash-o"></span> 删除</a>
                   </div>
                 </div>
               </td>
             </tr>
+            </form>
+            <form action=" " method=" " enctype="multipart/form-data" >
             <tr>
               <td><input type="checkbox" class="wx_bankcheck" /></td>
               <td>1</td>
@@ -82,12 +89,13 @@
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">
+                    <button type="submit" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>
                     <a href="" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only del"><span class="am-icon-trash-o"></span> 删除</a>
                   </div>
                 </div>
               </td>
             </tr>
-
+            </form>
             </tbody>
         </table>
         <div class="am-cf">
@@ -99,7 +107,6 @@
 </div>
         </div> -->
         </div>
-        <button type="submit" class="am-btn am-btn-primary am-btn-xs wx_sub">提交保存</button>
 
         </form>
       </div>
@@ -120,6 +127,7 @@
 
           </thead>
           <tbody id="movies">
+          <form action=" " method=" " enctype="multipart/form-data" >
               <tr>
               <td><input type="checkbox" class="wx_mollcheck" /></td>
               <td>1</td>
@@ -136,11 +144,14 @@
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">
+                    <button type="submit" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>
                     <a href="" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only del"><span class="am-icon-trash-o"></span> 删除</a>
                   </div>
                 </div>
               </td>
             </tr>
+            </form>
+            <form action=" " method=" " enctype="multipart/form-data" >
             <tr>
               <td><input type="checkbox" class="wx_mollcheck" /></td>
               <td>1</td>
@@ -157,11 +168,14 @@
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">
+                    <button type="submit" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>
                     <a href="" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only del"><span class="am-icon-trash-o"></span> 删除</a>
                   </div>
                 </div>
               </td>
             </tr>
+            </form>
+            <form action=" " method=" " enctype="multipart/form-data" >
             <tr>
               <td><input type="checkbox" class="wx_mollcheck" /></td>
               <td>1</td>
@@ -178,11 +192,13 @@
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">
+                    <button type="submit" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>
                     <a href="" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only del"><span class="am-icon-trash-o"></span> 删除</a>
                   </div>
                 </div>
               </td>
             </tr>
+            </form>
             </tbody>
         </table>
         <div class="am-cf">
@@ -194,7 +210,6 @@
 </div>
         </div> -->
         </div>
-        <button type="submit" class="am-btn am-btn-primary am-btn-xs">提交保存</button>
         </form>
     </div>
   </div>
