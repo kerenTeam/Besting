@@ -9,7 +9,6 @@
 	margin-left: 15px!important;
 }
 footer{
-	text-align:center;
 	width:100%;
 	text-align: center;
 }
@@ -30,8 +29,20 @@ section .am-panel-bd{
 	width:100%;
 }
 .amlogo{
-    padding: 10px 10px!important;
+    padding: 15px 10px!important;
+}
+.amlogo img{
+	width:15rem;
 }
 #topbar-collapse{
-	padding: 15px;
+	padding: 10px;
+}
+.am-topbar{
+	background:#333;
+}
+.am-topbar a{
+	color:white;
+}
+.am-topbar a:hover,.am-topbar a:focus{
+	background:none!important;
 }
