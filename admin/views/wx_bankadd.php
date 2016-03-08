@@ -26,6 +26,14 @@
               <input type="text" placeholder="">
             </div>
           </div>
+
+          <div class="am-form-group">
+            <label class="am-u-sm-3 am-form-label">积分</label>
+            <div class="am-u-sm-9">
+              <input type="text" placeholder="">
+            </div>
+          </div>
+
           <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label">价格（元）</label>
             <div class="am-u-sm-9">
@@ -44,8 +52,8 @@
             <label class="am-u-sm-3 am-form-label">商家名</label>
             <div class="am-u-sm-9"> 
                 <select data-am-selected="{btnSize: 'sm'}">
-                  <option value="option1">大凉山</option>
-                  <option value="option1">优客逸家</option>
+                  <option value="option1">优自西方</option>
+                  <option value="option1">理大师</option>
                 </select>
               </div> 
           </div>
@@ -54,9 +62,9 @@
             <label class="am-u-sm-3 am-form-label">分类</label>
             <div class="am-u-sm-9"> 
                 <select data-am-selected="{btnSize: 'sm'}">
-                   <option value="option1">品牌街</option>
-                  <option value="option1">途悦大赏</option>
-                  <option value="option1">目的地</option>
+                   <option value="option1">悦活</option>
+                  <option value="option1">悦品</option>
+                  <option value="option1">悦享</option>
                 </select> 
             </div>
           </div>
@@ -68,27 +76,6 @@
             <div class="am-u-sm-9">
               <textarea class="" rows="5" id="user-intro" placeholder="输入商品简介"></textarea>
               <small>250字以内对商品进行简介...</small>
-            </div>
-          </div> 
-
-           <div class="am-form-group">
-            <label for="user-intro" class="am-u-sm-3 am-form-label">颜色</label>
-            <div class="am-u-sm-9">
-              <label class="am-checkbox-inline">
-                <input type="checkbox"  value="" data-am-ucheck> 红色
-              </label>
-              <label class="am-checkbox-inline">
-                <input type="checkbox"  value="" data-am-ucheck> 白色
-              </label>
-              <label class="am-checkbox-inline">
-                <input type="checkbox"  value="" data-am-ucheck> 黑色
-              </label>
-              <label class="am-checkbox-inline">
-                <input type="checkbox"  value="" data-am-ucheck> 银色
-              </label>
-              <label class="am-checkbox-inline">
-                <input type="checkbox"  value="" data-am-ucheck> 绿色
-              </label>
             </div>
           </div>
 

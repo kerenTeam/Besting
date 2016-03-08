@@ -39,7 +39,7 @@ section .am-panel-bd{
 	padding: 10px;
 }
 .am-topbar{
-	background:#333;
+	background:rgba(125, 123, 123, 0.88);
 }
 .am-topbar a{
 	color:white;
