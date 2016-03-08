@@ -56,6 +56,18 @@ class wx_index extends CI_Controller {
 	    $this->load->view('wx_bankGoods');
 	    $this->load->view('footer');
 	}
+	public function bankadd()
+	{
+		
+	    $this->load->view('wx_bankadd');
+	    $this->load->view('footer');
+	}
+	public function bankedit()
+	{
+		
+	    $this->load->view('wx_bankedit');
+	    $this->load->view('footer');
+	}
 	public function mall()
 	{
 		
@@ -66,6 +78,12 @@ class wx_index extends CI_Controller {
 	{
 		
 	    $this->load->view('wx_malladd');
+	    $this->load->view('footer');
+	}
+	public function malledit()
+	{
+		
+	    $this->load->view('wx_malledit');
 	    $this->load->view('footer');
 	}
 	public function users()
