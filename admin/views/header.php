@@ -77,7 +77,7 @@
             <a class="am-cf" href="<?php echo site_url('wx_advert/index')?>"><span class="am-icon-weixin"></span> 微信-广告管理 </a>
           </li>
           <li class="admin-parent">
-            <a class="am-cf" data-am-collapse="{target: '#collapse-nav2'}"><span class="am-icon-weixin"></span> 微信-产品管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+            <a class="am-cf" data-am-collapse="{target: '#collapse-nav2'}"><span class="am-icon-weixin"></span> 微信-商品管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
             <ul class="am-list am-collapse admin-sidebar-sub" id="collapse-nav2">
               <li><a href="<?php echo site_url('wx_product/bank')?>"><span class="am-icon-credit-card-alt"></span> 时间银行</a></li>
               <li><a href="<?php echo site_url('wx_index/mall')?>"><span class="am-icon-cart-arrow-down"></span> 精品商城</a></li>
@@ -86,8 +86,8 @@
           <li class="admin-parent">
             <a class="am-cf" data-am-collapse="{target: '#collapse-nav3'}"><span class="am-icon-weixin"></span> 微信-交易记录 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
             <ul class="am-list am-collapse admin-sidebar-sub" id="collapse-nav3">
-              <li><a href="<?php echo site_url('wx_index/order')?>"><span class="am-icon-credit-card-alt"></span> 时间银行</a></li>
-              <li><a href="<?php echo site_url('wx_index/change')?>"><span class="am-icon-cart-arrow-down"></span> 精品商城</a></li>
+              <li><a href="<?php echo site_url('wx_index/change')?>"><span class="am-icon-credit-card-alt"></span> 时间银行</a></li>
+              <li><a href="<?php echo site_url('wx_index/order')?>"><span class="am-icon-cart-arrow-down"></span> 精品商城</a></li>
             </ul>
           </li>
           <li class="admin-parent">
@@ -97,7 +97,7 @@
             <a class="am-cf" href="<?php echo site_url('wx_index/users')?>"><span class="am-icon-weixin"></span> 微信-用户管理 </a>
           </li>
           <li class="admin-parent">
-            <a class="am-cf" href="<?php echo site_url('wx_index/suggestion')?>"><span class="am-icon-weixin"></span> 微信-意见反馈管理 </a>
+            <a class="am-cf" href="<?php echo site_url('wx_index/suggestion')?>"><span class="am-icon-weixin"></span> 微信-意见反馈 </a>
           </li>
         </ul>
         <div class="am-panel am-panel-default admin-sidebar-panel">

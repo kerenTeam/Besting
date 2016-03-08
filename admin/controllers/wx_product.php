@@ -40,9 +40,10 @@ class wx_product extends MY_Controller
    				#通过验证
    				#判断是否有图片上传
    				if(!empty($_FILES['img1']['tmp_name']) || !empty($_FILES['img2']['tmp_name'])){
-   					var_dump($_FILES);
+   					var_dump('2134567');
 
    				}
+   				
    				exit;
    			}
 			

@@ -16,7 +16,7 @@
         <table class="am-table am-table-striped am-table-hover table-main" id="SignFrame">
             <thead>
               <tr>
-                <th class="table-id">ID</th><th class="table-title">商家名</th><th class="table-date am-hide-sm-only">图片</th><th class="table-set">操作</th>
+                <th class="table-id">ID</th><th class="table-title">商家名</th><th class="table-date am-hide-sm-only">logo图片(点击上传修改)</th><th class="table-set">操作</th>
               </tr>
           </thead>
           <tbody id="movies">
