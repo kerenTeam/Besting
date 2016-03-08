@@ -24,3 +24,10 @@ footer{
 .cm{
 	margin: 0 15px;
 }
+.userimg{
+	width:8rem;
+}
+section .am-panel-bd{
+	display:inline-block;
+	width:100%;
+}
