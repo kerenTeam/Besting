@@ -19,24 +19,25 @@
       <div id="sidebar">
         <div id="content" class="defaults">
          <br>
-          <a href="<?php echo site_url('wx_index/bankadd')?>" class="am-cf"><span class="am-icon-plus"></span> 新增</a> 
+          <a href="<?php echo site_url('wx_product/bankadd')?>" class="am-cf"><span class="am-icon-plus"></span> 新增</a> 
           <table class="am-table am-table-striped am-table-hover table-main wx_input">
             <thead>
               <tr>
-                <th class="table-check"><input type="checkbox" class="allchexed"/></th><th class="table-id">ID</th><th class="table-title">商品名</th><th class="table-type am-hide-sm-only">图片</th><th class="table-author am-hide-sm-only">商家</th><th class="table-author am-hide-sm-only">分类</th><th class="table-author am-hide-sm-only">积分</th><th class="table-set">操作</th>
+                <th class="table-check"><input type="checkbox" class="allchexed"/></th><th class="table-id">ID</th><th class="table-title">商品名</th><th class="table-type am-hide-sm-only">图片</th><th class="table-author am-hide-sm-only">分类</th><th class="table-author am-hide-sm-only">积分/市场价</th><th class="table-set">操作</th>
               </tr>
             </thead>
             <tbody id="movies">
+            <?php if(!empty($banks)):?>
+              <?php foreach($banks as $bank):?>
               <tr>
-                <td><input type="checkbox" class="wx_bankcheck" /></td>
-                <td>1</td>
-                <td>优自红酒</td>
+                <td><input type="checkbox" class="wx_bankcheck" value='<?=$bank['id'];?>' name='id'/></td>
+                <td><?=$bank['id'];?></td>
+                <td><?=$bank['bankname'];?></td>
                 <td>
-                <img src="assets/image/img8.png" class="userimg" alt="besting">
+                <img src="<?=$bank['bankpic'];?>" class="userimg" alt="besting">
                 </td>
-                <td>优自西方</td>
-                <td>悦品</td>
-                <td>500</td>
+                <td><?=$bank['gid'];?></td>
+                <td><?php echo $bank['proint'] .'积分/'.$bank['money'].'元' ?></td>
                 <td>
                   <div class="am-btn-toolbar">
                     <div class="am-btn-group am-btn-group-xs">
@@ -46,13 +47,14 @@
                   </div>
                 </td>
               </tr>
-              
+              <?php endforeach;?>
+              <?php endif;?>
             </tbody>
           </table>
           <a href="" class="am-text-danger del"><span class="am-icon-trash-o"></span> 删除</a>
 
           <div class="am-cf">
-            共 15 条记录
+            共 <?php echo count($banks);?> 条记录
             <div class="am-fr">
               <div class="holder"></div>
             </div>

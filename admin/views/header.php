@@ -79,7 +79,7 @@
           <li class="admin-parent">
             <a class="am-cf" data-am-collapse="{target: '#collapse-nav2'}"><span class="am-icon-weixin"></span> 微信-产品管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
             <ul class="am-list am-collapse admin-sidebar-sub" id="collapse-nav2">
-              <li><a href="<?php echo site_url('wx_index/bank')?>"><span class="am-icon-credit-card-alt"></span> 时间银行</a></li>
+              <li><a href="<?php echo site_url('wx_product/bank')?>"><span class="am-icon-credit-card-alt"></span> 时间银行</a></li>
               <li><a href="<?php echo site_url('wx_index/mall')?>"><span class="am-icon-cart-arrow-down"></span> 精品商城</a></li>
             </ul>
           </li>

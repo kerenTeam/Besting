@@ -79,16 +79,80 @@ class wx_advert extends MY_Controller
 
 	public function updata(){
 		if($_POST){
+			$this->form_validation->set_rules('linkurl','链接地址','required');
+   			$this->form_validation->set_rules('merchantname','商家名称','required');
+   			if ($this->form_validation->run() == false) {
+				# 未通过验证
+				$data['message'] = validation_errors();
+				$data['wait'] = 3;
+				$data['url'] = site_url('wx_advert/updata');
+				$this->load->view('message.php',$data);
+			} else {
+				if(!empty($_FILES['imgfile']['tmp_name'])){
+					if ($this->upload->do_upload('imgfile')) {
+						# 上传成功，获取文件路径
+						$fileinfo = $this->upload->data();
+						$this->config->load('upload.php');
+						$upload  = $this->config->item('upload_path');
+						$data['advertpic'] = $upload . $fileinfo['file_name'];
+					}else{
+						#上传失败
+						$data['message'] = $this->upload->display_errors();
+						$data['wait'] = 3;
+						$data['url'] = site_url('wx_advert/updata');
+						$this->load->view('message.php',$data);
+					}
+				}else{
+					$data['advertpic'] = $this->input->post('advertpic');
+				}	
 
-			var_dump($_POST);
+				$data['merchantname'] = $this->input->post('merchantname');
+				$data['linkurl'] = $this->input->post('linkurl');
+				$data['pid'] = $this->input->post('pid');
+				$id = $this->input->post('id');
+				// var_dump($data);exit;
+				
+				#调用模型完成修改动作
+				if ($this->advert_model->upadvert($data,$id)) {
+					$data['message'] = '修改成功';
+					$data['wait'] = 3;
+					$data['url'] = site_url('wx_advert/index');
+					$this->load->view('message.php',$data);
+				} else {
+					$data['message'] = '修改失败';
+					$data['wait'] = 3;
+					$data['url'] = site_url('wx_advert/updata');
+					$this->load->view('message.php',$data);
+				}
+			}
 		}else{
-			$data['pid'] = $_GET['id'];
-			
+			$id = $_GET['id'];
+			$data['advert'] = (array)$this->advert_model->listade($id);
 			$this->load->view('wx_bankadup',$data);
 			$this->load->view('footer');
 		}
 	}
 
+	#删除广告
+	public function del(){
+		$id = $_GET['id'];
+		$list = (array)$this->advert_model->listade($id);
+		$a = $list['advertpic'];
+		$result = @unlink ($a);
+		
+		if($this->advert_model->deladvert($id)){
+			$data['message'] = '删除成功';
+			$data['wait'] = 3;
+			$data['url'] = site_url('wx_advert/index');
+			$this->load->view('message.php',$data);
+		} else {
+			$data['message'] = '删除失败';
+			$data['wait'] = 3;
+			$data['url'] = site_url('wx_advert/updata');
+			$this->load->view('message.php',$data);
+		}
+
+	}
 		
 }
 
