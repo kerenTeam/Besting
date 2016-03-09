@@ -25,24 +25,26 @@
             </tr>
           </thead>
           <tbody id="movies">
+          <?php foreach($users as $user):?>
             <tr>
               
-              <td>1</td>
-              <td>wf</td>
-              <td class="am-hide-sm-only"><img src="assets/image/user.jpg" class="userimg"  alt="用户头像"></td>
-              <td class="am-hide-sm-only">12345678901</td>
-              <td class="am-hide-sm-only">2014年9月4日 7:28:47</td>
-              <td class="am-hide-sm-only">200积分</td>
-              <td class="am-hide-sm-only"><a href="<?php echo site_url('wx_index/usermore')?>">查看</a></td>
+              <td><?=$user['id'];?></td>
+              <td><?=$user['name'];?></td>
+              <td class="am-hide-sm-only"><img src="<?=$user['headimg']?>" class="userimg"  alt="用户头像"></td>
+              <td class="am-hide-sm-only"><?=$user['phone']?></td>
+              <td class="am-hide-sm-only"><?=$user['addtime']?></td>
+              <td class="am-hide-sm-only"><?=$user['point']?></td>
+              <td class="am-hide-sm-only"><a href="<?php echo site_url('wx_menter/usermore?openid='.$user['openid'])?>">查看</a></td>
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">
                     <!-- <a href="<?php echo site_url('wx_index/useredit')?>" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</a> -->
-                    <a href="" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only del"><span class="am-icon-trash-o"></span> 删除</a>
+                    <a href="<?php echo site_url('wx_menter/deluser?openid='.$user['openid'])?>" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only del"><span class="am-icon-trash-o"></span> 删除</a>
                   </div>
                 </div>
               </td>
             </tr>
+          <?php endforeach;?>
             
           </tbody>
         </table>

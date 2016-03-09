@@ -27,16 +27,18 @@
               </tr>
             </thead>
             <tbody id="movies">
+            <?php if($malls):?>
+              <?php foreach($malls as $mall):?>
               <tr>
                 <td><input type="checkbox" class="wx_bankcheck" /></td>
-                <td>1</td>
-                <td>野生草莓</td>
+                <td><?=$mall['id'];?></td>
+                <td><?=$mall['goodsname']?></td>
                 <td>
-                <img src="assets/image/img3.png" class="userimg" alt="besting">
+                <img src="<?=base_url($mall['listpic']);?>" class="userimg" alt="besting">
                 </td>
-                <td>大凉山</td>
-                <td>品牌街</td>
-                <td>25</td>
+                <td><?=$mall['sid']?></td>
+                <td><?=$mall['gid']?></td>
+                <td><?=$mall['price']?></td>
                 <td>
                   <div class="am-btn-toolbar">
                     <div class="am-btn-group am-btn-group-xs">
@@ -46,13 +48,15 @@
                   </div>
                 </td>
               </tr>
+            <?php endforeach;?>
+          <?php endif;?>
               
             </tbody>
           </table>
           <a href="" class="am-text-danger del"><span class="am-icon-trash-o"></span> 删除</a>
 
           <div class="am-cf">
-            共 15 条记录
+            共 <?=count($malls);?> 条记录
             <div class="am-fr">
               <div class="holder"></div>
             </div>

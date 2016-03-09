@@ -20,18 +20,21 @@
       color: #333;
       margin-top: 30px;
     }
+    .header p {
+      font-size: 14px;
+    }
   </style>
 </head>
 <body>
 <div class="header">
   <div class="am-g">
     <h1>百喜听</h1>
-    <p style="font-size: 16px;">管理员后台登录</p>
+    <p>管理员后台登录</p>
   </div>
   <hr />
 </div>
 <div class="am-g">
-  <div class="am-u-lg-6 am-u-md-8 am-u-sm-centered loginform">
+  <div class="am-u-lg-6 am-u-md-8 am-u-sm-centered">
   <!-- 表单 start -->
     <?php if(isset($error)){ echo $error;}?>
      <?php echo form_open('login/login','class="am-form"')?>

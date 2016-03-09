@@ -14,20 +14,17 @@
           </header>
           <div class="am-panel-bd">
              <div class="am-u-sm-6 am-u-md-3">
-               <img src="assets/image/user.jpg" class="userimg2" alt="用户头像">
+               <img src="<?=$user['headimg'];?>" class="userimg2" alt="用户头像">
              </div>
              <div class="am-u-sm-6 am-u-md-3">
-               <p>用 户 名：wf</p>
-               <p>手机号码：12345678901</p>
+               <p>用 户 名：<?=$user['name'];?></p>
+               <p>手机号码：<?=$user['phone'];?></p>
              </div>
              <div class="am-u-sm-6 am-u-md-3">
-               <p>注册时间：2014年9月4日 7:28:47</p>
-               <p>可用积分：247个积分</p>
+               <p>注册时间：<?=$user['addtime']?></p>
+               <p>可用积分：<?=$user['point']?>个积分</p>
              </div>
-             <div class="am-u-sm-6 am-u-md-3">
-                <p>已用积分：2014年9月4日 7:28:47</p>
-                <p>注册时间：2014年9月4日 7:28:47</p>
-             </div> 
+            
           </div>
         </section>
          <section class="am-panel am-panel-default">
@@ -35,9 +32,14 @@
             <h3 class="am-panel-title">收货地址</h3>
           </header>
           <div class="am-panel-bd">
-             <p>1：四川省成都市高新区蜀都中心3号楼1108.邮编610100</p>
-             <p>2：四川省成都市高新区蜀都中心3号楼1108.邮编610100</p>
-          </div>
+          <?php if(!empty($address)):?>
+          <?php foreach($address as $key=>$addres):?>
+             <p><?=$key+1;?>：<?=$addres['province'] . $addres['city'] . $addres['area'] . $addres['address'];?>.邮编<?=$addres['code'];?></p>
+           <?php endforeach;?>
+         <?php else:?>
+          <p>该用户还没有设置收货地址！</p>
+         <?php endif;?>
+           </div>
         </section>
 
      

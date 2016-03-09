@@ -13,7 +13,7 @@
 
       <div class="am-u-sm-12 am-u-md-8 am-u-md-pull-4">
        <!-- 表单start -->
-        <form action="<?=site_url('wx_product/bankadd');?>" method="post" enctype="multipart/form-data" class="am-form am-form-horizontal">
+        <form id="parentNode" enctype="multipart/form-data" class="am-form am-form-horizontal">
           <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label">商品名</label>
             <div class="am-u-sm-9">
@@ -55,7 +55,7 @@
           <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label">缩略图片</label>
             <div class="am-u-sm-9">
-               <input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
+               <input type="file" id="imgUpload"  name="img1" onchange="previewImage(this)" class="upload-add">
                   <!-- 图片实时预览 -->
                   <div id="preview"> <img style="border-radius: 3px;" src=" "> </div>
             </div>
@@ -83,11 +83,12 @@
 
           <div class="am-form-group">
             <div class="am-u-sm-9 am-u-sm-push-3">
-              <button type="submit" class="am-btn am-btn-primary">保存</button>
+              <button type="submit" class="am-btn am-btn-primary" onclick='doaction(this)'>保存</button>
             </div>
           </div>
         </form>
       </div>
     </div>
   </div>
+
   <!-- content end -->

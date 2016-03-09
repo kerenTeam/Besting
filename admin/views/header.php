@@ -18,7 +18,8 @@
     <link rel="stylesheet" href="assets/css/jPages.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/wxapp.css">
-    <script src="assets/js/jquery.min.js"></script>
+   
+    <script src="assets/js/jquery.js"></script>
   </head>
   <body>
     <!--[if lte IE 9]>
@@ -80,21 +81,21 @@
             <a class="am-cf" data-am-collapse="{target: '#collapse-nav2'}"><span class="am-icon-weixin"></span> 微信-商品管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
             <ul class="am-list am-collapse admin-sidebar-sub" id="collapse-nav2">
               <li><a href="<?php echo site_url('wx_product/bank')?>"><span class="am-icon-credit-card-alt"></span> 时间银行</a></li>
-              <li><a href="<?php echo site_url('wx_index/mall')?>"><span class="am-icon-cart-arrow-down"></span> 精品商城</a></li>
+              <li><a href="<?php echo site_url('wx_product/mall')?>"><span class="am-icon-cart-arrow-down"></span> 精品商城</a></li>
             </ul>
           </li>
           <li class="admin-parent">
             <a class="am-cf" data-am-collapse="{target: '#collapse-nav3'}"><span class="am-icon-weixin"></span> 微信-交易记录 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
             <ul class="am-list am-collapse admin-sidebar-sub" id="collapse-nav3">
-              <li><a href="<?php echo site_url('wx_index/change')?>"><span class="am-icon-credit-card-alt"></span> 积分兑换</a></li>
-              <li><a href="<?php echo site_url('wx_index/order')?>"><span class="am-icon-cart-arrow-down"></span> 商城订单</a></li>
+              <li><a href="<?php echo site_url('wx_index/change')?>"><span class="am-icon-credit-card-alt"></span> 时间银行</a></li>
+              <li><a href="<?php echo site_url('wx_index/order')?>"><span class="am-icon-cart-arrow-down"></span> 精品商城</a></li>
             </ul>
           </li>
           <li class="admin-parent">
-            <a class="am-cf" href="<?php echo site_url('wx_index/shop')?>"><span class="am-icon-weixin"></span> 微信-商家管理 </a>
+            <a class="am-cf" href="<?php echo site_url('wx_shop/index')?>"><span class="am-icon-weixin"></span> 微信-商家管理 </a>
           </li>
           <li class="admin-parent">
-            <a class="am-cf" href="<?php echo site_url('wx_index/users')?>"><span class="am-icon-weixin"></span> 微信-用户管理 </a>
+            <a class="am-cf" href="<?php echo site_url('wx_menter/index')?>"><span class="am-icon-weixin"></span> 微信-用户管理 </a>
           </li>
           <li class="admin-parent">
             <a class="am-cf" href="<?php echo site_url('wx_index/suggestion')?>"><span class="am-icon-weixin"></span> 微信-意见反馈 </a>

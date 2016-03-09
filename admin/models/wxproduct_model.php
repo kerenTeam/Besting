@@ -8,7 +8,7 @@ class Wxproduct_model extends CI_model
 	#时间银行数据库
 	const TBL_BANK = 'bank_shops';
 	#途悦商城数据库
-
+	const TBL_MALL = 'goods';
 	//获取时间银行分类列表
 	public function bankcate(){
 		$cate['pid'] = '1'; 
@@ -21,7 +21,11 @@ class Wxproduct_model extends CI_model
 		$query = $this->db->get(self::TBL_BANK);
 		return $query->result_array();
 	}
-
+	//获取精品商城产品列表
+	public function malllist(){
+		$query = $this->db->get(self::TBL_MALL);
+		return $query->result_array();
+	}
 	
 }
 

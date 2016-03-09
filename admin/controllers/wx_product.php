@@ -13,6 +13,7 @@ class wx_product extends MY_Controller
 		$this->load->view('header');
 		$this->load->model('wxproduct_model');
 		$this->load->library('upload');
+		$this->load->helper('url');
 	}
 
 	//时间银行
@@ -21,6 +22,15 @@ class wx_product extends MY_Controller
 		$data['banks'] = $this->wxproduct_model->banklist();
 		$this->load->view('wx_bankGoods',$data);
 		$this->load->view('footer');
+	}
+
+	#精品商城
+	public function mall(){
+
+		$data['malls'] = $this->wxproduct_model->malllist();
+
+		$this->load->view('wx_mallGoods',$data);
+	    $this->load->view('footer');
 	}
 
 	#时间银行新增产品
@@ -39,39 +49,42 @@ class wx_product extends MY_Controller
 				$this->load->view('message.php',$data);
    			}else{
    				#通过验证
-   				#判断是否有图片上传
-   				if(!empty($_FILES['img1']['tmp_name'])){
-   					for($i = 1; $i < 3; $i++) {
-   						$upload = $this->upload->do_upload('img');       
-				        if($upload === FALSE) continue;
-				        $data = $this->upload->data();
-				        //返回上传文件的所有相关信息的数组
-				       /// $uid = $this->session->userdata('uid');
-				        $uploadedFiles[$i] = $data;
-   					}
-   					echo "<pre>";
-   					var_dump($uploadedFiles);
-   				}else{
-   					var_dump('qwty');
-   				}
+   				#判断是否有图片
+			    $this->config->load('upload.php');
+				$upload  = $this->config->item('upload_path');
+				
 
-   				exit;
-   			}
+
+
+
+				$data['bankname'] = $this->input->post('bankname');
+				$data['proint'] = $this->input->post('proint');
+				$data['money'] = $this->input->post('money');
+				$data['gid'] = $this->input->post('gid');
+				$data['profiles'] = $this->input->post('profiles');
+				var_dumP($data);
+
+   		    }
 			
 		}else{
 			$data['cates'] = $this->wxproduct_model->bankcate();
 			$this->load->view('wx_bankadd',$data);
 			$this->load->view('footer');
-		}
+ 		}
+	}
+
+	#产品列表图片上传类
+	public function fileimg(){
+	
 	}
 
 
 
 
 
+
+
 }
-
-
 
 
 
