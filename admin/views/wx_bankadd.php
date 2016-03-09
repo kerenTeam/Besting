@@ -55,7 +55,7 @@
           <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label">缩略图片</label>
             <div class="am-u-sm-9">
-               <input type="file" id="imgUpload" name="img1" onchange="previewImage(this)" class="upload-add">
+               <input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
                   <!-- 图片实时预览 -->
                   <div id="preview"> <img style="border-radius: 3px;" src=" "> </div>
             </div>
@@ -64,17 +64,17 @@
             <label class="am-u-sm-3 am-form-label">详情图片</label>
             <div class="am-u-sm-9">
                 <div>
-                  <input type="file" id="imgUpload" name="img2" onchange="previewImage(this)" class="upload-add">
+                  <input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
                   <!-- 图片实时预览 -->
                   <div id="preview"> <img style="border-radius: 3px;width: 50%;" src=" "> </div>
                 </div>
                 <div>
-                  <input type="file" id="imgUpload" name="img3" onchange="previewImage(this)" class="upload-add">
+                  <input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
                   <!-- 图片实时预览 -->
                   <div id="preview"> <img style="border-radius: 3px;width: 50%;" src=" "> </div>
                 </div>
                 <div>
-                  <input type="file" id="imgUpload" name="img4" onchange="previewImage(this)" class="upload-add">
+                  <input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
                   <!-- 图片实时预览 -->
                   <div id="preview"> <img style="border-radius: 3px;width: 50%;" src=" "> </div>
                 </div>

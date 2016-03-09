@@ -12,6 +12,7 @@ class wx_product extends MY_Controller
 		parent::__construct();
 		$this->load->view('header');
 		$this->load->model('wxproduct_model');
+		$this->load->library('upload');
 	}
 
 	//时间银行
@@ -39,11 +40,21 @@ class wx_product extends MY_Controller
    			}else{
    				#通过验证
    				#判断是否有图片上传
-   				if(!empty($_FILES['img1']['tmp_name']) || !empty($_FILES['img2']['tmp_name'])){
-   					var_dump('2134567');
-
+   				if(!empty($_FILES['img1']['tmp_name'])){
+   					for($i = 1; $i < 3; $i++) {
+   						$upload = $this->upload->do_upload('img');       
+				        if($upload === FALSE) continue;
+				        $data = $this->upload->data();
+				        //返回上传文件的所有相关信息的数组
+				       /// $uid = $this->session->userdata('uid');
+				        $uploadedFiles[$i] = $data;
+   					}
+   					echo "<pre>";
+   					var_dump($uploadedFiles);
+   				}else{
+   					var_dump('qwty');
    				}
-   				
+
    				exit;
    			}
 			
