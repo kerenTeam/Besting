@@ -80,3 +80,8 @@ section .am-panel-bd{
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
     background:rgba(238, 238, 238, 0.17);
 }
+.loginform{
+	border: 1px solid rgba(0,0,0,0.1);
+    padding: 40px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.3);
+}
