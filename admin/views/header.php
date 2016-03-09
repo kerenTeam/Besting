@@ -86,8 +86,8 @@
           <li class="admin-parent">
             <a class="am-cf" data-am-collapse="{target: '#collapse-nav3'}"><span class="am-icon-weixin"></span> 微信-交易记录 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
             <ul class="am-list am-collapse admin-sidebar-sub" id="collapse-nav3">
-              <li><a href="<?php echo site_url('wx_index/change')?>"><span class="am-icon-credit-card-alt"></span> 时间银行</a></li>
-              <li><a href="<?php echo site_url('wx_index/order')?>"><span class="am-icon-cart-arrow-down"></span> 精品商城</a></li>
+              <li><a href="<?php echo site_url('wx_index/change')?>"><span class="am-icon-credit-card-alt"></span> 积分兑换</a></li>
+              <li><a href="<?php echo site_url('wx_index/order')?>"><span class="am-icon-cart-arrow-down"></span> 商城订单</a></li>
             </ul>
           </li>
           <li class="admin-parent">
