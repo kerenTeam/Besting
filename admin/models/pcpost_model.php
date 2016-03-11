@@ -28,6 +28,28 @@ class Pcpost_model extends CI_model
 		return $this->db->insert(self::TBL_POST,$data);	
 	}
 
+	//查出要编辑的新闻
+	public function setpost($id)
+	{
+		$contion['id'] =$id;
+		$query = $this->db->where($contion)->get(self::TBL_POST);
+		return $query->row();
+	}
+
+	//编辑
+	public function editpost($data,$id)
+	{
+		$contion['id'] = $id;
+		return $this->db->where($contion)->update(self::TBL_POST,$data);
+	}
+
+	//删除
+	public function delpost($id)
+	{
+		$contion['id'] = $id;
+		return $this->db->where($contion)->delete(self::TBL_POST);
+	}
+
 
 }
 
