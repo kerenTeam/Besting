@@ -11,7 +11,7 @@ class wx_shop extends MY_Controller
 		parent::__construct();
 		$this->load->view('header');
 		$this->load->model('wxshop_model');
-		$this->load->model('wxpublic_model');
+		// $this->load->model('wxpublic_model');
 		$this->load->library('upload');
 	}
 
@@ -69,7 +69,7 @@ class wx_shop extends MY_Controller
 
 			}
 		}else{ 
-			$data['cates'] = $this->wxpublic_model->catelist();
+			$data['cates'] = $this->wxshop_model->shopcate('2');
 			$this->load->view('wx_shopadd',$data);
 			$this->load->view('footer');
 		}
@@ -115,7 +115,7 @@ class wx_shop extends MY_Controller
 				}else{
 					$data['message'] = '修改失败';
 					$data['wait'] = 3;
-					$data['url'] = site_url('wx_shop/shopadd');
+					$data['url'] = site_url('wx_shop/upshops?sid='.$sid);
 					$this->load->view('message.php',$data);
 				}
 
@@ -123,7 +123,7 @@ class wx_shop extends MY_Controller
 		}else{
 			$id = $_GET['sid'];
 			$data['shop'] = (array)$this->wxshop_model->shop($id);
-			$data['cates'] = $this->wxpublic_model->catelist();
+			$data['cates'] = $this->wxshop_model->shopcate('2');
 			$this->load->view('wx_shopupdata',$data);
 			$this->load->view('footer');
 		}

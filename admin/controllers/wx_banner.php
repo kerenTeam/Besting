@@ -10,55 +10,54 @@ class wx_banner extends MY_Controller {
     {
         parent::__construct();
         $this->load->view('header');
-       
+        $this->load->model('wxcate_model');
+        $this->load->library('upload');
     }
 
 
 	public function index()
-	{
-
-
-	    $this->load->view('wx_banner');
+	{  
+        $data['banner'] = $this->wxcate_model->listbanner();
+        $this->load->view('wx_banner',$data);
 	    $this->load->view('footer');
 	}
 
-	public function add(){
-	
-		
-
-        $this->load->library('upload', $config);
-
-        for($i = 1; $i < 4; $i++) {
-        $upload = $this->upload->do_upload('img'.$i);       
-        if($upload === FALSE) continue;
-        $data = $this->upload->data();//返回上传文件的所有相关信息的数组
-        $uid = $this->session->userdata('uid');
-        $uploadedFiles[$i] = $data;
-
-        $picture = array(
-            'filename' => $data['file_name'],
-            'albumID' => $this->uri->segment(4,0),
-            'uid' => $this->session->userdata('uid'),
-            'dateline' => time(),
-            'describe' => '',
-            'click' => 0
-        );
-
-        $this->load->model('album_model');
-        $this->album_model->AddPic($picture);
-        $picture = array();
-    	}
-
-
-
-	}
-
-
-    public function do_upload()
+	public function upbanner()
     {
-      
-    }
+        if($_POST){
+                $id = $_POST['id'];
+             if (!empty($_FILES['fileimg']['tmp_name'])) {
+                if ($this->upload->do_upload('fileimg')) {
+                    //上传成功
+                    $fileinfo = $this->upload->data();
+                    $this->config->load('upload.php');
+                    $upload  = $this->config->item('upload_path');
+                    $data['bannerpic'] = $upload . $fileinfo['file_name'];
+                  } else {
+                    //上传失败
+                    $error['message'] = $this->upload->display_errors();
+                    $error['wait'] = 3;
+                    $error['url'] = site_url("wx_banner/index");
+                    $this->load->view('message.php',$error);
+                  }
+            }else{
+                $data['bannerpic']=$_POST['bannerpic'];
+            }
+            
+            if($this->wxcate_model->upbanner($data,$id)){
+                $success['message'] = "编辑成功";
+                $success['wait'] = 3;
+                $success['url'] = site_url("wx_banner/index");
+                $this->load->view('message.php',$success);
+            }else{
+                $error['message'] = "编辑失败";
+                $error['wait'] = 3;
+                $error['url'] = site_url("wx_banner/index");
+                $this->load->view('message.php',$error);
 
+            }
+        }
+    }
 
 	
 }

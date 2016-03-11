@@ -13,7 +13,7 @@
 
       <div class="am-u-sm-12 am-u-md-8 am-u-md-pull-4">
        <!-- 表单start -->
-        <form id="parentNode" enctype="multipart/form-data" class="am-form am-form-horizontal">
+        <form action='<?=site_url('wx_product/bankadd');?>' method="post" id="parentNode" enctype="multipart/form-data" class="am-form am-form-horizontal">
           <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label">商品名</label>
             <div class="am-u-sm-9">
@@ -55,7 +55,7 @@
           <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label">缩略图片</label>
             <div class="am-u-sm-9">
-               <input type="file" id="imgUpload"  name="img1" onchange="previewImage(this)" class="upload-add">
+               <input type="file" id="imgUpload"  name="imgfile" onchange="previewImage(this)" class="upload-add">
                   <!-- 图片实时预览 -->
                   <div id="preview"> <img style="border-radius: 3px;" src=" "> </div>
             </div>
@@ -63,21 +63,21 @@
           <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label">详情图片</label>
             <div class="am-u-sm-9">
-                <div>
-                  <input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
-                  <!-- 图片实时预览 -->
-                  <div id="preview"> <img style="border-radius: 3px;width: 50%;" src=" "> </div>
-                </div>
-                <div>
-                  <input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
-                  <!-- 图片实时预览 -->
-                  <div id="preview"> <img style="border-radius: 3px;width: 50%;" src=" "> </div>
-                </div>
-                <div>
-                  <input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
-                  <!-- 图片实时预览 -->
-                  <div id="preview"> <img style="border-radius: 3px;width: 50%;" src=" "> </div>
-                </div>
+             <style>
+     #feedback{width:1200px;margin:0 auto;}
+     #feedback img{float:left;width:300px;height:300px;}
+     #ZjmainstaySignaturePicture,#addpicContainer{float:left;width: 100%;}
+     #addpicContainer{margin-left:5px;}
+     #ZjmainstaySignaturePicture img{width: 535px;}
+     #addpicContainer img{float: left;}
+     .loading{display:none;background:url("http://f7-preview.awardspace.com/zjmainstay.co.cc/jQueryExample/jquery_upload_image/files/ui-anim_basic_16x16.gif") no-repeat scroll 0 0 transparent;float: left;padding:8px;margin:18px 0 0 18px;}
+ </style>
+                 <div id="addpicContainer">
+                 <img onclick="getElementById('inputfile').click()" style="cursor:pointer;border: 1px solid #AABBCC;" title="点击添加图片" alt="点击添加图片" src="">
+                 <input type="file" multiple="multiple" id="inputfile" style="height:0;width:0;z-index: -1; position: absolute;left: 10px;top: 5px;"/>
+                 <span class="loading"></span>
+                 </div>
+                 <div id="feedback"></div> 
             </div>
           </div> 
 
@@ -90,5 +90,40 @@
       </div>
     </div>
   </div>
+  <script type="text/javascript">
+ $(document).ready(function(){
+     //响应文件添加成功事件
+     $("#inputfile").change(function(){
+         //创建FormData对象
+         var data = new FormData();
+         //为FormData对象添加数据
+         $.each($('#inputfile')[0].files, function(i, file) {
+             data.append('upload_file'+i, file);
+         });
+         $(".loading").show();    //显示加载图片
+         //发送数据
+         $.ajax({
+             url:'<?php echo site_url("wx_product/ajax");?>',
+             type:'POST',
+             data:data,
+             cache: false,
+             contentType: false,        //不可缺参数
+             processData: false,        //不可缺参数
+             success:function(data){
+                 data = $(data).html();
+                 //第一个feedback数据直接append，其他的用before第1个（ .eq(0).before() ）放至最前面。
+                 //data.replace(/&lt;/g,'<').replace(/&gt;/g,'>') 转换html标签，否则图片无法显示。
+                 if($("#feedback").children('img').length == 0) $("#feedback").append(data.replace(/&lt;/g,'<').replace(/&gt;/g,'>'));
+                else $("#feedback").children('img').eq(0).before(data.replace(/&lt;/g,'<').replace(/&getElementById;/g,'>'));
+                 $(".loading").hide();    //加载成功移除加载图片
+             },
+             error:function(){
+                 alert('上传出错');
+                 $(".loading").hide();    //加载失败移除加载图片
+             }
+         });
+     });
+ });
+ </script>
 
   <!-- content end -->

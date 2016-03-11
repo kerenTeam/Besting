@@ -58,7 +58,7 @@
             <a class="am-cf" href="<?php echo site_url('pc_option/index')?>"><span class="am-icon-desktop"></span> 官网-首页设置 </a>
           </li>
           <li class="admin-parent">
-            <a class="am-cf" href="<?php echo site_url('pc_index/content')?>"><span class="am-icon-desktop"></span> 官网-内容管理 </a>
+            <a class="am-cf" href="<?php echo site_url('pc_newpost/content')?>"><span class="am-icon-desktop"></span> 官网-内容管理 </a>
           </li>
           <li class="admin-parent">
             <a class="am-cf" data-am-collapse="{target: '#collapse-nav'}"><span class="am-icon-desktop"></span> 官网-图片管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
@@ -87,7 +87,7 @@
           <li class="admin-parent">
             <a class="am-cf" data-am-collapse="{target: '#collapse-nav3'}"><span class="am-icon-weixin"></span> 微信-交易记录 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
             <ul class="am-list am-collapse admin-sidebar-sub" id="collapse-nav3">
-              <li><a href="<?php echo site_url('wx_index/change')?>"><span class="am-icon-credit-card-alt"></span> 时间银行</a></li>
+              <li><a href="<?php echo site_url('wx_exchange/bankexchang')?>"><span class="am-icon-credit-card-alt"></span> 时间银行</a></li>
               <li><a href="<?php echo site_url('wx_index/order')?>"><span class="am-icon-cart-arrow-down"></span> 精品商城</a></li>
             </ul>
           </li>

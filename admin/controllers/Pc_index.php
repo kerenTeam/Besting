@@ -4,7 +4,7 @@
 */
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Pc_index extends CI_Controller {
+class Pc_index extends MY_Controller {
 
     public function __construct()
     {

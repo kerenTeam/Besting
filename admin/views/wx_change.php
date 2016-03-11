@@ -21,21 +21,21 @@
         <table class="am-table am-table-striped am-table-hover table-main wx_input">
           <thead>
             <tr>
-              <th class="table-check"><input type="checkbox" class="allchexed"/></th><th class="table-id">订单号</th><th class="table-author am-hide-sm-only">交易时间</th><th class="table-type am-hide-sm-only">用户名</th><th class="table-title">商品名</th><th class="table-type am-hide-sm-only">图片</th><th class="table-author am-hide-sm-only">数量</th><th class="table-author am-hide-sm-only">积分</th><th class="table-set">操作</th>
+              <th class="table-check"><input type="checkbox" class="allchexed"/></th><th class="table-id">订单号</th><th class="table-author am-hide-sm-only">交易时间</th><th class="table-type am-hide-sm-only">用户名</th><th class="table-title">商品名</th><th class="table-type am-hide-sm-only">图片</th><th class="table-author am-hide-sm-only">积分</th><th class="table-set">操作</th>
             </tr>
           </thead>
           <tbody id="movies">
+          <?php foreach($exchang as $val):?>
             <tr>
-              <td><input type="checkbox" class="wx_bankcheck" /></td>
-              <td>1624545643</td>
-              <td>2016年3月1日</td>
-              <td>wf</td>
-              <td>优自红酒</td>
+              <td><input type="checkbox" class="wx_bankcheck" value="<?=$val['id']?>" /></td>
+              <td><?=$val['id']?></td>
+              <td><?=$val['createtime']?></td>
+              <td><?=$val['openid']?></td>
+              <td><?=$val['bankname']?></td>
               <td>
-                <img src="assets/image/img8.png" class="userimg" alt="besting">
+                <img src="<?=base_url($val['bankpic']);?>" class="userimg" alt="besting">
               </td>
-              <td>1瓶</td>
-              <td>500</td>
+              <td><?=$val['proint'];?>积分/<?=$val['money'];?></td>
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">
@@ -46,33 +46,12 @@
                 </div>
               </td>
             </tr>
-             <tr>
-              <td><input type="checkbox" class="wx_bankcheck" /></td>
-              <td>1624545643</td>
-              <td>2016年3月1日</td>
-              <td>wf</td>
-              <td>优自红酒</td>
-              <td>
-                <img src="assets/image/img8.png" class="userimg" alt="besting">
-              </td>
-              <td>1瓶</td>
-              <td>500</td>
-              <td>
-                <div class="am-btn-toolbar">
-                  <div class="am-btn-group am-btn-group-xs">
-                    <a href="" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-check"></span> 已完成</a>
-                     <!-- 交易未完成则显示：处理，点击进行处理。交易已经完成则显示：已完成 部分代码：<span class="am-icon-check"></span> 已完成-->
-                    <a href="" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only del"><span class="am-icon-trash-o"></span> 删除</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            
+          <?php endforeach;?>
           </tbody>
         </table>
         <a href="" class="am-text-danger del"><span class="am-icon-trash-o"></span> 删除</a>
         <div class="am-cf">
-          共 1 条记录
+          共 <?=count($exchang);?> 条记录
           <div class="am-fr">
             <div class="holder"></div>
           </div>

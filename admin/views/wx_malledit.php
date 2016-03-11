@@ -13,50 +13,51 @@
 
       <div class="am-u-sm-12 am-u-md-8 am-u-md-pull-4">
        <!-- 表单start -->
-        <form action=" " method=" " enctype="multipart/form-data" class="am-form am-form-horizontal">
+        <form action="<?=site_url('wx_product/malledit')?>" method="post" enctype="multipart/form-data" class="am-form am-form-horizontal">
           <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label">商品名</label>
             <div class="am-u-sm-9">
-              <input type="text" placeholder="野生草莓">
+              <input type="text" placeholder="野生草莓" name='goodsname' value="<?=$mall['goodsname'];?>">
             </div>
           </div>
           <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label">计量单位</label>
             <div class="am-u-sm-9">
-              <input type="text" placeholder="斤">
+              <input type="text" placeholder="斤" name='specifications' value="<?=$mall['specifications'];?>">
             </div>
           </div>
           <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label">价格（元）</label>
             <div class="am-u-sm-9">
-              <input type="text" placeholder="20">
+              <input type="text" placeholder="20" name='price' value="<?=$mall['price'];?>">
             </div>
           </div>
 
           <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label">库存</label>
             <div class="am-u-sm-9">
-              <input type="text" placeholder="10000">
+              <input type="text" placeholder="10000" name='numbers' value="<?=$mall['numbers'];?>">
             </div>
           </div>
 
           <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label">商家名</label>
             <div class="am-u-sm-9"> 
-                <select data-am-selected="{btnSize: 'sm'}">
-                  <option value="option1" selected>大凉山</option>
-                  <option value="option1">优客逸家</option>
-                </select>
+                <select data-am-selected="{btnSize: 'sm'}" name='sid'>
+                <?php foreach($shops as $shop):?>
+                  <option value="<?=$shop['sid'];?>" <?php if($shop['sid'] == $mall['sid']){echo "selected";}?>><?=$shop['shopsname'];?></option>
+                <?php endforeach;?>
+                   </select>
               </div> 
           </div>
           
           <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label">分类</label>
             <div class="am-u-sm-9"> 
-                <select data-am-selected="{btnSize: 'sm'}">
-                   <option value="option1" selected>品牌街</option>
-                  <option value="option1">途悦大赏</option>
-                  <option value="option1">目的地</option>
+                <select data-am-selected="{btnSize: 'sm'}" name='gid'>
+                <?php foreach($cates as $cate):?>
+                   <option value="<?=$cate['id']?>" <?php if($cate['id'] == $mall['gid']){echo "selected";}?>><?=$cate['title'];?></option>
+                 <?php endforeach;?>
                 </select> 
             </div>
           </div>
@@ -66,63 +67,75 @@
           <div class="am-form-group">
             <label for="user-intro" class="am-u-sm-3 am-form-label">简介</label>
             <div class="am-u-sm-9">
-              <textarea class="" rows="5" id="user-intro" placeholder="asfdfadsfadfadfadsfasdf"></textarea>
+              <textarea class="" rows="5" id="user-intro" name='profiles' placeholder="asfdfadsfadfadfadsfasdf"><?=$mall['profiles'];?></textarea>
               <small>250字以内对商品进行简介...</small>
             </div>
           </div> 
-
            <div class="am-form-group">
             <label for="user-intro" class="am-u-sm-3 am-form-label">颜色(没有则不选)</label>
             <div class="am-u-sm-9">
+            <?php $list = explode(' | ', $mall['color']);  ?>
               <label class="am-checkbox-inline">
-                <input type="checkbox"  value="" data-am-ucheck> 红色
+                <input type="checkbox"  value="红色" <?if(in_array("红色",$list)){echo "checked";}?> name="color[]" data-am-ucheck>红色
+              </label>
+           
+              <label class="am-checkbox-inline">
+                <input type="checkbox"  value="白色" <?if(in_array("白色",$list)){echo "checked";}?> name="color[]" data-am-ucheck> 白色
               </label>
               <label class="am-checkbox-inline">
-                <input type="checkbox"  value="" data-am-ucheck> 白色
+                <input type="checkbox"  value="黑色" <?if(in_array("黑色",$list)){echo "checked";}?> name="color[]" data-am-ucheck> 黑色
               </label>
               <label class="am-checkbox-inline">
-                <input type="checkbox"  value="" data-am-ucheck> 黑色
+                <input type="checkbox"  value="银色" <?if(in_array("银色",$list)){echo "checked";}?> name="color[]" data-am-ucheck> 银色
               </label>
               <label class="am-checkbox-inline">
-                <input type="checkbox"  value="" data-am-ucheck> 银色
+                <input type="checkbox"  value="绿色" <?if(in_array("绿色",$list)){echo "checked";}?>  name="color[]" data-am-ucheck> 绿色
               </label>
-              <label class="am-checkbox-inline">
-                <input type="checkbox"  value="" data-am-ucheck> 绿色
-              </label>
+              
             </div>
           </div>
 
           <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label">缩略图片</label>
             <div class="am-u-sm-9">
-               <input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
+               <input type="file" id="imgUpload" name="listpic" onchange="previewImage(this)" class="upload-add">
                   <!-- 图片实时预览 -->
-                  <div id="preview"> <img style="border-radius: 3px;" src="assets/image/img3.png"> </div>
+                  <input type="hidden" name='listpic' value='<?=$mall["listpic"];?>' />
+                  <div id="preview"> <img style="border-radius: 3px;" src="<?=base_url($mall['listpic']);?>"> </div>
             </div>
           </div>
           <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label">详情图片</label>
             <div class="am-u-sm-9">
-                <div>
-                  <input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
-                  <!-- 图片实时预览 -->
-                  <div id="preview"> <img style="border-radius: 3px;width: 50%;" src="assets/image/zm1.jpg"> </div>
-                </div>
-                <div>
-                  <input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
-                  <!-- 图片实时预览 -->
-                  <div id="preview"> <img style="border-radius: 3px;width: 50%;" src="assets/image/zm2.jpg"> </div>
-                </div>
-                <div>
-                  <input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
-                  <!-- 图片实时预览 -->
-                  <div id="preview"> <img style="border-radius: 3px;width: 50%;" src="assets/image/zm3.jpg"> </div>
-                </div>
+               <style>
+     #feedback{width:1200px;margin:0 auto;}
+     #feedback img{float:left;width:300px;height:300px;}
+     #ZjmainstaySignaturePicture,#addpicContainer{float:left;width: 100%;}
+     #addpicContainer{margin-left:5px;}
+     #ZjmainstaySignaturePicture img{width: 535px;}
+     #addpicContainer img{float: left;}
+     .loading{display:none;background:url("http://f7-preview.awardspace.com/zjmainstay.co.cc/jQueryExample/jquery_upload_image/files/ui-anim_basic_16x16.gif") no-repeat scroll 0 0 transparent;float: left;padding:8px;margin:18px 0 0 18px;}
+ </style>
+                 <div id="addpicContainer">
+                 <img onclick="getElementById('inputfile').click()" style="cursor:pointer;border: 1px solid #AABBCC;" title="点击添加图片" alt="点击添加图片" src="">
+                 <input type="file" multiple="multiple" id="inputfile" style="height:0;width:0;z-index: -1; position: absolute;left: 10px;top: 5px;"/>
+                 <span class="loading"></span>
+                 </div>
+                 <div id="feedback">
+                    
+                 </div>
+                <div id='hidden'>
+                  <?php $list = explode(' | ', $mall['goodspic']); foreach($list as $v):?>
+                      <img src="<?=base_url($v)?>" alt="">
+                      <input type="hidden" name='goodspic[]' value="<?=$v?>" />
+                   <?php endforeach;?>
+                  </div>
             </div>
           </div> 
 
           <div class="am-form-group">
             <div class="am-u-sm-9 am-u-sm-push-3">
+            <input type="hidden" name='id' value='<?=$mall["id"]?>' />
               <button type="submit" class="am-btn am-btn-primary">保存</button>
             </div>
           </div>
@@ -130,4 +143,41 @@
       </div>
     </div>
   </div>
+    <script type="text/javascript">
+ $(document).ready(function(){
+     //响应文件添加成功事件
+     $("#inputfile").change(function(){
+         //创建FormData对象
+        var data = new FormData();
+        //删除之前的
+        $('#hidden').remove();
+         //为FormData对象添加数据
+         $.each($('#inputfile')[0].files, function(i, file) {
+             data.append('upload_file'+i, file);
+         });
+         $(".loading").show();    //显示加载图片
+         //发送数据
+         $.ajax({
+             url:'<?php echo site_url("wx_product/ajax");?>',
+             type:'POST',
+             data:data,
+             cache: false,
+             contentType: false,        //不可缺参数
+             processData: false,        //不可缺参数
+             success:function(data){
+                 data = $(data).html();
+                 //第一个feedback数据直接append，其他的用before第1个（ .eq(0).before() ）放至最前面。
+                 //data.replace(/&lt;/g,'<').replace(/&gt;/g,'>') 转换html标签，否则图片无法显示。
+                 if($("#feedback").children('img').length == 0) $("#feedback").append(data.replace(/&lt;/g,'<').replace(/&gt;/g,'>'));
+                else $("#feedback").children('img').eq(0).before(data.replace(/&lt;/g,'<').replace(/&getElementById;/g,'>'));
+                 $(".loading").hide();    //加载成功移除加载图片
+             },
+             error:function(){
+                 alert('上传出错');
+                 $(".loading").hide();    //加载失败移除加载图片
+             }
+         });
+     });
+ });
+ </script>
   <!-- content end -->

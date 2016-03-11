@@ -12,6 +12,13 @@ class Wxshop_model extends CI_model
 		$query = $this->db->get(self::TBL_SHOP);
 		return $query->result_array();
 	}
+	#查出分类
+	public function shopcate($id){
+		$condition['pid'] = $id;
+		$query = $this->db->where($condition)->get('wd_wx_cate');
+		return $query->result_array();
+	}
+	
 	//新增
 	public function addshop($data){
 	    return $this->db->insert(self::TBL_SHOP,$data);

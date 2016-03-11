@@ -22,51 +22,23 @@
               </tr>
           </thead>
           <tbody >
+          <?php foreach($enterprise as $post):?>
             <tr>
               
-              <td>1</td>
-              <td>default</td>
-              <td class="am-hide-sm-only">2014年9月4日 7:28:47</td>
-              <td class="am-hide-sm-only">测试1号</td>
+              <td><?=$post['id'];?></td>
+              <td><?=$post['title'];?></td>
+              <td class="am-hide-sm-only"><?=$post['addtime'];?></td>
+              <td class="am-hide-sm-only"><?=$post['postinfo'];?></td>
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">
                     <a href="<?php echo site_url('pc_index/cotentedit')?>" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</a>
-                    <a href="" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only del"><span class="am-icon-trash-o"></span> 删除</a>
                   </div>
                 </div>
               </td>
             </tr>
             <tr>
-              
-              <td>2</td>
-              <td>default</td>
-              <td class="am-hide-sm-only">2014年9月4日 7:28:47</td>
-              <td class="am-hide-sm-only">测试1号</td>
-              <td>
-                <div class="am-btn-toolbar">
-                  <div class="am-btn-group am-btn-group-xs">
-                    <a href="<?php echo site_url('pc_index/cotentedit')?>" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</a>
-                    <a href="" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only del"><span class="am-icon-trash-o"></span> 删除</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-             <tr>
-              
-              <td>3</td>
-              <td>default</td>
-              <td class="am-hide-sm-only">2014年9月4日 7:28:47</td>
-              <td class="am-hide-sm-only">测试1号</td>
-              <td>
-                <div class="am-btn-toolbar">
-                  <div class="am-btn-group am-btn-group-xs">
-                    <a href="<?php echo site_url('pc_index/cotentedit')?>" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</a>
-                    <a href="" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only del"><span class="am-icon-trash-o"></span> 删除</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
+             <?php endforeach;?> 
           </tbody>
         </table>
           <div class="am-cf">
@@ -75,7 +47,7 @@
       <!-- 新闻中心列表 -->
       <div class="am-tab-panel am-fade" id="tab2">
       <!-- 新增 -->
-      <a href="<?php echo site_url('pc_index/contentadd')?>" class="am-cf"><span class="am-icon-plus"></span> 新增</a>
+      <a href="<?php echo site_url('pc_newpost/addnew')?>" class="am-cf"><span class="am-icon-plus"></span> 新增</a>
       <div id="container" class="clearfix">
 <div id="sidebar">
     <div id="content" class="defaults">
@@ -86,12 +58,13 @@
               </tr>
           </thead>
           <tbody id="movies">
+            <?php foreach($posts as $post):?>
             <tr>
               
-              <td>1</td>
-              <td>default</td>
-              <td class="am-hide-sm-only">2014年9月4日 7:28:47</td>
-              <td class="am-hide-sm-only">测试1号</td>
+              <td><?=$post['id']?></td>
+              <td><?=$post['title']?></td>
+              <td class="am-hide-sm-only"><?=$post['addtime']?></td>
+              <td class="am-hide-sm-only"><?=$post['postinfo']?></td>
               <td>
                 <div class="am-btn-toolbar">
                   <div class="am-btn-group am-btn-group-xs">
@@ -101,68 +74,12 @@
                 </div>
               </td>
             </tr>
-            <tr>
-              
-              <td>2</td>
-              <td>default</td>
-              <td class="am-hide-sm-only">2014年9月4日 7:28:47</td>
-              <td class="am-hide-sm-only">测试1号</td>
-              <td>
-                <div class="am-btn-toolbar">
-                  <div class="am-btn-group am-btn-group-xs">
-                    <a href="<?php echo site_url('pc_index/cotentedit')?>" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</a>
-                    <a href="" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only del"><span class="am-icon-trash-o"></span> 删除</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-              <td>3</td>
-              <td>default</td>
-              <td class="am-hide-sm-only">2014年9月4日 7:28:47</td>
-              <td class="am-hide-sm-only">测试1号</td>
-              <td>
-                <div class="am-btn-toolbar">
-                  <div class="am-btn-group am-btn-group-xs">
-                    <a href="" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</a>
-                    <a href="" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only del"><span class="am-icon-trash-o"></span> 删除</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              
-              <td>3</td>
-              <td>default</td>
-              <td class="am-hide-sm-only">2014年9月4日 7:28:47</td>
-              <td class="am-hide-sm-only">测试1号</td>
-              <td>
-                <div class="am-btn-toolbar">
-                  <div class="am-btn-group am-btn-group-xs">
-                    <a href="" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</a>
-                    <a href="" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only del"><span class="am-icon-trash-o"></span> 删除</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              
-              <td>3</td>
-              <td>default</td>
-              <td class="am-hide-sm-only">2014年9月4日 7:28:47</td>
-              <td class="am-hide-sm-only">测试1号</td>
-              <td>
-                <div class="am-btn-toolbar">
-                  <div class="am-btn-group am-btn-group-xs">
-                    <a href="<?php echo site_url('pc_index/cotentedit')?>" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</a>
-                    <a href="" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only del"><span class="am-icon-trash-o"></span> 删除</a>
-                  </div>
-                </div>
-              </td>
-            </tr>
+          <?php endforeach;?>
+           
           </tbody>
         </table>
           <div class="am-cf">
-  共 15 条记录
+  共 <?php echo count($posts);?> 条记录
   <div class="am-fr">
     <div class="holder"></div> 
   </div>

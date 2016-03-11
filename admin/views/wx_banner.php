@@ -11,52 +11,84 @@
     </ul>
     <div class="am-tabs-bd">
       <div class="am-tab-panel am-fade am-in am-active" id="tab1">
-       <?php if(isset($error)){ echo $error;}?>
-      <?php echo form_open_multipart('wx_banner/add');?>
-    
-      <label>banner1:</label>
-      <div class="wx_type_img">
-        <input type="file" id="imgUpload" name="img1" onchange="previewImage(this)" class="upload-add">
-        <!-- 图片实时预览 -->
-        <div id="preview"> <img style="border-radius: 3px;" src="" alt="选择图片"> </div>
-        </div>
-        <label>banner2:</label>
-        <div class="wx_type_img">
-        <input type="file" id="imgUpload" name="img2" onchange="previewImage(this)" class="upload-add">
-        <!-- 图片实时预览 -->
-        <div id="preview"> <img style="border-radius: 3px;" src="" alt="选择图片"> </div>
-        </div>
-        <label>banner3:</label>
-        <div class="wx_type_img">
-        <input type="file" id="imgUpload" name="img3" onchange="previewImage(this)" class="upload-add">
-        <!-- 图片实时预览 -->
-        <div id="preview"> <img style="border-radius: 3px;" src="" alt="选择图片"> </div>
-        </div>
-        <button type="submit" class="am-btn am-btn-primary am-btn-xs">提交保存</button>
-        </form>
+       <table class="am-table am-table-striped am-table-hover table-main" id="SignFrame">
+            <thead>
+              <tr>
+               <th class="table-title">banner</th><th class="table-date am-hide-sm-only">图片</th><th class="table-set">操作</th>
+              </tr>
+          </thead>
+          <tbody id="movies">
+          <?php foreach($banner as $key=>$val):?>
+            <?php if($val['pid'] == 1):?>
+          <form action="<?=site_url('wx_banner/upbanner');?>" method="post" enctype="multipart/form-data" class="am-form am-form-horizontal">
+            <tr>
+              <td>banner<?=$key+1?></td>
+              <!-- 这儿如果改了name值得话，上面的js也需要改 -->
+              <td>
+              <div class="wx_type_img">
+                 <input type="file" id="imgUpload" name="fileimg" onchange="previewImage(this)" class="upload-add">
+                  <!-- 图片实时预览 -->
+                  <div id="preview"> <img style="border-radius: 3px;" src="<?=base_url($val['bannerpic']);?>" alt="选择图片"> </div>
+              </div>
+               <div >
+                <input type="hidden" value="<?=$val['id']?>" name='id'>
+                <input type='hidden' value="<?=$val['bannerpic']?>" name='bannerpic'>
+              </div>
+              </td>
+              <td>
+                <div class="am-btn-toolbar">
+                  <div class="am-btn-group am-btn-group-xs">
+                    <button type="submit" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 修改保存</button>
+                   <!-- 这儿的链接确定了的话，上面的js中的a标签也需要添加一个 -->
+                  </div>
+                </div>
+              </td>
+            </tr>
+            </form>
+          <?php endif;?>
+          <?php endforeach;?>
+          </tbody>
+        </table>
       </div>
       <div class="am-tab-panel am-fade" id="tab2">
-      <form action="" method="" enctype="multipart/form-data">
-      <label>banner1:</label>
-      <div class="wx_type_img">
-        <input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
-        <!-- 图片实时预览 -->
-        <div id="preview"> <img style="border-radius: 3px;" src="" alt="选择图片"> </div>
-        </div>
-        <label>banner2:</label>
-        <div class="wx_type_img">
-        <input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
-        <!-- 图片实时预览 -->
-        <div id="preview"> <img style="border-radius: 3px;" src="" alt="选择图片"> </div>
-        </div>
-        <label>banner3:</label>
-        <div class="wx_type_img">
-        <input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
-        <!-- 图片实时预览 -->
-        <div id="preview"> <img style="border-radius: 3px;" src="" alt="选择图片"> </div>
-        </div>
-        <button type="submit" class="am-btn am-btn-primary am-btn-xs">提交保存</button>
-        </form>
+       <table class="am-table am-table-striped am-table-hover table-main" id="SignFrame">
+            <thead>
+              <tr>
+               <th class="table-title">banner</th><th class="table-date am-hide-sm-only">图片</th><th class="table-set">操作</th>
+              </tr>
+          </thead>
+          <tbody id="movies">
+          <?php foreach($banner as $key=>$val):?>
+            <?php if($val['pid'] == 2):?>
+          <form action="<?=site_url('wx_banner/upbanner');?>" method="post" enctype="multipart/form-data" class="am-form am-form-horizontal">
+            <tr>
+              <td>banner<?=$key+1?></td>
+              <!-- 这儿如果改了name值得话，上面的js也需要改 -->
+              <td>
+              <div class="wx_type_img">
+                 <input type="file" id="imgUpload" name="fileimg" onchange="previewImage(this)" class="upload-add">
+                  <!-- 图片实时预览 -->
+                  <div id="preview"> <img style="border-radius: 3px;" src="<?=base_url($val['bannerpic'])?>" alt="选择图片"> </div>
+              </div>
+              <div >
+                <input type="hidden" value="<?=$val['id']?>" name='id'>
+                <input type='hidden' value="<?=$val['bannerpic']?>" name='bannerpic'>
+              </div>
+              </td>
+              <td>
+                <div class="am-btn-toolbar">
+                  <div class="am-btn-group am-btn-group-xs">
+                    <button type="submit" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 修改保存</button>
+                   <!-- 这儿的链接确定了的话，上面的js中的a标签也需要添加一个 -->
+                  </div>
+                </div>
+              </td>
+            </tr>
+            </form>
+          <?php endif;?>
+          <?php endforeach;?>
+          </tbody>
+        </table>
     </div>
   </div>
 </div>
