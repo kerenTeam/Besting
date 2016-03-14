@@ -1,0 +1,171 @@
+.clear{clear: both;}
+.hard-tit{font-size: 28px;text-align: center;padding: 5rem 0;color: #4e4e4e;position: relative;z-index: -1;}
+.hard-tit img{width: 50%;}
+/*.hard-tit i{font-size: 2rem;}*/
+.hard-top,.hard-center,.hard-bottom{color: #333;}
+/*第一块*/
+.hard-top-ctt img,.hard-center-ctt img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+.hard-top-ctt,.hard-center-ctt{padding: 4rem 0;text-align: center; position: relative;}
+.hard-top-ctt h2{display: inline-block;font-size: 2.7em;color: #ffffff;padding: 2rem 4rem;background-color: #000000;margin-top: 3rem;}
+.hard-top-ctt p{text-align: center;margin: 20rem 0 5rem;font-size: 1.7em;}
+/*第二块*/
+.hard-center-ctt{text-align: center;padding: 4rem 0 12rem 0;}
+.hard-center-ctt div{display: inline-block;padding: 1rem 15rem;background-color: #ffffff;}
+.hard-center-ctt h2{font-size: 3.5em;}
+.hard-center-ctt p{font-size: 2.5em;}
+.hard-center-ctt span{font-size: 1.5em;}
+/*第三块*/
+.hard-bottom{margin-bottom: 5rem}
+.hard-bottom-pic{padding-bottom: 2rem;margin-bottom: 2rem;background-color: #000000;text-align: center}
+.hard-bottom-pic img.pic{width: 100%;}
+.hard-bottom-pic div{height: 130px;}
+.hard-bottom-pic h3{color: #efe302;font-size: 2em;}
+.hard-bottom-pic p{color: #ffffff;font-size: 1em;margin: 0;min-height: 3em;}
+.hard-bottom-pic .pic1{background: url("../img/hardware/up%20arrow.png") no-repeat center;}
+.hard-bottom-pic .pic2{background: url("../img/hardware/list%20view.png") no-repeat center;}
+.hard-bottom-pic .pic3{background: url("../img/hardware/z61.png") no-repeat center;}
+.hard-bottom-pic .pic4{background: url("../img/hardware/pen.png") no-repeat center;}
+
+/*品牌专列*/
+.hard-brand,.hard-media{color: #333;}
+.hard-brand{padding: 10rem 0;}
+.hard-media{position: relative;margin-bottom: 10rem;}
+.hard-media img{width: 100%;}
+.hard-media-cap{position: absolute;top: 20%;left: 0;text-align: center;width: 100%;}
+.hard-media-cap h2{font-weight: bold;font-size: 2.4em;}
+.hard-media-cap p{font-size: 1.7em;color: #4e4e4e;}
+.hard-brand{position: relative;margin-bottom: 10rem;}
+.hard-brand img{width: 100%;}
+.hard-brand>img{position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+.hard-brand-ctt{top: 15%;left: 0;width: 100%;text-align: center;}
+.hard-brand-cap img{width: 100%;}
+.hard-brand-cap{background-color: #f5f5f5;padding-bottom: 1rem;width: 80%;margin: auto;}
+.hard-brand-cap h4{font-size: 2em;}
+.hard-brand-cap p{font-size: 1.5em;}
+
+
+@media (min-width: 1200px){
+    .container.news{width: 1170px;margin: 0 auto;}
+	.hard-center-ctt{padding: 4rem 0 12rem 0;min-height: 45rem;}
+}
+
+@media (min-width: 680px) and (max-width: 1080px) {
+    .hard-top-ctt,.hard-center-ctt,.hard-bottom-pic{
+        font-size: 10px;
+    }
+    .hard-top-ctt{
+        padding: 3rem 0;
+    }
+    .hard-tit img{width: 60%;}
+    .hard-center-ctt{
+        padding: 3rem 0 10rem;
+    }
+	.hard-center-ctt div{padding: 1rem 5rem;}
+    .hard-bottom-pic .pic1{background: url("../img/hardware/up%20arrow.png") no-repeat center;background-size: 20%;}
+    .hard-bottom-pic .pic2{background: url("../img/hardware/list%20view.png") no-repeat center;background-size: 20%;}
+    .hard-bottom-pic .pic3{background: url("../img/hardware/z61.png") no-repeat center;background-size: 25%;}
+    .hard-bottom-pic .pic4{background: url("../img/hardware/pen.png") no-repeat center;background-size: 20%;}
+    .hard-bottom-pic div{
+        height: 10rem;
+    }
+    .hard-media-cap h2{font-size: 1.8em;}
+    .hard-media-cap p{font-size: 1.2em;}
+    .hard-brand{padding: 6rem 0;}
+    .hard-brand-cap{top: 10%;width: auto;}
+    .hard-brand-cap h4{font-size: 1.6em}
+    .hard-brand-cap p{font-size: 1.2em}
+}
+@media (min-width: 1080px) and (max-width: 1200px){
+ 	.hard-center-ctt div{padding: 1rem 5rem;}
+	.hard-top-ctt p{margin: 15rem 0 5rem;}
+}
+@media (max-width: 680px) {
+    .hard-top-ctt,.hard-center-ctt,.hard-bottom-pic{
+        font-size: 8px;
+    }
+}
+@media (max-width: 680px) {
+    .hard-top-ctt,.hard-center-ctt{
+        font-size: 8px;
+        padding: 2rem 0;
+		background-size: auto 100%;
+    }
+	.hard-center-ctt{
+		background-size: auto 100%;
+		}
+    .hard-tit{
+        font-size: 1.15em;
+        padding: 2rem 0;
+    }
+    .hard-top-ctt h2{
+        font-size: 1.7em;
+        line-height: 1.5em;
+        padding: 2rem;
+    }
+    .hard-top-ctt p{
+        font-size: 1.2em;
+        margin: 2rem 0 1rem;
+    }
+    .hard-center-ctt{
+        padding: 2rem 0 6rem;
+    }
+    .hard-tit img{width: 75%;}
+    .hard-center-ctt div{
+        padding: 1rem 0;
+        width: 80%;
+    }
+    .hard-center-ctt h2{
+        font-size: 1.8em;
+        margin-top: 0;
+    }
+    .hard-center-ctt p{
+        font-size: 1.2em;
+    }
+    .hard-center-ctt span{
+        font-size: .9em;
+        color: gray;
+    }
+    .hard-bottom-ctt .container{padding: 0;width: 100%;}
+    .hard-bottom{margin-bottom: 2rem}
+    .hard-bottom-pic{margin: 0 -10px 10px;padding-bottom: 10px;}
+    .hard-bottom-pic .pic1{background: url("../img/hardware/up%20arrow.png") no-repeat center;background-size: 20%;}
+    .hard-bottom-pic .pic2{background: url("../img/hardware/list%20view.png") no-repeat center;background-size: 20%;}
+    .hard-bottom-pic .pic3{background: url("../img/hardware/z61.png") no-repeat center;background-size: 25%;}
+    .hard-bottom-pic .pic4{background: url("../img/hardware/pen.png") no-repeat center;background-size: 20%;}
+    .hard-bottom-pic div{
+        height: 7rem;
+    }
+    .hard-bottom-pic h3{
+        margin: 10px 0 10px;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    .hard-bottom-pic p{
+        font-size: 1.5em;min-height: 2.5em;
+    }
+    .hard-media,.hard-brand{margin-bottom: 5rem;}
+    .hard-media-cap{top: 5%;}
+    .hard-media-cap h2{font-size: .9em;}
+    .hard-media-cap p{font-size: .8em;}
+
+    .hard-brand{padding: 3rem 0;}
+    .hard-brand-ctt .container .row{margin: 0 -15px;}
+    .hard-brand-cap{padding-bottom: 1px;margin: 0 -10px;width: auto;}
+    .hard-brand-cap h4{font-size: .9em;}
+    .hard-brand-cap p{font-size: .8em;}
+
+}
+
+
+
+
+
+
+
+

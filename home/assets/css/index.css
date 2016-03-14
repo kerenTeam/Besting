@@ -1,0 +1,167 @@
+.clear {
+    clear: both;
+}
+.imgTxt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    /* line-height: 50%; */
+    color: white;
+    margin-top: 23%;
+}
+.ls {
+    font-size: 26px;
+    letter-spacing: 22px;
+}
+.w {
+    width: 100%;
+}
+.top {
+    padding: 0;
+    margin-top: -100px;
+    width: 100%;
+    z-index: -1;
+}
+.center {
+    padding: 0;
+    width: 100%;
+}
+.session {
+    text-align: center;
+    font-size: 28px;
+    height: 150px;
+    line-height: 160px;
+    color: #4e4e4e;
+}
+.p2 {
+  text-align: left;
+    font-size: 20px;
+    margin-left: 20%;
+    margin-top: 2%;
+    line-height: 27px;
+}
+.p1 {
+      text-align: left;
+    margin-left: 20%;
+    margin-top: -15%;
+    font-size: 24px;
+    line-height: 2.5em;
+}
+.allp {
+    position: relative;
+    margin-top: -21em;
+}
+.topImg {
+    width: 28%;
+    margin-bottom: 37px;
+    margin-top: 3.3em;
+}
+.allp1 {
+    font-size: 22px;
+}
+.allp2 {
+    font-size: 30px;
+    color: #F7EA04;
+    margin: 0.3em 0 1em;
+}
+.allp3 {
+    font-size: 20px;
+    margin-bottom: 0em;
+}
+.rail {
+    width: 100%;
+    position: relative;
+    margin: 4em auto 0em auto;
+}
+.rail-bot {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(13,12,12,0.5); 
+}
+.rail-bot img {
+    width: 8em!important;
+    margin-top: -4em;
+    margin-bottom: 2em;
+}
+.rail-bot h4 {
+    font-size: 1.6em;
+    color: #fff100;
+}
+.rail-bot p {
+    font-size: 1.2em;
+    margin: 0px 25px;
+    line-height: 25px;
+    color: white;
+}
+.rail-bot .col-md-3 {
+    text-align: center;
+    margin: 0 auto;
+    width: 20%;
+    height: 17em;
+}
+.listm {
+    margin-left: 20%!important;
+}
+.rail-bot .list1 {
+    background-color: rgba(13,12,12,0.8)!important;
+}
+.rail-bot .list2 {
+    background-color: rgba(13,12,12,1)!important;
+}
+.rail-bg img {
+    width: 100%;
+}
+.logoes {
+    margin: 0 auto 3em;
+}
+.logoes tr td {
+    padding: 0.5em;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.1);
+    width: 17em;
+}
+.logoes tr td img {
+    width: auto;
+}
+.leftc {
+    background: none!important;
+}
+.mediCenter { 
+    background-color: #FAFAFA;
+}
+.around{
+    }
+.mediCenter div {
+    text-align: center;
+    margin-bottom: 5em;
+}
+.mediCenter div img {
+    width: 8em;
+}
+.mediCenter div h3 {
+    color: black;
+    margin-top: 1.5em;
+}
+.botP{
+    text-align: center;
+    color: #4e4e4e;
+    font-size: 1.4em;
+}
+.around{ 
+    width: 70%;
+    margin: 8em auto; 
+    margin-left: 15%;
+    color: #4e4e4e;}
+.list0{
+    background-color: rgba(13,12,12,0.5);
+}
+.cas{
+    margin-top: 8em;}
+@media screen and (max-width: 680px){
+    .cas{
+    margin-top: 4em;}
+    }

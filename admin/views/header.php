@@ -63,9 +63,9 @@
           <li class="admin-parent">
             <a class="am-cf" data-am-collapse="{target: '#collapse-nav'}"><span class="am-icon-desktop"></span> 官网-图片管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
             <ul class="am-list am-collapse admin-sidebar-sub" id="collapse-nav">
-              <li><a href="<?php echo site_url('pc_index/pcbanner')?>" class="am-cf"><span class="am-icon-photo"></span> banner</a></li>
+              <li><a href="<?php echo site_url('pc_pageimg/banner')?>" class="am-cf"><span class="am-icon-photo"></span> banner</a></li>
               <li><a href="<?php echo site_url('pc_partner/partner')?>"><span class="am-icon-users"></span> 合作伙伴</a></li>
-              <li><a href="<?php echo site_url('pc_index/pageimg')?>"><span class="am-icon-file-image-o"></span> 页面图片修改</a></li>
+              <li><a href="<?php echo site_url('pc_pageimg/pageimg')?>"><span class="am-icon-file-image-o"></span> 页面图片修改</a></li>
             </ul>
           </li>
           <li class="admin-parent">

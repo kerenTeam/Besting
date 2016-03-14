@@ -34,12 +34,12 @@ class wx_menter extends MY_Controller
 		if($this->wxmenter_model->deluser($openid) && $this->wxmenter_model->deladdres($openid)){
 			$data['message'] = '删除成功';
 			$data['wait'] = 3;
-			$data['url'] = site_url('wx_menuter/index');
+			$data['url'] = site_url('wx_menter/index');
 			$this->load->view('message.php',$data);
 		}else{
 			$data['message'] = '删除失败';
 			$data['wait'] = 3;
-			$data['url'] = site_url('wx_menuter/index');
+			$data['url'] = site_url('wx_menter/index');
 			$this->load->view('message.php',$data);
 		}
 	}

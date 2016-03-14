@@ -13,7 +13,7 @@
 
       <div class="am-u-sm-12 am-u-md-8 am-u-md-pull-4">
        <!-- 表单 start -->
-        <form action=" " method=" " enctype="multipart/form-data" class="am-form am-form-horizontal">
+        <form action="<?=site_url('pc_pageimg/editbanner');?>" method="post" enctype="multipart/form-data" class="am-form am-form-horizontal">
           <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label">所属页面</label>
             <div class="am-u-sm-9">
@@ -28,9 +28,10 @@
           <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label">图片上传</label>
             <div class="am-u-sm-9">
-               <input type="file" id="imgUpload" name="img[]" onchange="previewImage(this)" class="upload-add">
+               <input type="file" id="imgUpload" name="bgpic" onchange="previewImage(this)" class="upload-add">
                   <!-- 图片实时预览 -->
-                  <div id="preview"> <img style="border-radius: 3px;" src=" "> </div>
+                  <input type="hidden" value="<?=$banner['bgpic'];?>" name='bgpic' />
+                  <div id="preview"> <img style="border-radius: 3px;" src="<?=base_url($banner['bgpic']);?>"> </div>
             </div>
           </div>
 
@@ -44,7 +45,7 @@
                   <script type="text/javascript" charset="utf-8" src="assets/uediter/umeditor.js"></script> 
                   <script type="text/javascript" src="assets/uediter/lang/zh-cn/zh-cn.js"></script>
                   <div style="margin-left: -20px;"> 
-                    <script id="myEditor" type="text/plain" style="width:90%;height:500px;"></script>
+                    <script id="myEditor" type="text/plain" style="width:90%;height:500px;" name='content'><?=$banner['content'];?></script>
 
                   </div>
                   <script type="text/javascript">
@@ -59,6 +60,7 @@
 
           <div class="am-form-group">
             <div class="am-u-sm-9 am-u-sm-push-3">
+            <input type='hidden' value="<?=$banner['id'];?>" name='id' />
               <button type="submit" class="am-btn am-btn-primary">保存修改</button>
             </div>
           </div>

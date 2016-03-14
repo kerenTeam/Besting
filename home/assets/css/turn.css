@@ -1,0 +1,23 @@
+body{font-size:12px;background:#920903;}
+*{margin:0;padding:0;}
+img{border:0}
+#mian{width:700px;height:600px;}
+.youhave{
+    position:absolute;
+    color:#fff;
+    font-weight:bold;
+    height:30px;
+    line-height:30px;
+    top:123px;
+    left:195px;
+    font-size:14px;
+}
+#zhuanpan{
+    width:526px;
+    height:526px;
+    top:65px;
+    left:400px;
+    position:absolute;
+    overflow:hidden;
+}
+#tip{position:absolute;left:203px;;top:145px;cursor:pointer;}
