@@ -50,7 +50,14 @@ class home extends CI_Controller
 		$this->load->view('pc_new',$data);
 		$this->load->view('footer');
 	}
-
+	#
+	public function postnew()
+	{
+		$id = $_GET['id'];
+		$data['news'] = $this->home_model->setnews($id);
+		$this->load->view('pc_postnew',$data);
+		$this->load->view('footer');
+	}
 
 	#高铁全媒体
 	public function allmedia()

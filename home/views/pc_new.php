@@ -22,7 +22,7 @@
                         <h1><?=$post['title']?></h1>
                            <?=$post['postinfo']?>
                         <div>
-                            <a href="newspage.html">MORE</a>
+                            <a href="<?=site_url('home/postnew?id=').$post['id'];?>">MORE</a>
                         </div>
                     </div>
                 </div>

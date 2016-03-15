@@ -24,7 +24,7 @@ class Home_model extends CI_model
 		return $query->row_array();
 	}
 	
-	#企业简介
+	#企业简介+新闻中新
 	public function listinfo($pid,$limit)
 	{
 		$contion['pid'] = $pid;
@@ -32,6 +32,12 @@ class Home_model extends CI_model
 		return $query->result_array();
 	}
 
+	public function setnews($id)
+	{
+		$contion['id'] = $id;
+		$query = $this->db->where($contion)->get(self::TBL_POST);
+		return $query->row_array();
+	}
 	
 }
 ?>
