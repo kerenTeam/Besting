@@ -92,8 +92,16 @@
             </ul>
           </li>
           <li class="admin-parent">
-            <a class="am-cf" href="<?php echo site_url('wx_shop/index')?>"><span class="am-icon-weixin"></span> 微信-商家管理 </a>
+            <a class="am-cf" data-am-collapse="{target: '#collapse-nav4'}"><span class="am-icon-weixin"></span> 微信-玩途悦 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+            <ul class="am-list am-collapse admin-sidebar-sub" id="collapse-nav4">
+              <li><a class="am-cf" href="<?php echo site_url('wx_index/playBanner')?>"><span class="am-icon-weixin"></span> banner </a></li>
+              <li><a class="am-cf" href="<?php echo site_url('wx_index/reading')?>"><span class="am-icon-weixin"></span> 读物 </a></li>
+              <li><a class="am-cf" href="<?php echo site_url('wx_index/city')?>"><span class="am-icon-weixin"></span> 城事 </a></li>
+            </ul>
           </li>
+          <li class="admin-parent">
+            <a class="am-cf" href="<?php echo site_url('wx_shop/index')?>"><span class="am-icon-weixin"></span> 微信-商家管理 </a>
+          </li> 
           <li class="admin-parent">
             <a class="am-cf" href="<?php echo site_url('wx_menter/index')?>"><span class="am-icon-weixin"></span> 微信-用户管理 </a>
           </li>

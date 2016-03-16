@@ -134,4 +134,53 @@ class wx_index extends CI_Controller {
 				$this->load->view('message',$data);
 				$this->load->view('footer');
 	}
+	//玩儿途悦banner
+	public function playBanner()
+	{
+		
+	    $this->load->view('wx_playBanner');
+	    $this->load->view('footer');
+	}
+	//city
+	public function city()
+	{
+		
+	    $this->load->view('wx_city');
+	    $this->load->view('footer');
+	}
+	//编辑城事
+	public function editCity()
+	{
+		
+	    $this->load->view('wx_editCity');
+	    $this->load->view('footer');
+	}
+	//新增城事cityadd
+	public function cityadd()
+	{
+		
+	    $this->load->view('wx_cityadd');
+	    $this->load->view('footer');
+	}
+	//reading
+	public function reading()
+	{
+		
+	    $this->load->view('wx_reading');
+	    $this->load->view('footer');
+	}
+	//新增读物
+	public function addReading()
+	{
+		
+	    $this->load->view('wx_addReading');
+	    $this->load->view('footer');
+	}
+	//编辑读物
+	public function editreading()
+	{
+		
+	    $this->load->view('wx_editreading');
+	    $this->load->view('footer');
+	}
 }
