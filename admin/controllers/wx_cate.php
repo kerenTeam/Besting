@@ -33,9 +33,8 @@ class wx_cate extends MY_Controller {
 				if ($this->upload->do_upload('titpic')) {
 					# 上传成功，获取文件路径
 					$fileinfo = $this->upload->data();
-					$this->config->load('upload.php');
-					$upload  = $this->config->item('upload_path');
-					$data['titpic'] = $upload . $fileinfo['file_name'];
+					
+					$data['titpic'] = 'upload/' . $fileinfo['file_name'];
 				}else{
 					#上传失败
 					$data['message'] = $this->upload->display_errors();

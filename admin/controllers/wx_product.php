@@ -52,9 +52,8 @@ class wx_product extends MY_Controller
    				if ($this->upload->do_upload('imgfile')) {
 						# 上传成功，获取文件路径
 						$fileinfo = $this->upload->data();
-						$this->config->load('upload.php');
-						$upload  = $this->config->item('upload_path');
-						$data['bankpic'] = $upload . $fileinfo['file_name'];	
+						
+						$data['bankpic'] = 'upload/' . $fileinfo['file_name'];	
 				}else{
 						#上传失败
 						$error['message'] = $this->upload->display_errors();
@@ -111,9 +110,7 @@ class wx_product extends MY_Controller
 					if ($this->upload->do_upload('bankpic')) {
 						# 上传成功，获取文件路径
 						$fileinfo = $this->upload->data();
-						$this->config->load('upload.php');
-						$upload  = $this->config->item('upload_path');
-						$data['bankpic'] = $upload . $fileinfo['file_name'];
+						$data['bankpic'] ='upload/' . $fileinfo['file_name'];
 						
 					}else{
 						#上传失败
@@ -163,16 +160,17 @@ class wx_product extends MY_Controller
 	//时间银行删除商品
 	public function delbank($id)
 	{
-		//$sid = $_GET['id'];
+		
 		$list = (array)$this->wxproduct_model->setbank($id);
-		$a = $list['bankpic'];
+		$a = 'weixin/' . $list['bankpic'];
+		//
 		$result = @unlink ($a);
 		$listpic = explode(' | ', $list['listpic']);
 		for ($i=0; $i < count($listpic); $i++) { 
-			 @unlink ($listpic[$i]);
+			$u = 'weixin/'.$listpic[$i];
+			@unlink ($u);
 		}
 
-		
 		if($this->wxproduct_model->delbank($id)){
 			$data['message'] = '删除成功';
 			$data['wait'] = 3;
@@ -203,9 +201,8 @@ class wx_product extends MY_Controller
 					if ($this->upload->do_upload('goodspic')) {
 						# 上传成功，获取文件路径
 						$fileinfo = $this->upload->data();
-						$this->config->load('upload.php');
-						$upload  = $this->config->item('upload_path');
-						$data['listpic'] = $upload . $fileinfo['file_name'];
+						
+						$data['listpic'] = 'upload/' . $fileinfo['file_name'];
 						
 					}else{
 						#上传失败
@@ -275,9 +272,8 @@ class wx_product extends MY_Controller
 					if ($this->upload->do_upload('listpic')) {
 						# 上传成功，获取文件路径
 						$fileinfo = $this->upload->data();
-						$this->config->load('upload.php');
-						$upload  = $this->config->item('upload_path');
-						$data['listpic'] = $upload . $fileinfo['file_name'];
+						
+						$data['listpic'] = 'upload/' . $fileinfo['file_name'];
 					}else{
 						#上传失败
 						$error['message'] = $this->upload->display_errors();
@@ -334,11 +330,12 @@ class wx_product extends MY_Controller
 	public function delmall($id)
 	{
 		$list = (array)$this->wxproduct_model->setmall($id);
-		$a = $list['listpic'];
+		$a = 'weixin/'.$list['listpic'];
 		$result = @unlink ($a);
 		$listpic = explode(' | ', $list['goodspic']);
 		for ($i=0; $i < count($listpic); $i++) { 
-			 @unlink ($listpic[$i]);
+			$u = 'weixin/'.$listpic[$i];
+			 @unlink ($u);
 		}
 
 		if($this->wxproduct_model->delmall($id)){
@@ -409,8 +406,8 @@ class wx_product extends MY_Controller
            //输出图片文件<img>标签
            //注：在一些系统src可能需要urlencode处理，发现图片无法显示，
            //    请尝试 urlencode($gb_filename) 或 urlencode($filename)，不行请查看HTML中显示的src并酌情解决。
-             $output .= "<img src='".base_url()."{$dir_base}{$pic_name}' title='{$filename}' alt='{$filename}'/>";
-             $output .="<input type='hidden' value='{$dir_base}{$pic_name}' name='pic[]'/>";
+             $output .= "<img src='".base_url()."/weixin/upload/{$pic_name}' title='{$filename}' alt='{$filename}'/>";
+             $output .="<input type='hidden' value='upload/{$pic_name}' name='pic[]'/>";
          }else {
               $output .= "<p>上传失败！</p>";
          }

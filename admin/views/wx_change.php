@@ -33,7 +33,7 @@
               <td><?=$val['openid']?></td>
               <td><?=$val['bankname']?></td>
               <td>
-                <img src="<?=base_url($val['bankpic']);?>" class="userimg" alt="besting">
+                <img src="<?=base_url('/weixin/'.$val['bankpic']);?>" class="userimg" alt="besting">
               </td>
               <td><?=$val['proint'];?>积分/<?=$val['money'];?></td>
               <td>

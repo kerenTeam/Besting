@@ -20,37 +20,39 @@
       <div id="sidebar">
         <div id="content" class="defaults">
          <br>
-          <a href="<?php echo site_url('wx_index/cityadd')?>" class="am-cf"><span class="am-icon-plus"></span> 新增</a> 
+          <a href="<?php echo site_url('wx_city/cityadd')?>" class="am-cf"><span class="am-icon-plus"></span> 新增</a> 
           <table class="am-table am-table-striped am-table-hover table-main wx_input">
             <thead>
               <tr>
-                <th class="table-check"><input type="checkbox" class="allchexed"/></th><th class="table-id">ID</th><th class="table-title">城市</th><th class="table-type am-hide-sm-only">标题</th><th class="table-author am-hide-sm-only">日期</th><th class="table-set">操作</th>
+                <th class="table-check"><input type="checkbox" class="allchexed"/></th><th class="table-id">ID</th><th class="table-type am-hide-sm-only">标题</th><th class="table-author am-hide-sm-only">日期</th><th class="table-set">操作</th>
               </tr>
             </thead>
             <tbody id="movies"> 
+            <?php foreach($citys as $city):?>
               <tr>
-                <td><input type="checkbox" class="wx_bankcheck" value=' ' name='id'/></td>
-                <td>1</td>
-                <td>北京</td>
+                <td><input type="checkbox" class="wx_bankcheck" value='<?=$city['id'];?> ' name='checkid'/></td>
+                <td><?=$city['id'];?></td>
+                
                 <td>
-                 老北京
+                 <?=$city['titlecity'];?>
                 </td>
-                <td>2016年3月16日</td> 
+                <td><?=$city['addtime']?></td> 
                 <td>
                   <div class="am-btn-toolbar">
                     <div class="am-btn-group am-btn-group-xs">
-                    <a href="<?php echo site_url('wx_index/editCity');?>" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</a>
-                      <a href="" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only del"><span class="am-icon-trash-o"></span> 删除</a>
+                    <a href="<?php echo site_url('wx_city/editcity?id=').$city['id'];?>" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</a>
+                      <a href="<?php echo site_url('wx_city/delcity?id=').$city['id'];?>" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only del"><span class="am-icon-trash-o"></span> 删除</a>
                     </div>
                   </div>
                 </td>
               </tr> 
+            <?php endforeach;?>
             </tbody>
           </table>
           <a href="" class="am-text-danger del"><span class="am-icon-trash-o"></span> 删除</a>
 
           <div class="am-cf">
-            共 1 条记录
+            共 <?=count($citys);?> 条记录
             <div class="am-fr">
               <div class="holder"></div>
             </div>

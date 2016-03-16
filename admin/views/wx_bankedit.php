@@ -58,7 +58,7 @@
                <input type="file" id="imgUpload" name="bankpic" onchange="previewImage(this)" class="upload-add">
                   <!-- 图片实时预览 -->
                   <input type="hidden" value="<?=$bank['bankpic'];?>" name='bankpic' />
-                  <div id="preview"> <img style="border-radius: 3px;" src="<?=base_url($bank['bankpic']);?>"> </div>
+                  <div id="preview"> <img style="border-radius: 3px;" src="<?=base_url('/weixin/'.$bank['bankpic']);?>"> </div>
             </div>
           </div>
           <div class="am-form-group">
@@ -83,7 +83,7 @@
                  </div> 
                  <div id='hidden'>
                     <?php $list = explode(' | ', $bank['listpic']); foreach($list as $v):?>
-                      <img src="<?=base_url($v)?>" alt="">
+                      <img src="<?=base_url('/weixin/'.$v)?>" alt="">
                       <input type="hidden" name='listpic[]' value="<?=$v?>" />
                    <?php endforeach;?>
                  </div>

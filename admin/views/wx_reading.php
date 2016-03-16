@@ -20,7 +20,7 @@
       <div id="sidebar">
         <div id="content" class="defaults">
          <br>
-          <a href="<?php echo site_url('wx_index/addReading')?>" class="am-cf"><span class="am-icon-plus"></span> 新增</a> 
+          <a href="<?php echo site_url('wx_reading/addread')?>" class="am-cf"><span class="am-icon-plus"></span> 新增</a> 
           <table class="am-table am-table-striped am-table-hover table-main wx_input">
             <thead>
               <tr>
@@ -29,33 +29,48 @@
               </tr>
             </thead>
             <tbody id="movies"> 
+            <?php foreach($reads as $read):?>
               <tr>
-                <td><input type="checkbox" class="wx_bankcheck" value=' ' name='id'/></td>
-                <td>1</td>
-                <td>理大师按摩</td>
+                <td><input type="checkbox" class="wx_bankcheck" value=' <?=$read['id']?>' name='checkid'/></td>
+                <td><?=$read['id']?></td>
+                <td><?=$read['title']?></td>
                 <td>
-                <img src="assets/image/user.jpg" class="userimg" alt="besting">
+                <img src="<?=base_url('/weixin/'.$read['titlepic']);?>" class="userimg" alt="besting">
                 </td>
-                <td>
-                asdad
-                </td>
-                <td>格调</td> 
-                <td>2016年3月16日</td> 
+                 <td><?=$read['rwiter'];?></td> 
+                <td><?php switch ($read['pid']) {
+                  case '1':
+                    echo '知道';
+                    break;
+                  case '2':
+                    echo '格调';
+                    break;
+                  case '3':
+                    echo '人间';
+                    break;
+                  
+                  default:
+                   echo "健康";
+                    break;
+                }?></td>
+               
+                <td><?=$read['addtime'];?></td> 
                 <td>
                   <div class="am-btn-toolbar">
                     <div class="am-btn-group am-btn-group-xs">
-                    <a href="<?php echo site_url('wx_index/editReading');?>" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</a>
-                      <a href="" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only del"><span class="am-icon-trash-o"></span> 删除</a>
+                    <a href="<?php echo site_url('wx_reading/editread?id=').$read['id'];?>" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</a>
+                      <a href="<?php echo site_url('wx_reading/delread?id=').$read['id'];?>" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only del"><span class="am-icon-trash-o"></span> 删除</a>
                     </div>
                   </div>
                 </td>
               </tr> 
+            <?php endforeach;?>
             </tbody>
           </table>
           <a href="" class="am-text-danger del"><span class="am-icon-trash-o"></span> 删除</a>
 
           <div class="am-cf">
-            共 1 条记录
+            共 <?=count($reads);?> 条记录
             <div class="am-fr">
               <div class="holder"></div>
             </div>

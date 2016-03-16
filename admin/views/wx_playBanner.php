@@ -18,19 +18,21 @@
               </tr>
           </thead>
           <tbody id="movies"> 
-          <form action="" method="post" enctype="multipart/form-data" class="am-form am-form-horizontal">
+          <?php foreach($banner as $key=>$val):?>
+            <?php if($val['pid'] == 3):?>
+          <form action="<?=site_url('wx_banner/upplayBanner');?>" method="post" enctype="multipart/form-data" class="am-form am-form-horizontal">
             <tr>
-              <td>banner1</td>
+              <td>banner<?=$key+1?></td>
               <!-- 这儿如果改了name值得话，上面的js也需要改 -->
               <td>
               <div class="wx_type_img">
                  <input type="file" id="imgUpload" name="fileimg" onchange="previewImage(this)" class="upload-add">
                   <!-- 图片实时预览 -->
-                  <div id="preview"> <img style="border-radius: 3px;" src="" alt="选择图片"> </div>
+                  <div id="preview"> <img style="border-radius: 3px;" src="<?=base_url('/weixin/'.$val['bannerpic']);?>" alt="选择图片"> </div>
               </div>
                <div >
-                <input type="hidden" value="<?=$val['id']?>" name='id'>
-                <input type='hidden' value="<?=$val['bannerpic']?>" name='bannerpic'>
+                <input type="hidden" value="<?=$val['id'];?>" name='id'>
+                <input type='hidden' value="<?=$val['bannerpic'];?>" name='bannerpic'>
               </div>
               </td>
               <td>
@@ -43,56 +45,8 @@
               </td>
             </tr>
             </form> 
-             <form action="" method="post" enctype="multipart/form-data" class="am-form am-form-horizontal">
-            <tr>
-              <td>banner2</td>
-              <!-- 这儿如果改了name值得话，上面的js也需要改 -->
-              <td>
-              <div class="wx_type_img">
-                 <input type="file" id="imgUpload" name="fileimg" onchange="previewImage(this)" class="upload-add">
-                  <!-- 图片实时预览 -->
-                  <div id="preview"> <img style="border-radius: 3px;" src="" alt="选择图片"> </div>
-              </div>
-               <div >
-                <input type="hidden" value="<?=$val['id']?>" name='id'>
-                <input type='hidden' value="<?=$val['bannerpic']?>" name='bannerpic'>
-              </div>
-              </td>
-              <td>
-                <div class="am-btn-toolbar">
-                  <div class="am-btn-group am-btn-group-xs">
-                    <button type="submit" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 修改保存</button>
-                   <!-- 这儿的链接确定了的话，上面的js中的a标签也需要添加一个 -->
-                  </div>
-                </div>
-              </td>
-            </tr>
-            </form> 
-             <form action="" method="post" enctype="multipart/form-data" class="am-form am-form-horizontal">
-            <tr>
-              <td>banner3</td>
-              <!-- 这儿如果改了name值得话，上面的js也需要改 -->
-              <td>
-              <div class="wx_type_img">
-                 <input type="file" id="imgUpload" name="fileimg" onchange="previewImage(this)" class="upload-add">
-                  <!-- 图片实时预览 -->
-                  <div id="preview"> <img style="border-radius: 3px;" src="" alt="选择图片"> </div>
-              </div>
-               <div >
-                <input type="hidden" value="<?=$val['id']?>" name='id'>
-                <input type='hidden' value="<?=$val['bannerpic']?>" name='bannerpic'>
-              </div>
-              </td>
-              <td>
-                <div class="am-btn-toolbar">
-                  <div class="am-btn-group am-btn-group-xs">
-                    <button type="submit" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 修改保存</button>
-                   <!-- 这儿的链接确定了的话，上面的js中的a标签也需要添加一个 -->
-                  </div>
-                </div>
-              </td>
-            </tr>
-            </form> 
+          <?php endif;?>
+          <?php endforeach;?>
           </tbody>
         </table>
       </div>
@@ -104,19 +58,21 @@
               </tr>
           </thead>
           <tbody id="movies"> 
-          <form action="" method="post" enctype="multipart/form-data" class="am-form am-form-horizontal">
+             <?php foreach($banner as $key=>$val):?>
+            <?php if($val['pid'] == 4):?>
+          <form action="<?=site_url('wx_banner/upplayBanner');?>" method="post" enctype="multipart/form-data" class="am-form am-form-horizontal">
             <tr>
-              <td>banner1</td>
+              <td>banner<?=$key+1?></td>
               <!-- 这儿如果改了name值得话，上面的js也需要改 -->
               <td>
               <div class="wx_type_img">
                  <input type="file" id="imgUpload" name="fileimg" onchange="previewImage(this)" class="upload-add">
                   <!-- 图片实时预览 -->
-                  <div id="preview"> <img style="border-radius: 3px;" src="" alt="选择图片"> </div>
+                  <div id="preview"> <img style="border-radius: 3px;" src="<?=base_url('/weixin/'.$val['bannerpic']);?>" alt="选择图片"> </div>
               </div>
-              <div >
-                <input type="hidden" value="<?=$val['id']?>" name='id'>
-                <input type='hidden' value="<?=$val['bannerpic']?>" name='bannerpic'>
+               <div >
+                <input type="hidden" value="<?=$val['id'];?>" name='id'>
+                <input type='hidden' value="<?=$val['bannerpic'];?>" name='bannerpic'>
               </div>
               </td>
               <td>
@@ -129,56 +85,8 @@
               </td>
             </tr>
             </form> 
-            <form action="" method="post" enctype="multipart/form-data" class="am-form am-form-horizontal">
-            <tr>
-              <td>banner2</td>
-              <!-- 这儿如果改了name值得话，上面的js也需要改 -->
-              <td>
-              <div class="wx_type_img">
-                 <input type="file" id="imgUpload" name="fileimg" onchange="previewImage(this)" class="upload-add">
-                  <!-- 图片实时预览 -->
-                  <div id="preview"> <img style="border-radius: 3px;" src="" alt="选择图片"> </div>
-              </div>
-              <div >
-                <input type="hidden" value="<?=$val['id']?>" name='id'>
-                <input type='hidden' value="<?=$val['bannerpic']?>" name='bannerpic'>
-              </div>
-              </td>
-              <td>
-                <div class="am-btn-toolbar">
-                  <div class="am-btn-group am-btn-group-xs">
-                    <button type="submit" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 修改保存</button>
-                   <!-- 这儿的链接确定了的话，上面的js中的a标签也需要添加一个 -->
-                  </div>
-                </div>
-              </td>
-            </tr>
-            </form> 
-            <form action="" method="post" enctype="multipart/form-data" class="am-form am-form-horizontal">
-            <tr>
-              <td>banner3</td>
-              <!-- 这儿如果改了name值得话，上面的js也需要改 -->
-              <td>
-              <div class="wx_type_img">
-                 <input type="file" id="imgUpload" name="fileimg" onchange="previewImage(this)" class="upload-add">
-                  <!-- 图片实时预览 -->
-                  <div id="preview"> <img style="border-radius: 3px;" src="" alt="选择图片"> </div>
-              </div>
-              <div >
-                <input type="hidden" value="<?=$val['id']?>" name='id'>
-                <input type='hidden' value="<?=$val['bannerpic']?>" name='bannerpic'>
-              </div>
-              </td>
-              <td>
-                <div class="am-btn-toolbar">
-                  <div class="am-btn-group am-btn-group-xs">
-                    <button type="submit" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 修改保存</button>
-                   <!-- 这儿的链接确定了的话，上面的js中的a标签也需要添加一个 -->
-                  </div>
-                </div>
-              </td>
-            </tr>
-            </form> 
+          <?php endif;?>
+          <?php endforeach;?>
           </tbody>
         </table>
     </div>

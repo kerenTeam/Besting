@@ -40,9 +40,8 @@ class wx_advert extends MY_Controller
 					if ($this->upload->do_upload('imgfile')) {
 						# 上传成功，获取文件路径
 						$fileinfo = $this->upload->data();
-						$this->config->load('upload.php');
-						$upload  = $this->config->item('upload_path');
-						$data['advertpic'] = $upload . $fileinfo['file_name'];
+						
+						$data['advertpic'] = 'upload/' . $fileinfo['file_name'];
 					}else{
 						#上传失败
 						$data['message'] = $this->upload->display_errors();
@@ -92,9 +91,8 @@ class wx_advert extends MY_Controller
 					if ($this->upload->do_upload('imgfile')) {
 						# 上传成功，获取文件路径
 						$fileinfo = $this->upload->data();
-						$this->config->load('upload.php');
-						$upload  = $this->config->item('upload_path');
-						$data['advertpic'] = $upload . $fileinfo['file_name'];
+						
+						$data['advertpic'] ='upload/' . $fileinfo['file_name'];
 					}else{
 						#上传失败
 						$data['message'] = $this->upload->display_errors();
@@ -137,7 +135,7 @@ class wx_advert extends MY_Controller
 	public function del(){
 		$id = $_GET['id'];
 		$list = (array)$this->advert_model->listade($id);
-		$a = $list['advertpic'];
+		$a = './weixin/'.$list['advertpic'];
 		$result = @unlink ($a);
 		
 		if($this->advert_model->deladvert($id)){

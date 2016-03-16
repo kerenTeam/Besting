@@ -11,7 +11,7 @@ class pc_partner extends MY_Controller
 		parent::__construct();
 		$this->load->view('header');
 		$this->load->model('pcpartner_model');
-		$this->load->library('upload');
+		
 	}
 	//合作商列表
 	public function partner()
@@ -35,11 +35,16 @@ class pc_partner extends MY_Controller
 			} else {
 				$data = $_POST;
 				if(!empty($_FILES['partnerpic']['tmp_name'])){
+					$config['upload_path']      = './upload/';
+					$config['allowed_types']    = 'gif|jpg|png|jpeg';
+					$config['max_size']     = 3072;
+					$config['file_name']     =date("Y-m-d_His");
+
+					$this->load->library('upload', $config);
 					if ($this->upload->do_upload('partnerpic')) {
 						# 上传成功，获取文件路径
 						$fileinfo = $this->upload->data();
-						$this->config->load('upload.php');
-						$upload  = $this->config->item('upload_path');
+						$upload  = $config['upload_path'];
 						$data['partnerpic'] = $upload . $fileinfo['file_name'];
 					}else{
 						#上传失败
@@ -82,11 +87,17 @@ class pc_partner extends MY_Controller
 				$data = $_POST;
 				$id = $_POST['id'];
 				if(!empty($_FILES['partnerpic']['tmp_name'])){
+					$config['upload_path']      = './upload/';
+					$config['allowed_types']    = 'gif|jpg|png|jpeg';
+					$config['max_size']     = 3072;
+					$config['file_name']     =date("Y-m-d_His");
+
+					$this->load->library('upload', $config);
 					if ($this->upload->do_upload('partnerpic')) {
 						# 上传成功，获取文件路径
 						$fileinfo = $this->upload->data();
-						$this->config->load('upload.php');
-						$upload  = $this->config->item('upload_path');
+						$upload  = $config['upload_path'];
+
 						$data['partnerpic'] = $upload . $fileinfo['file_name'];
 					}else{
 						#上传失败

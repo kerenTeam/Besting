@@ -13,11 +13,17 @@
 
       <div class="am-u-sm-12 am-u-md-8 am-u-md-pull-4">
        <!-- 表单start -->
-        <form action="<?=site_url('wx_product/bankedit');?>" method="post" enctype="multipart/form-data" class="am-form am-form-horizontal">
+        <form action="<?=site_url('wx_city/editcity');?>" method="post" enctype="multipart/form-data" class="am-form am-form-horizontal">
           <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label">标题</label>
             <div class="am-u-sm-9">
-              <input type="text" placeholder="老北京" name=''>
+              <input type="text" placeholder="老北京" value="<?=$city['titlecity'];?>" name='titlecity'>
+            </div>
+          </div>
+          <div class="am-form-group">
+            <label class="am-u-sm-3 am-form-label">来源</label>
+            <div class="am-u-sm-9">
+              <input type="text" placeholder="老北京" value="<?=$city['username'];?>" name='username'>
             </div>
           </div>
  
@@ -25,10 +31,10 @@
           <div class="am-form-group">
             <label class="am-u-sm-3 am-form-label">城市图片</label>
             <div class="am-u-sm-9">
-               <input type="file" id="imgUpload" name=" " onchange="previewImage(this)" class="upload-add">
+               <input type="file" id="imgUpload" name="citypic" onchange="previewImage(this)" class="upload-add">
                   <!-- 图片实时预览 -->
-                  <input type="hidden" value=" " name=' ' />
-                  <div id="preview"> <img style="border-radius: 3px;" src=" "> </div>
+                  <input type="hidden" value="<?=$city['citypic'];?>" name='citypic' />
+                  <div id="preview"> <img style="border-radius: 3px;" src="<?=base_url('/weixin/'.$city['citypic']);?>"> </div>
             </div>
           </div>
           <div class="am-form-group">
@@ -41,7 +47,7 @@
             <script type="text/javascript" charset="utf-8" src="assets/uediter/umeditor.js"></script>
             <script type="text/javascript" src="assets/uediter/lang/zh-cn/zh-cn.js"></script>
             <div style="margin-left: -20px;">
-              <script id="myEditor" type="text/plain" style="width:90%;height:500px;" name='postcontent'></script>
+              <script id="myEditor" type="text/plain" style="width:90%;height:500px;" name='citycontent'><?=$city['citycontent'];?></script>
             </div>
             <script type="text/javascript">
             var um = UM.getEditor('myEditor'); //实例化编辑器
@@ -51,7 +57,7 @@
 
           <div class="am-form-group">
             <div class="am-u-sm-9 am-u-sm-push-3">
-            <input type="hidden" value="<?=$bank['id']?>" name='id'>
+            <input type="hidden" value="<?=$city['id']?>" name='id'>
               <button type="submit" class="am-btn am-btn-primary">保存</button>
             </div>
           </div>

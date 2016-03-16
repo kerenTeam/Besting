@@ -11,7 +11,6 @@ class pc_pageimg extends MY_Controller
 		parent::__construct();
 		// 
 		$this->load->model('pcpageimg_model');  
-		$this->load->library('upload');
 	}
 	#首页banner
 	public function banner()
@@ -48,11 +47,16 @@ class pc_pageimg extends MY_Controller
 			$id = $_POST['id'];
 			//$data = $_POST;
 			if(!empty($_FILES['bgpic']['tmp_name'])){
+				$config['upload_path']      = './upload/';
+				$config['allowed_types']    = 'gif|jpg|png|jpeg';
+				$config['max_size']     = 3072;
+				$config['file_name']     =date("Y-m-d_His");
+
+				$this->load->library('upload', $config);
 				if ($this->upload->do_upload('bgpic')) {
 					# 上传成功，获取文件路径
 					$fileinfo = $this->upload->data();
-					$this->config->load('upload.php');
-					$upload  = $this->config->item('upload_path');
+					$upload  = $config['upload_path'];
 					$data['bgpic'] = $upload . $fileinfo['file_name'];
 				}else{
 					#上传失败
@@ -88,11 +92,16 @@ class pc_pageimg extends MY_Controller
 		if ($_POST) {
 			$id = $_POST['id'];
 			if(!empty($_FILES['bgpic']['tmp_name'])){
+				$config['upload_path']      = './upload/';
+				$config['allowed_types']    = 'gif|jpg|png|jpeg';
+				$config['max_size']     = 3072;
+				$config['file_name']     =date("Y-m-d_His");
+
+				$this->load->library('upload', $config);
 				if ($this->upload->do_upload('bgpic')) {
 					# 上传成功，获取文件路径
 					$fileinfo = $this->upload->data();
-					$this->config->load('upload.php');
-					$upload  = $this->config->item('upload_path');
+					$upload  = $config['upload_path'];
 					$data['bgpic'] = $upload . $fileinfo['file_name'];
 				}else{
 					#上传失败

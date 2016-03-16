@@ -34,7 +34,7 @@
                 <td><?=$mall['id'];?></td>
                 <td><?=$mall['goodsname']?></td>
                 <td>
-                <img src="<?=base_url($mall['listpic']);?>" class="userimg" alt="besting">
+                <img src="<?=base_url('/weixin/'.$mall['listpic']);?>" class="userimg" alt="besting">
                 </td>
                 <td><?=$mall['sid']?></td>
                 <td><?=$mall['gid']?></td>

@@ -28,7 +28,7 @@
               <div class="wx_type_img">
                  <input type="file" id="imgUpload" name="fileimg" onchange="previewImage(this)" class="upload-add">
                   <!-- 图片实时预览 -->
-                  <div id="preview"> <img style="border-radius: 3px;" src="<?=base_url($val['bannerpic']);?>" alt="选择图片"> </div>
+                  <div id="preview"> <img style="border-radius: 3px;" src="<?=base_url('/weixin/'.$val['bannerpic']);?>" alt="选择图片"> </div>
               </div>
                <div >
                 <input type="hidden" value="<?=$val['id']?>" name='id'>
@@ -60,7 +60,7 @@
           <tbody id="movies">
           <?php foreach($banner as $key=>$val):?>
             <?php if($val['pid'] == 2):?>
-          <form action="<?=site_url('wx_banner/upbanner');?>" method="post" enctype="multipart/form-data" class="am-form am-form-horizontal">
+         <form action="<?=site_url('wx_banner/upbanner');?>" method="post" enctype="multipart/form-data" class="am-form am-form-horizontal">
             <tr>
               <td>banner<?=$key+1?></td>
               <!-- 这儿如果改了name值得话，上面的js也需要改 -->
@@ -68,9 +68,9 @@
               <div class="wx_type_img">
                  <input type="file" id="imgUpload" name="fileimg" onchange="previewImage(this)" class="upload-add">
                   <!-- 图片实时预览 -->
-                  <div id="preview"> <img style="border-radius: 3px;" src="<?=base_url($val['bannerpic'])?>" alt="选择图片"> </div>
+                  <div id="preview"> <img style="border-radius: 3px;" src="<?=base_url('/weixin/'.$val['bannerpic']);?>" alt="选择图片"> </div>
               </div>
-              <div >
+               <div >
                 <input type="hidden" value="<?=$val['id']?>" name='id'>
                 <input type='hidden' value="<?=$val['bannerpic']?>" name='bannerpic'>
               </div>

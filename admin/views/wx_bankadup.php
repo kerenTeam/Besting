@@ -32,7 +32,7 @@
                <input type="file" id="imgUpload" name="imgfile" onchange="previewImage(this)" class="upload-add">
                   <!-- 图片实时预览 -->
                   <input type="hidden" value='<?=$advert['advertpic'];?>' name='advertpic'>
-                  <div id="preview"> <img style="border-radius: 3px;" src="<?=base_url($advert['advertpic']);?>"> </div>
+                  <div id="preview"> <img style="border-radius: 3px;" src="<?=base_url('/weixin/'.$advert['advertpic']);?>"> </div>
             </div>
           </div>
 

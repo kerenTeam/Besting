@@ -35,6 +35,14 @@ class Wxcate_model extends CI_Model
 		return $this->db->where($condition)->update(self::TBL_BANNER,$data);
 	}
 
+	// 城事加读物
+	public function listcitys()
+	{
+		$sql = "SELECT * FROM wd_wx_banner WHERE pid IN(3,4)";
+		$query = $this->db->query($sql);
+		return $query->result_array();	
+	}
+
 
 
 }

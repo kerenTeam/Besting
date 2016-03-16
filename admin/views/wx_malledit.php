@@ -101,7 +101,7 @@
                <input type="file" id="imgUpload" name="listpic" onchange="previewImage(this)" class="upload-add">
                   <!-- 图片实时预览 -->
                   <input type="hidden" name='listpic' value='<?=$mall["listpic"];?>' />
-                  <div id="preview"> <img style="border-radius: 3px;" src="<?=base_url($mall['listpic']);?>"> </div>
+                  <div id="preview"> <img style="border-radius: 3px;" src="<?=base_url('/weixin/'.$mall['listpic']);?>"> </div>
             </div>
           </div>
           <div class="am-form-group">
@@ -126,7 +126,7 @@
                  </div>
                 <div id='hidden'>
                   <?php $list = explode(' | ', $mall['goodspic']); foreach($list as $v):?>
-                      <img src="<?=base_url($v)?>" alt="">
+                      <img src="<?=base_url('/weixin/'.$v)?>" alt="">
                       <input type="hidden" name='goodspic[]' value="<?=$v?>" />
                    <?php endforeach;?>
                   </div>

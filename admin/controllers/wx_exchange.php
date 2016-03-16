@@ -18,7 +18,7 @@ class wx_exchange extends MY_Controller
 	public function bankexchang()
 	{
 		$data['exchang'] = $this->wxexchange_model->bankexchange();
-		var_dump($data);
+		//var_dump($data);
 		$this->load->view('wx_change',$data);
 	    $this->load->view('footer');
 	}

@@ -11,7 +11,7 @@ class pc_newpost extends MY_Controller
 		parent::__construct();
 		$this->load->view('header');
 		$this->load->model('pcpost_model');
-		$this->load->library('upload');
+	
 	}
 	//
 	public function content()
@@ -36,12 +36,16 @@ class pc_newpost extends MY_Controller
 			} else {
 				$data = $_POST;
 				if(!empty($_FILES['postpic']['tmp_name'])){
+					$config['upload_path']      = './upload/';
+					$config['allowed_types']    = 'gif|jpg|png|jpeg';
+					$config['max_size']     = 3072;
+					$config['file_name']     =date("Y-m-d_His");
+
+					$this->load->library('upload', $config);
 					if ($this->upload->do_upload('postpic')) {
 						# 上传成功，获取文件路径
-						$fileinfo = $this->upload->data();
-						$this->config->load('upload.php');
-						$upload  = $this->config->item('upload_path');
-						$data['postpic'] = $upload . $fileinfo['file_name'];
+						$upload  = $config['upload_path'];
+						$data['postpic'] = $upload . $this->upload->data('file_name');
 					}else{
 						#上传失败
 						$error['message'] = $this->upload->display_errors();
@@ -85,12 +89,16 @@ class pc_newpost extends MY_Controller
 				$data = $_POST;
 				$id = $_POST['id'];
 				if(!empty($_FILES['postpic']['tmp_name'])){
+					$config['upload_path']      = './upload/';
+					$config['allowed_types']    = 'gif|jpg|png|jpeg';
+					$config['max_size']     = 3072;
+					$config['file_name']     =date("Y-m-d_His");
+
+					$this->load->library('upload', $config);
 					if ($this->upload->do_upload('postpic')) {
 						# 上传成功，获取文件路径
-						$fileinfo = $this->upload->data();
-						$this->config->load('upload.php');
-						$upload  = $this->config->item('upload_path');
-						$data['postpic'] = $upload . $fileinfo['file_name'];
+						$upload  = $config['upload_path'];
+						$data['postpic'] = $upload . $this->upload->data('file_name');
 					}else{
 						#上传失败
 						$error['message'] = $this->upload->display_errors();

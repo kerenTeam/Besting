@@ -32,7 +32,7 @@
               <div class="wx_type_img">
                  <input type="file" id="imgUpload" name="titpic" onchange="previewImage(this)" class="upload-add">
                   <!-- 图片实时预览 -->
-                  <div id="preview"> <img style="border-radius: 3px;" src="<?=base_url($cate['titpic']);?>" alt="选择图片"> </div>
+                  <div id="preview"> <img style="border-radius: 3px;" src="<?=base_url('/weixin/'.$cate['titpic']);?>" alt="选择图片"> </div>
                </div>
               </td>
               <td class="am-hide-sm-only"><input type="text" value="<?=$cate['linkurl'];?>" class="wx_input" /></td>

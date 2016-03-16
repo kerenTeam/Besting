@@ -35,7 +35,7 @@
                 <td><?=$bank['id'];?></td>
                 <td><?=$bank['bankname'];?></td>
                 <td>
-                <img src="<?=base_url($bank['bankpic']);?>" class="userimg" alt="besting">
+                <img src="<?=base_url('/weixin/'.$bank['bankpic']);?>" class="userimg" alt="besting">
                 </td>
                 <td><?=$bank['gid'];?></td>
                 <td><?php echo $bank['proint'] .'积分/'.$bank['money'].'元' ?></td>

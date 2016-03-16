@@ -11,8 +11,6 @@ class pc_option extends MY_Controller
 		parent::__construct();
         $this->load->view('header');
         $this->load->model('pcoption_model');
-        	$this->load->library('upload');
-
 	}
 
 
@@ -43,11 +41,16 @@ class pc_option extends MY_Controller
 				$arr = array('tuyuepic','bestingpic');
 				foreach($arr as $val){
 					if(!empty($_FILES[$val]['tmp_name'])){
+						$config['upload_path']      = './upload/';
+						$config['allowed_types']    = 'gif|jpg|png|jpeg';
+						$config['max_size']     = 3072;
+						$config['file_name']     =date("Y-m-d_His");
+
+						$this->load->library('upload', $config);
 						if ($this->upload->do_upload($val)) {
 							# 上传成功，获取文件路径
 							$fileinfo = $this->upload->data();
-							$this->config->load('upload.php');
-							$upload  = $this->config->item('upload_path');
+							$upload  = $config['upload_path'];
 							$data[$val] = $upload . $fileinfo['file_name'];
 						}else{
 							#上传失败
