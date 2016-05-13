@@ -1,11 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>403 Forbidden</title>
+    <meta charset="utf-8">
+    <title>途悦</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
 </head>
 <body>
+	<header class="h_head">
+	    <a href="" title=""><img src="../assets/images/icon_03.png"></a>
+	    <p><img src="../assets/images/t_logo_03.png" alt=""></p>
+	</header>
+	
+    <!-- 轮播图 -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="../assets/images/ceshi.png"></div>
+            <div class="swiper-slide"><img src="../assets/images/ceshi.png"></div>
+            <div class="swiper-slide"><img src="../assets/images/ceshi.png"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- 轮播结束 -->
+    <div class="nav_top">
+    	<ul>
+    		<li>
+    			<img src="../assets/images/dushu_03.png" alt="">
+    			<div>
+    				<b>阅读</b><br>
+    				<span>最新资讯前沿</span>
+    			</div>
+    			<a href="#" title=""></a>
+    		</li>
+    		<li>
+    			<img src="../assets/images/meishi_03.png" alt="">
+    			<div>
+		 			<b>点餐</b><br>
+		 			<span>美食私人订制</span>
+    			</div>
+    			<a href="#" title=""></a>
+    		</li>
+    	</ul>
+    </div>
+    <div class="groom_body">
+    	<h3>精品推荐</h3>
+    	<ul>
+    		<li>
+    			<img src="../assets/images/lvxing_03.png" alt="">
+    			<p>带你去非洲大草原旅行兜风。</p>
+    		</li>
+    		<li>
+    			<img src="../assets/images/lvxing_03.png" alt="">
+    			<p>带你去非洲大草原旅行兜风。</p>
+    		</li>
+    		<li>
+    			<img src="../assets/images/lvxing_03.png" alt="">
+    			<p>带你去非洲大草原旅行兜风。</p>
+    		</li>
+    		<li>
+    			<img src="../assets/images/lvxing_03.png" alt="">
+    			<p>带你去非洲大草原旅行兜风。</p>
+    		</li>
+    		<li>
+    			<img src="../assets/images/lvxing_03.png" alt="">
+    			<p>带你去非洲大草原旅行兜风。</p>
+    		</li>
+    		<li>
+    			<img src="../assets/images/lvxing_03.png" alt="">
+    			<p>带你去非洲大草原旅行兜风。</p>
+    		</li>
+    		<li>
+    			<img src="../assets/images/lvxing_03.png" alt="">
+    			<p>带你去非洲大草原旅行兜风。</p>
+    		</li>
+    		<li>
+    			<img src="../assets/images/lvxing_03.png" alt="">
+    			<p>带你去非洲大草原旅行兜风。</p>
+    		</li>
+    		<li>
+    			<img src="../assets/images/lvxing_03.png" alt="">
+    			<p>带你去非洲大草原旅行兜风。</p>
+    		</li>
+    	</ul>
+    </div>
+    <footer>
+        <div class="read_index_foot">
+            <a href="" title="" class="person_pic">
+                <img src="../assets/images/touxiang_y.png" alt="">
+            </a>
+            <a href="" title="" class="shopcar_pic">
+                <img src="../assets/images/shopingcar_foot.png" alt="">
+            </a>
+        </div>
+        
+    </footer>
 
-<p>Directory access is forbidden.</p>
 
+    <!-- 轮播 JS -->
+    <script src="../assets/js/swiper.min.js"></script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        spaceBetween: 30,
+    });
+    </script>
 </body>
 </html>

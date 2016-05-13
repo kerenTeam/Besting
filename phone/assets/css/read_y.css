@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors  ()
+ * @date    2016-05-12
+ * @version $Id$
+ */
+
+/* 初始化 */
+*{margin:0;padding:0}
+a{text-decoration:none}
+a:hover{text-decoration:underline}
+li{list-style:none}
+img{border:0;vertical-align: middle;}
+h1,h2,h3,h4,h5,h6{font-weight: 500;}
+
+/* 轮播图 */
+.swiper-container {
+     width: 100%;
+     height: auto;
+ }
+ .swiper-slide {
+     text-align: center;
+     font-size: 18px;
+     background: #fff;
+
+     /* Center slide text vertically */
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
+     display: flex;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     -webkit-justify-content: center;
+     justify-content: center;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     -webkit-align-items: center;
+     align-items: center;
+ }
+ .swiper-slide img{
+ 	width: 100%;
+ }
+.nav_top ul:before{
+	content: '';
+	clear: both;
+	display:block; 
+} 
+.nav_top ul li{
+	float: left;
+	width: 50%;
+	box-sizing: border-box;
+	padding: 6% 0 6% 8%;
+	border: 1px solid #eee;
+	border-top: none;
+	position: relative; 
+} 
+.nav_top ul li>a{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+} 
+.nav_top ul li:first-child{
+	border-left: none;
+	border-right: none;
+}
+.nav_top ul li:last-child{
+	border-right: none;
+}
+.nav_top ul li>img{
+	float: left;
+	width: 3rem;
+	margin-right: 0.4rem;
+}
+.nav_top ul li div span{
+	font-size: 12px;
+}
+.groom_body ul li{
+	display: inline-block;
+	width: 30%; 
+}
+.groom_body ul li img{
+	width: 100%;
+}

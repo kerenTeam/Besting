@@ -17,6 +17,13 @@ img{
 a{
 	text-decoration: none;
 }
+
+a:hover{text-decoration:underline}
+li{list-style:none}
+img{border:0;vertical-align: middle;}
+h1,h2,h3,h4,h5,h6{font-weight: 500;}
+
+/* 注册 页面 */
 input[type="tel"],input[type="text"],input[type="submit"],input[type="reset"],input[type="button"],button { 
 	-webkit-appearance: none; 
 	border: none;
@@ -129,3 +136,397 @@ header p{
 	background: url(../images/not_03.png) no-repeat center;
 	background-size: 60%;
 }
+
+
+/* 阅读主页 页面 */
+
+.h_head p img{
+	width: 7rem;
+}
+/* 轮播图 */
+.swiper-container {
+     width: 100%;
+     height: auto;
+ }
+ .swiper-slide {
+     text-align: center;
+     font-size: 18px;
+     background: #fff;
+
+     /* Center slide text vertically */
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
+     display: flex;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     -webkit-justify-content: center;
+     justify-content: center;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     -webkit-align-items: center;
+     align-items: center;
+ }
+ .swiper-slide img{
+ 	width: 100%;
+ }
+.nav_top ul:after{
+	content: '';
+	clear: both;
+	display:block; 
+} 
+.nav_top ul li{
+	float: left;
+	width: 50%;
+	box-sizing: border-box;
+	padding: 6% 0 6% 8%;
+	border: 1px solid #eee;
+	border-top: none;
+	position: relative; 
+} 
+.nav_top ul li>a{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+} 
+.nav_top ul li:first-child{
+	border-left: none;
+	border-right: none;
+}
+.nav_top ul li:last-child{
+	border-right: none;
+}
+.nav_top ul li>img{
+	float: left;
+	width: 3rem;
+	margin-right: 0.4rem;
+}
+.nav_top ul li div span{
+	font-size: 12px;
+}
+.groom_body ul li{
+	display: inline-block;
+	width: 32%; 
+}
+.groom_body ul li img{
+	width: 100%;
+}
+.groom_body{
+	padding: 2%;
+	margin-top: .5rem;
+} 
+.groom_body h3{
+	margin-bottom: .5rem;
+	font-size: 16px;
+	color: #007aff;
+}
+.groom_body ul li p{
+	font-size: 12px;
+}
+
+footer{
+	background-color: #f2f2f2;
+	 width: 100%;
+	 position: fixed;
+	 height: 8%;
+	 bottom: 0;
+}
+footer .person_pic img ,footer .shopcar_pic img{
+	width: 9%;
+}
+.read_index_foot{
+	padding: 3% 10%;
+}
+.shopcar_pic{
+	margin-left: 75%;
+}
+
+/* 阅读页面 */
+.h_head a ,.h_head p{ 
+	font-size: 1.8rem;
+}
+.h_head>a img{
+	margin-top: -.3rem;
+}
+.read_nav>li{
+	float: left;
+} 
+.read_nav .li_dropdown{
+	float: right;
+	margin-top: -1%;
+} 
+.read_nav:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+.read_nav{
+	padding: 3%;
+	padding-bottom: 2%;
+	border-bottom: 1px solid #eee;
+}
+.read_nav>li{
+	width: 18%;
+	font-size: 1.6rem;
+}
+.read_nav>li a{
+	color: #999;
+}
+.btn {
+	padding: 3px 12px !important;
+}
+.dropdown-menu > li > a{
+	padding: 2px 0 !important; 
+}
+.dropdown-menu{
+	min-width: auto !important;
+    max-width: 66px !important;
+    width: 66px;
+    overflow: hidden;
+}
+.dropdown-menu>li{
+	text-align: center;
+}
+.read_body_con img{
+	width: 50%;
+	float: left;
+} 
+.read_body_con p{
+	font-size:  12px;
+	padding-left: 52%;
+}
+.read_body_con:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+.read_body{
+	padding: 0 3%;
+	margin-top: -3%;
+	padding-bottom: 15%;
+}
+.read_body li{
+	padding: 5% 0 3% 0;
+	position: relative;
+	border-bottom: 1px solid #eee;
+} 
+.read_body li span{
+	position: absolute;
+	bottom: 5%;
+	left: 52%;
+	font-size: 12px;
+	color: #c9c9c9;
+}
+.read_body>li>a{
+	color: #000;
+} 
+.h_head{
+	box-shadow: 0 1px 1px 1px #eee;
+} 
+.read_index_foot .foot_font_le , .read_index_foot .foot_font_ri{
+	color: #000;
+	font-size: 120%;
+	padding-top: .3rem;
+	display: inline-block;
+}
+.foot_font_le{
+	padding-top: .3rem;
+}
+.foot_font_ri{
+	float: right;
+} 
+.in_active{
+	color: #fbbd37 !important;
+}
+
+/* 点餐页面 */
+#price_s{
+	color: #f65c18;
+	font-size: 14px;
+}
+#nowgo_btn{
+	right: 0;
+	left: auto;
+	padding: 1.5% 3%;
+	color: #fff;
+	background-color: #f65c18;
+	border-radius: 5px;
+}
+.read_body_con .read_b_con_r{
+	font-size:  12px;
+	padding-left: 52%;
+}
+.read_b_con_r b{
+	font-weight: normal;
+    display: inline-block;
+    width: 60%;
+}
+.con_r_input{
+	float: right;
+	text-align: right;
+	width: 40%;
+}
+.con_r_input input{
+	width: 15px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 1.3;
+}
+.con_r_input img{
+	width: 30%;
+	float: none;
+}
+.read_b_con_r .vege_name{
+	font-size: 1.6rem;
+}
+.star_level i{
+	display: inline-block;
+	width: 15%;
+	background-image: url(../images/star_level.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	color: transparent;
+}
+.read_body{
+
+}
+
+/* 阅读详情 */
+.article_con{
+	padding: 0 3%;
+}
+.article_head{
+	text-align: center;
+    border-bottom: 1px solid #eee;	
+}
+.article_head h4{
+	margin-top: .4rem;
+}
+.article_head span{
+	font-size: 12px;
+    color: #999;
+    line-height: 2;
+    display: inline-block;
+}
+.article_body{
+    padding: 3% 8%;
+}
+.article_body img{
+	width: 100%;
+}
+.article_body p{
+	font-size: 14px;
+	padding: 3% 0;
+}
+
+/* 订单信息 */
+.read_b_con_r .order_vege_name{
+	font-size: 1rem;
+	text-align: right;
+	margin-bottom: 10%;
+}
+.detail_price_s{
+	margin-top: 15%;
+    text-align: right;
+    color: #f65c18;
+}
+.form_list{
+	padding: 5% 5% 0 5%;
+}
+.form_list .red{
+	color: #d1352d;
+}
+.form_list>div{
+	height: 4rem;
+	line-height: 4rem;
+	text-align: center;
+}
+
+.form_list .call .call_input{
+	height: 2rem;
+	width: 40%;
+	border-radius: 5px;
+}
+.form_list .seat input{
+	width: 27%;
+	height: 2rem;
+	border-radius: 5px;
+
+}
+.form_list .remark input{
+	width: 66%;
+	height: 2rem;
+	border-radius: 5px;
+}
+.prompt{
+	padding: 5%;
+}
+.prompt h4{
+	margin-bottom: 2%;
+}
+.prompt p{
+	font-size: 14px;
+}
+.fixedBtm_in4{
+	position: fixed;
+}
+.order_info{
+	padding-bottom: 0;
+}
+
+
+
+
+@media(max-width: 350px){
+	/* 订单信息 */
+	.form_list{
+		font-size: 12px;
+	}
+	.prompt h4{
+		font-size: 14px;
+	}
+	.prompt p{
+		font-size: 12px;
+	}
+	/* 点餐页面 */
+	.read_body_con>img{
+		width: 40%;
+	}
+	.read_body_con .read_b_con_r{
+		padding-left: 43%;
+	}
+	.read_b_con_r .vege_name{
+		font-size: 1.3rem;
+	}
+	.star_level i{
+		width: 10%;
+	}
+	.read_body li span{
+	    left: 43%;
+	}
+	.media_in4{
+		margin-top: -8px;
+	}
+	.con_r_input>img{
+		width: 25%;
+	}
+	#nowgo_btn{
+   	 padding: 0.5% 3%;
+	}
+	.read_index_foot{
+		padding: 1% 10%;
+	}
+
+}
+
+@media(min-width: 700px){
+	.read_b_con_r b{
+	    height: 3rem;
+	}
+	.star_level i{
+		height: 3rem;
+	}
+}
+

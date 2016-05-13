@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>途悦</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name ="viewport" content ="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<link href="../assets/css/layout.css" rel="stylesheet">
+</head>
+<body class="registerBg">
+    <header>
+    	<a href="" title=""><img src="../assets/images/icon_03.png"></a>
+    	<p>订单信息</p>
+    </header>
+    <form id="order_submit">
+
+    	<ul class="read_body order_info">
+			<li>
+				<div class="read_body_con">
+					<img src="../assets/images/diancan_03.png" alt="">
+					<div class="read_b_con_r">
+						<div class="vege_name  order_vege_name">隆江猪脚饭</div>
+							  <div class="con_r_input">
+							  		<img src="../assets/images/jian.png" alt="" class="down_num" />
+							  		<input type="text" name="" value="1" readonly  />
+							  		<img src="../assets/images/jia.png" alt="" class="up_num"/>
+							  </div>
+					</div>
+					<div class="detail_price_s">￥18</div>
+				</div>
+			</li>
+
+
+		</ul>
+		<div class="form_list">
+			<div class="call">
+				<span>称谓 <b class="red">(必填:)</b> </span>
+				<input type="text" placeholder="请输入你的姓名" name="" class="call_input" required />
+				<label>先生<input type="radio" placeholder="" name="sex"></label>
+				<label>女士<input type="radio" placeholder="" name="sex"></label>
+			</div>
+			<div class="seat">
+				<span>座位 <b class="red">(必填:)</b> </span>
+				<input type="text" placeholder="例如08" name="" required />
+				<span>车</span>
+				<input type="text" placeholder="例如18D" name="" required />
+				<span>号</span>
+			</div>
+			<div class="remark">
+				<span>备注 <b>(必填:)</b> </span>
+				<input type="text" placeholder="请输入送餐注意事项或用餐习惯" name="" required />
+			</div>
+		</div>	
+		<div class="prompt">
+			<h4>温馨提示</h4>
+			<p>为了便于我更好的服务，请务必填写以上信息。为了保证你和家人的健康，菜品热饮恕不退还，请备现金支付，如有不便，敬请谅解。</p>
+		</div>
+		
+    
+    	
+	    <div class="fixedBtm fixedBtm_in4">
+	    	<button type="submit" class="regBtn">确定</button>
+	    </div>
+
+	    <div id="">
+	    	
+	    </div>
+    </form>
+
+
+<script type="text/javascript">
+	document.getElementById('order_submit').onsubmit = function(){
+		alert('为了便于我更好的服务，请务必填写以上信息。为了保证你和家人的健康，菜品热饮恕不退还，请备现金支付，如有不便，敬请谅解。');
+		return false;
+	}
+</script>
+<script src="../assets/js/orderfood.js"></script>
+</body>
+</html>
