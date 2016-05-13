@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>途悦</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name ="viewport" content ="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<link href="../assets/css/layout.css" rel="stylesheet">
+</head>
+<body class="registerBg">
+    <header>
+    	<a href="" title=""><img src="../assets/images/icon_03.png"></a>
+    	<p>注册</p>
+    </header>
+    <form>
+    	<div class="registerCtt">
+    		<div class="form-group">
+    			<div class="regText box">
+    				<img src="../assets/images/icon_07.png">
+    				<div class="flex1 box">
+    					<input id="phone" class="flex1" type="tel" placeholder="请输入您的手机号" required>
+    					<div class="reset" onclick="reset(this)"></div>
+    				</div>
+    				<span id="yzm_bt" onclick="gotime()">获取验证码</span>
+    			</div>
+    		</div>
+    		<div class="form-group">
+    			<div class="regText box">
+    				<img src="../assets/images/icon_11.png">
+    				<input class="flex1" type="text" placeholder="请输入短信中的验证码" required>
+    			</div>
+    		</div>
+    	</div>
+	    <div class="fixedBtm">
+	    	<button type="submit" class="regBtn">登录</button>
+	    </div>
+    </form>
+
+
+<script type="text/javascript">
+		var wait=60;  
+	function gotime() {  
+			var phone = document.getElementById('phone').value;
+			if((/^1((3|4|5|8|7){1}\d{1}|70)\d{8}$/.test(phone))){
+				if (wait == 0) {  
+		           document.getElementById("yzm_bt").removeAttribute("disabled");           
+		            document.getElementById("yzm_bt").value="获取验证码";  
+		            wait = 60;  
+		        } else {  
+		            document.getElementById("yzm_bt").setAttribute("disabled", true);  
+		            document.getElementById("yzm_bt").value="重新发送(" + wait + ")";  
+		            wait--;  
+		            setTimeout(function() {  
+		                gotime()  
+		            },  
+		            1000)  
+		        }  
+			}else{
+				alert('请输入正确的手机号！');
+			}  
+	    }
+
+    function reset(tel){
+    	// console.log(tel)
+    	tel.parentNode.getElementsByTagName('input')[0].value = '';
+    }
+</script>
+</body>
+</html>
