@@ -59,6 +59,8 @@ header>a{
 	color: #999;
 	display: inline-block;
 	min-width: 3rem;
+	position: relative;
+	z-index: 100;
 }
 header>a img{
 	width: 1.5rem;
@@ -75,10 +77,11 @@ header p{
 	left: 0;
 	width: 100%;
 	height: 100%;
-	padding: 0 5rem;
+	padding:0 5rem;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+	z-index: 1;
 }
 .registerBg{
 	background: #f9f9f9;
@@ -242,6 +245,12 @@ footer .person_pic img ,footer .shopcar_pic img{
 .shopcar_pic{
 	margin-left: 75%;
 }
+.groom_body ul{
+	text-align: center;
+}
+.groom_body ul li{
+	text-align: left;
+}
 
 /* 阅读页面 */
 .h_head a ,.h_head p{ 
@@ -342,9 +351,9 @@ footer .person_pic img ,footer .shopcar_pic img{
 }
 
 /* 点餐页面 */
-#price_s{
-	color: #f65c18;
-	font-size: 14px;
+.price_s{
+	color: #f65c18 !important;
+	font-size: 14px !important;
 }
 #nowgo_btn{
 	right: 0;
@@ -377,6 +386,7 @@ footer .person_pic img ,footer .shopcar_pic img{
 .con_r_input img{
 	width: 30%;
 	float: none;
+	margin-top: -5px;
 }
 .read_b_con_r .vege_name{
 	font-size: 1.6rem;
@@ -390,6 +400,17 @@ footer .person_pic img ,footer .shopcar_pic img{
 	color: transparent;
 }
 .read_body{
+
+}
+.foot_font_ri span b{
+	color: #f65c18;
+   font-size: 16px;
+}
+.foot_font_ri span #allprice{
+	margin-right: 1rem;
+}
+.foot_font_ri span{
+	font-size: 12px;
 
 }
 
@@ -480,6 +501,10 @@ footer .person_pic img ,footer .shopcar_pic img{
 
 
 @media(max-width: 350px){
+	/* 阅读主页 */
+	.nav_top ul li{
+		padding-left: 5%;
+	}
 	/* 订单信息 */
 	.form_list{
 		font-size: 12px;
@@ -517,6 +542,13 @@ footer .person_pic img ,footer .shopcar_pic img{
 	}
 	.read_index_foot{
 		padding: 1% 10%;
+	}
+	/* 阅读页面 */
+	.reading_con>img{
+		width: 50%;
+	}
+	.reading_body li span{
+		left: 52%;
 	}
 
 }
