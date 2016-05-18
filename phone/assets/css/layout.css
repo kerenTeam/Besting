@@ -15,10 +15,8 @@ img{
 	border: none;
 }
 a{
-	text-decoration: none;
+	text-decoration: none !important;
 }
-
-a:hover{text-decoration:underline}
 li{list-style:none}
 img{border:0;vertical-align: middle;}
 h1,h2,h3,h4,h5,h6{font-weight: 500;}
