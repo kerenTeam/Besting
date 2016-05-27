@@ -1,11 +1,11 @@
 (function(){
-	$ = function(el){ return document.querySelector(el)};
+	$$$ = function(el){ return document.querySelector(el)};
 	$$ = function(el){ return document.querySelectorAll(el)};
 
 	var up_num =  $$('.up_num');
 	var down_num =  $$('.down_num');
 	var price_s =  $$('.price_s');
-	var allprice = $('#allprice');
+	var allprice = $$$('#allprice');
 
 
 	// 加
@@ -54,8 +54,8 @@
 		var totals = 0;
 		var sub_total = values*oneprices;
 		for (var i = 0; i < price_s.length; i++) {
-			price_s[ads].sub = sub_total;
-			if (price_s[i].sub) {
+			price_s[ads].sub = sub_total;//给点击的对象添加sub属性，保存每次点击菜品 的 小计
+			if (price_s[i].sub) {//如果元素有这个属性 就遍历他
 				totals +=  parseFloat(price_s[i].sub);
 			}
 		}
@@ -63,7 +63,5 @@
 		allprice.innerHTML = totals.toFixed(2);
 
 	}
-
-
 
 }());
