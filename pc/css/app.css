@@ -1,0 +1,128 @@
+ul{
+	list-style: none;
+}
+body{
+	font-family: 'Microsoft YaHei';
+}
+.bs-docs-nav .navbar-toggle .icon-bar {
+    background-color: #101010;
+}
+.navbar-toggle{
+	border: 1px solid #101010;
+	margin-top: 16px;
+}
+.curHead{
+	/* background-color: red; */
+}
+.curHead .navbar-brand{
+	height: 100%;
+	padding: 0;
+}
+.curHead .navbar-nav li{
+	/* padding: 40px 0 15px; */
+}
+.curHead .navbar-nav li a{
+	/* line-height: 60px; */
+	/* padding: 0 20px; */
+	/* font-size: 18px; */
+	color: #101010;
+	border-bottom: 3px solid transparent;
+}
+.curHead .navbar-nav li a:hover{
+	border-bottom: 3px solid #ffe401;
+}
+.grayB{
+	background-color: #f1f1f1;
+}
+.whiteB{
+	background-color: #fff;
+}
+.borlr{
+	border-left: 1px solid #f1f1f1;
+	border-right: 1px solid #f1f1f1;
+}
+.waringT{
+	color: #f59703;
+}
+footer.footer{
+	padding: 30px;
+	background-color: #181818;
+	color: #8e8e8e;
+}
+footer.footer .flex1{
+	display: inline-block;
+	vertical-align: middle;
+	width: 49%;
+}
+footer.footer .flex1 span{
+	display: inline-block;
+	text-align: center;
+	color: #fff;
+	font-size: 2rem;
+	margin-left: 15px;
+	vertical-align: top;
+}
+@media (max-width: 431px){
+	footer.footer .flex1 span{
+		width: 80px;
+		font-size: 1.2rem;
+	}
+}
+@media (max-width: 767px){
+	.curHead .navbar-brand{
+		width: 170px;
+		position: absolute;
+		left: 50%;
+		margin-left: -85px;
+	}
+	footer.footer .flex1{
+		width: 100%;
+	}
+	footer.footer .flex1.text-right{
+		text-align: center;
+	}
+}
+@media (min-width: 768px){
+	.curHead .navbar-brand{
+		width: 200px;
+	}
+	.curHead .navbar-nav li{
+		padding: 25px 0 15px;
+	}
+	.curHead .navbar-nav li a{
+		line-height: 30px;
+		font-size: 14px;
+		padding: 0 10px;
+	}
+}
+
+@media (min-width: 992px){
+	.curHead .navbar-brand{
+		width: 250px;
+	}
+	.curHead .navbar-nav li{
+		padding: 40px 0 15px;
+	}
+	.curHead .navbar-nav li a{
+		line-height: 30px;
+		font-size: 16px;
+	}
+}
+@media (min-width: 1200px){
+	.curHead .navbar-brand{
+		width: auto;
+	}
+	.curHead .navbar-nav li{
+		padding: 40px 0 15px;
+	}
+	.curHead .navbar-nav li a{
+		line-height: 60px;
+		padding: 0 20px;
+		font-size: 18px;
+	}
+}
+@media (min-width: 1400px){
+	.container{
+		width: 1400px;
+	}
+}

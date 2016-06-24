@@ -1,0 +1,50 @@
+.clear{clear: both;}
+.hard-tit{font-size: 28px;text-align: center;padding: 5rem 0;position: relative;z-index: -1;color:#4e4e4e;}
+.contact{color: #333;text-align: center;margin-bottom: 5rem;}
+.contact img{width: 68%;margin-bottom: 5rem;}
+.contact h1{font-size: 4em;margin-bottom: 5rem;}
+.contact p.place{font-size: 2em;}
+
+.intro-ctt{text-align: left;margin-bottom: 3rem;}
+.intro-center{background-color: #fafafa;padding: 5rem 0;margin: -5rem 0 5rem 0;}
+.intro-ctt>div{background-color: #ffffff;padding: 2rem;min-height: 180px;}
+.intro-ctt img.intro-pic{width: 100%;margin: 0;}
+/*.intro-ctt>div>h3,.intro-ctt>div>p{font-weight: bold;}*/
+.intro-ctt h3{font-size: 1.8em;margin: 0 0 2rem 0;}
+.intro-ctt p{font-size: 1.1em;margin: 0;}
+
+
+@media (min-width: 680px) and (max-width: 1010px){
+    .contact img{width: 100%;}
+    .contact h1{font-size: 2em;}
+    .contact p.place{font-size: 1.5em;}
+}
+
+
+@media (max-width: 680px){
+    .container.contact{
+        padding: 0;
+    }
+    .container.contact .row{
+		padding: 0;
+    }
+	.container.contact .row>div{
+		padding: 0;
+		}
+		.intro-center{
+			padding-bottom: 0;
+			}
+			.intro-ctt>div{
+				min-height: 0;
+				}
+    .hard-tit{
+        font-size: 1.15em;
+        padding: 2rem 0;
+    }
+    .contact img{width: 100%;margin-bottom: 2rem;}
+    .contact h1{font-size: 1.4em;margin-bottom: 2rem;font-weight: bold;}
+    .contact p.place{font-size: 1em;margin-bottom: 0;}
+
+    .intro-ctt h3{font-size: 1.3em;margin: 0 0 1rem;}
+    .intro-ctt p{font-size: 1em;}
+}
