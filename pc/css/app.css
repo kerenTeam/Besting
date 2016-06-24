@@ -1,5 +1,6 @@
 ul{
 	list-style: none;
+	padding: 0;
 }
 body{
 	font-family: 'Microsoft YaHei';
@@ -43,6 +44,14 @@ body{
 }
 .waringT{
 	color: #f59703;
+}
+.text-overflow{
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.grayT{
+	color: #bfbfbf;
 }
 footer.footer{
 	padding: 30px;

@@ -1,0 +1,178 @@
+.word{
+	margin-bottom: 10rem;
+}
+.wordTit{
+	padding: 3rem 0;
+	margin: 0;
+	position: relative;
+	font-size: 5rem;
+}
+.wordTit span{
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0 2rem;
+	font-size: .6em;
+	font-family: '黑体';
+}
+.wordTit strong{
+	color: #f6f6f6;
+	display: inline-block;
+	vertical-align: middle;
+	font-family: '黑体';
+	font-size: 1.5em;
+}
+.wordTit img{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin: 0;
+	height: 130%;
+	transform: translate(-50%);
+	-webkit-transform: translate(-50%);
+}
+.wordList li{
+	margin-bottom: 2rem;
+	position: relative;
+}
+.wordList .wordCap{
+	width: 25%;
+	float: left;
+	background-color: #f6f6f6;
+	position: absolute;
+	height: 100%;
+	padding: 3rem 0 3rem 1.5rem;
+}
+.wordList .wordCap h1{
+	margin: 1rem 0 0 0;
+	font-size: 2em;
+}
+.wordCapBtm{
+	position: absolute;
+	left: 1.5rem;
+	bottom: 3rem;
+	width: 100%;
+	padding-right: 1.5rem;
+}
+.wordList .wordPic{
+	margin-left: 25%;
+	width: 75%;
+}
+.container,.word{
+	position: relative;
+}
+.wordIcon{
+	position: absolute;
+	z-index: 99;
+	width: 15%;
+}
+.wordXs1{
+	position: absolute;
+	left: 0;
+	bottom: 15%;
+	width: 10%;
+	z-index: -1;
+}
+.wordXs2{
+	position: absolute;
+	right: 0;
+	top: 15%;
+	width: 12%;
+	z-index: -1;
+}
+@media (max-width: 767px){
+	.wordTit{
+		font-size: 2.5rem;
+		padding: 1.5rem 0;
+	}
+	.wordList .wordCap{
+		font-size: 1.2rem;
+		position: relative;
+		padding: 1rem;
+		width: 100%;
+	}
+	.wordList .wordCap .wordCapBtm{
+		position: static;
+		padding: 0;
+		margin: 0;
+	}
+	.wordList .wordCap h1{
+		margin: .5rem 0;
+	}
+	.wordList .wordCap .wordCapBtm p{
+		margin: 0;
+	}
+	.wordList .wordPic{
+		margin: 0;
+		width: 100%;
+	}
+	.wordIcon{
+		display: none;
+	}
+}
+@media (max-width: 431px){
+	.wordList .wordCap{
+		font-size: .8rem;
+	}
+	.wordIcon{
+		display: none;
+	}
+}
+@media (min-width: 768px){
+	.wordTit{
+		font-size: 3rem;
+		padding: 2rem 0;
+	}
+	.wordList .wordCap{
+		font-size: .8rem;
+		padding: 1rem 0 1rem 1rem;
+	}
+	.wordCapBtm{
+		bottom: 1rem;
+	}
+	.wordIcon{
+		bottom: -1rem;
+		right: -4rem;
+	}
+}
+@media (min-width: 992px){
+	.wordTit{
+		font-size: 3.5rem;
+		padding: 2rem 0;
+	}
+	.wordList .wordCap{
+		font-size: 1rem;
+	}
+	.wordCapBtm{
+		position: absolute;
+		left: 1.5rem;
+		bottom: 3rem;
+		width: 100%;
+		padding-right: 1.5rem;
+	}
+	.wordIcon{
+		bottom: -1.5rem;
+		right: -4rem;
+	}
+}
+@media (min-width: 1200px){
+	.wordTit{
+		font-size: 4rem;
+		padding: 2.5rem 0;
+	}
+	.wordList .wordCap{
+		font-size: 1.2rem;
+	}
+	.wordIcon{
+		bottom: -3rem;
+		right: -4rem;
+	}
+}
+@media (min-width: 1400px){
+	.wordList .wordCap{
+		font-size: 1.5rem;
+	}
+	.wordIcon{
+		bottom: -5rem;
+		right: -5rem;
+	}
+}
