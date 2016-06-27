@@ -5,6 +5,10 @@ ul{
 body{
 	font-family: 'Microsoft YaHei';
 }
+a,a:link,a:visited,a:hover,a:active{
+	text-decoration:none;
+	color: inherit;
+}
 .bs-docs-nav .navbar-toggle .icon-bar {
     background-color: #101010;
 }
@@ -52,6 +56,9 @@ body{
 }
 .grayT{
 	color: #bfbfbf;
+}
+.overflow-hidden{
+	overflow: hidden;
 }
 footer.footer{
 	padding: 30px;
