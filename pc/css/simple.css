@@ -1,0 +1,124 @@
+@media(max-width: 350px){
+	html{
+		font-size: 8px;
+	}
+}
+@media(min-width: 350px) and (max-width: 450px){
+	html{
+		font-size: 10px;
+	}
+}
+@media(min-width: 450px) and (max-width: 600px){
+	html{
+		font-size: 12px;
+	}
+}
+@media(min-width: 600px){
+	html{
+		font-size: 16px;
+	}
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+h1,h2,h3,h4,h5{
+	margin: 0;
+}
+/* 蓝图 */
+.blue_con{
+	padding: 0 13%;
+	background-color: #fff;
+}
+.blue_logo{
+	text-align: center;
+	padding: 2.5% 0;
+}
+.blue_logo img{
+	width: 15%;
+}
+.blue_list li{
+	text-align: center;
+}
+.blue_list li h3{
+	font-weight: 600;
+	font-size: 1.5rem;
+}
+.blue_list li span{
+	display: inline-block;
+	width: 50px;
+	height: 2px;
+	background-color: #fee600;
+	margin: 3% 0;
+}
+.blue_list li img{
+	width: 100%;
+}
+.mar_top{
+	margin-top: 8%; 
+}
+.mar_top ul{
+	display: table;
+	margin: 0 auto;
+	padding: 2.5%;
+	background-image: url(../img/images/ulbeijing_03.png);
+	background-size: 100% 100%;
+	
+}
+.bottom_mar{
+	padding-bottom: 8%;
+}
+.mar_top ul li{
+	display: table-cell;
+
+}
+.mar_top ul li img{
+	width: 80%;
+}
+/* 新闻 */
+.Jou_con{
+	padding: 0 21%;
+	background-color: #fff;
+}
+.jou_logo{
+	text-align: center;
+	padding: 2.5% 0;
+}
+.jou_logo img{
+	width: 20%;
+}
+.Jou_con h1, .Jou_con h2, .Jou_con h3, .Jou_con h4, .Jou_con h5{
+	font-size: 1.8rem;
+	padding: 3% 0;
+
+}
+.Jou_con h2{
+	border-bottom:1px solid #d9d9d9;
+}
+.jou_mid img{
+   width: 100%;
+   margin: 4% 0;
+}
+.Jou_con p{
+	font-size: 1.2rem;
+	line-height: 2;
+	padding-bottom: 3%;
+}
+footer.footer .flex1 span{
+	font-size: 1.2rem;
+}
+
+
+
+
+@media(max-width: 800px){
+	/* 蓝图 */
+	.blue_con{
+		padding: 0;
+	}
+	/* 新闻 */
+	.Jou_con{
+		padding: 0 2%;
+	}
+}
