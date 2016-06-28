@@ -475,7 +475,6 @@
 }
 .contact{
 	background-color: #2e2e2e;
-	padding-bottom: 5rem;
 }
 .contact .curTit{
 	margin-bottom: 5rem;
@@ -487,6 +486,15 @@
 .contact .img-responsive{
 	margin-bottom: 2rem;
 }
+ 	  .cut .printPic{
+ display: none;
+ 	  }
+ 	  .cut .printPic:first-child{
+ 	  	display: block;
+ 	  }
+ 	video{
+ 		width: 100%;
+ 	}
 @media (max-width: 1400px){
 	.hardList{
 		padding: 2rem;

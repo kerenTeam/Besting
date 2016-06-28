@@ -34,9 +34,6 @@
 					<li>
 						<a href="#">LET’S WORD</a>
 					</li>
-					<li class="active">
-						<a href="#">OUR TEAM</a>
-					</li>
 					<li>
 						<a href="#">BLUE PRINT</a>
 					</li>
@@ -85,8 +82,12 @@
 
 		<div class="container">
 			<div class="aboutsCtt clearfix">
-				<div class="col-md-7">
-					<img class="img-responsive" src="img/images/aboutsMv_03.jpg" alt="">
+				<div class="col-md-7 video">
+					<!-- <img class="img-responsive" src="img/images/aboutsMv_03.jpg" alt=""> -->
+					<video controls id="myVideo" poster="img/images/aboutsMv_03.jpg">
+					   <source src="mp4/papi.mp4" type="video/mp4"> 
+					   Your browser does not support the video tag.
+					</video> 
 				</div>
 				<div class="col-md-4">
 					<div class="aboutsCap">
@@ -151,30 +152,50 @@
 				<li>高铁客舱7D环幕影院</li>
 				<li>未来</li>
 			</ul>
-
-			<div class="printPic clearfix">
-				<div class="col-xs-4">
-					<div class="printImg">
-						<img class="img-responsive" src="img/images/print_03.png" alt="">
+         
+  
+         <div class="cut">
+         	 <div class="printPic clearfix cut1">
+					<div class="col-xs-4">
+						<div class="printImg">
+							<img class="img-responsive" src="img/images/print_03.png" alt="">
+						</div>
+					</div>
+					<div class="col-xs-4">
+						<div class="printImg">
+							<img class="img-responsive" src="img/images/print_04.png" alt="">
+						</div>
+						<div class="printImg">
+							<img class="img-responsive" src="img/images/print_05.png" alt="">
+						</div>
+					</div>
+					<div class="col-xs-4">
+						<div class="printImg">
+							<img class="img-responsive" src="img/images/print_07.png" alt="">
+						</div>
+						<div class="printImg">
+							<img class="img-responsive" src="img/images/print_08.jpg" alt="">
+						</div>
 					</div>
 				</div>
-				<div class="col-xs-4">
-					<div class="printImg">
-						<img class="img-responsive" src="img/images/print_04.png" alt="">
-					</div>
-					<div class="printImg">
-						<img class="img-responsive" src="img/images/print_05.png" alt="">
-					</div>
+				<div class="printPic clearfix cut2">
+					<img class="img-responsive" style="width:100%"; src="img/images/print_08.jpg" alt="">
+					
 				</div>
-				<div class="col-xs-4">
-					<div class="printImg">
-						<img class="img-responsive" src="img/images/print_07.png" alt="">
-					</div>
-					<div class="printImg">
-						<img class="img-responsive" src="img/images/print_08.jpg" alt="">
-					</div>
+				<div class="printPic clearfix cut3">
+					<img class="img-responsive" style="width:100%"; src="img/images/print_07.png" alt="">
 				</div>
-			</div>
+				<div class="printPic clearfix cut4">
+					<img class="img-responsive" style="width:100%"; src="img/images/print_04.png" alt="">
+				</div>
+				<div class="printPic clearfix cut5">
+					<img class="img-responsive" style="width:100%"; src="img/images/print_05.png" alt="">
+				</div>
+				<div class="printPic clearfix cut6">
+					<img class="img-responsive" style="width:100%"; src="img/images/print_08.jpg" alt="">
+				</div>
+         </div>
+			
 
 			<div class="curBottom printBtm">
 				<span>
@@ -360,13 +381,24 @@
 							<input type="tel" class="form-control bgTransparent" id="exampleInputPassword1" placeholder="电话">
 						</div>
 						<div class="form-group">
-							<textarea class="form-control bgTransparent" rows="3">内容</textarea>
+							<textarea class="form-control bgTransparent" rows="10">内容</textarea>
 						</div>
 						<button type="submit" class="btn btn-default pull-right send">发送</button>
 					</form>
 				</div>
 			</div>
 		</div>
+
+		 <div class="bgYellow ">
+		 	<div class="container paddingSM ">
+				  <div class="col-md-7 col-xs-12">
+				     <img alt="" src="img/images/address_07.png">  <b>成都市锦江区滨江东路9号香格里拉中心办公楼2202 </b> 
+					</div>
+				  <div class="col-md-5 col-xs-12">
+				     <div class="pull-right"><img alt="" src="img/images/phone_03.png"> <b>028-8628-3456</b></div>
+				  </div>
+			</div>
+		 </div>
 	</div>
 
 	<!-- footer -->
@@ -398,5 +430,24 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
 </body>
+<script>
+	$(function(){
+      $('video').click(function(){
+      	document.getElementById('myVideo').play();
+      	$('.aboutsTitH1').css('zIndex','-1');
+      })
 
+		$('.printNav li').each(function(){
+
+		$(this).on('click',function(){
+			$('.printNav li').removeClass("active");
+			$(this).addClass("active");
+			var index= $(this).index(); 
+       	$('.cut .printPic').css('display','none'); 
+         $('.cut'+(index+1)).css('display','block'); 
+		})
+
+		})
+	})
+</script>
 </html>
