@@ -2,8 +2,12 @@ ul{
 	list-style: none;
 	padding: 0;
 }
+@font-face {
+    font-family: ABC;
+    src: url(../fonts/HelveticaNeueLTPro-Th.otf);
+}
 body{
-	font-family: 'Microsoft YaHei';
+	font-family: 'ABC'!important;
 }
 a,a:link,a:visited,a:hover,a:active{
 	text-decoration:none;
