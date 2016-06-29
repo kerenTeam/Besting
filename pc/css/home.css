@@ -518,14 +518,8 @@
  	  	display: block;
  	  }
  	video{
-    width: 100%;
-    height: 100%;
-    //下面就是background-size，每种浏览器都写一个配置
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    background-size:cover;
-}
+ 		width: 100%;
+ 	}
 @media (max-width: 1400px){
 	.hardList{
 		padding: 2rem;

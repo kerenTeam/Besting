@@ -2,6 +2,7 @@ ul{
 	list-style: none;
 	padding: 0;
 }
+<<<<<<< HEAD
 @font-face {
     font-family: abc;
     src: url(../fonts/HelveticaNeueLTPro-ThCn.otf);
@@ -23,6 +24,10 @@ body{
 .pingfang{
 	font-family: 'pingFang'!important;
 	font-weight: 600!important;
+=======
+body{
+	font-family: 'Microsoft YaHei';
+>>>>>>> parent of 7d1a906... no message
 }
 a,a:link,a:visited,a:hover,a:active{
 	text-decoration:none;
