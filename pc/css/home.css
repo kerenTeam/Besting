@@ -478,11 +478,13 @@
 	color: #2e2e2e;
 	margin-top: 7rem;
 }
-.send{
-	margin-top: 2rem;
-    padding: 0.5rem 2.5rem;
+.send,.send:hover{
+	    margin-top: 2rem;
+    padding: 0.6rem 3rem;
     background-color: rgb(255, 228, 1);
-    border-radius: 1px;
+    border-radius: 0px;
+    border: none;
+    line-height: 1.5;
 }
 .bgTransparent{
 	background:transparent;
@@ -654,6 +656,10 @@
 	.contact .curTit img{
 		width: 40%;
 	}
+	.printPic .printImg:hover:after{
+	top:48%;
+	font-size: 2.5rem!important; 
+}
 }
 @media (max-width: 767px){
 	.abouts{
@@ -688,6 +694,10 @@
 	.curTit:before,.curTit:after{
 		width: 30%;
 	}
+			.printPic .printImg:hover:after{
+	top:50%;
+	font-size: 1rem; 
+}
 }
 @media (min-width: 768px){
 	.banner .carousel{
@@ -743,6 +753,10 @@
 	.curTit{
 		font-size: 5rem;
 	}
+		.printPic .printImg:hover:after{
+	top:48%;
+	font-size: 2.5rem; 
+}
 }
 @media (min-width: 1200px){
 	.aboutsCap{
@@ -762,6 +776,7 @@
 	.aboutsTitBottom{
 		height: 15%;
 	}
+
 }
 @media (min-width: 1400px){
 	.aboutsTitH1{
@@ -778,5 +793,6 @@
 	.aboutsTitBottom{
 		height: 15.5%;
 	}
+
 }
 

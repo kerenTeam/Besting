@@ -4,10 +4,25 @@ ul{
 }
 @font-face {
     font-family: abc;
-    src: url(../fonts/HelveticaNeueLTPro-Th.otf);
+    src: url(../fonts/HelveticaNeueLTPro-ThCn.otf);
+}
+@font-face {
+    font-family: FZLT;
+    src: url(../fonts/fzltzhk.TTF) format('truetype');
+}
+@font-face {
+    font-family: pingFang;
+    src: url(../fonts/pingFang.ttf) format('truetype');
 }
 body{
-	font-family: 'abc'!important;
+	font-family: 'abc','FZLT','pingFang'!important;
+}
+.lanting{
+	font-family: 'FZLT';
+}
+.pingfang{
+	font-family: 'pingFang'!important;
+	font-weight: 600!important;
 }
 a,a:link,a:visited,a:hover,a:active{
 	text-decoration:none;
