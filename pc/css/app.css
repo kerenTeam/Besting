@@ -24,7 +24,7 @@ a,a:link,a:visited,a:hover,a:active{
 	padding: 0;
 }
 .curHead .navbar-nav li{
-	/* padding: 40px 0 15px; */
+	margin: 0 1.5rem;
 }
 .curHead .navbar-nav li a{
 	/* line-height: 60px; */
@@ -109,6 +109,9 @@ footer.footer .flex1 span{
 		line-height: 30px;
 		font-size: 14px;
 		padding: 0 10px;
+	}
+	.curHead .navbar-nav li{
+		margin: 0 .5rem;
 	}
 }
 
