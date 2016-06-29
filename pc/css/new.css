@@ -95,6 +95,7 @@
 	color: #9f9f9f;
 	line-height: 22px;
 	margin: 0;
+   word-break: break-all;
 }
 @media (max-width: 431px){
 	.newsCtt{

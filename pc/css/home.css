@@ -188,6 +188,7 @@
 }
 .printPic>div img{
 	width: 100%;
+	-webkit-filter: contrast(0.8);
 }
 .printPic .printImg{
 	position: relative;
@@ -198,10 +199,32 @@
 	bottom: 0;
 	left: 0;
 	width: 100%;
+	color: white;
 	transition: all .3s;
 }
+.printPic .printImg1:hover:after{
+	content: '高铁影院，发现新奇';
+}
+.printPic .printImg2:hover:after{
+	content: '连接虚拟，触碰未曾遇见的美';
+}
+.printPic .printImg3:hover:after{
+	content: '互动未来，拥有与梦境交织的感官';
+}
+.printPic .printImg4:hover:after{
+	content: '现实与虚幻，真实世界亦如此绚烂';
+}
+.printPic .printImg5:hover:after{
+	content: '下一站，未来';
+}
 .printPic .printImg:hover:after{
+	top:48%;
+	font-size: 2.5rem;
+	text-align: center;
 	border-bottom: 10px solid #ffe401;
+}
+.printPic .printImg:hover img{ 
+	-webkit-filter: contrast(1);
 }
 .printBtm{
 	margin-bottom: -6rem;
@@ -455,11 +478,13 @@
 	color: #2e2e2e;
 	margin-top: 7rem;
 }
-.send{
-	margin-top: 2rem;
-    padding: 0.5rem 2.5rem;
+.send,.send:hover{
+	    margin-top: 2rem;
+    padding: 0.6rem 3rem;
     background-color: rgb(255, 228, 1);
-    border-radius: 1px;
+    border-radius: 0px;
+    border: none;
+    line-height: 1.5;
 }
 .bgTransparent{
 	background:transparent;
@@ -475,7 +500,6 @@
 }
 .contact{
 	background-color: #2e2e2e;
-	padding-bottom: 5rem;
 }
 .contact .curTit{
 	margin-bottom: 5rem;
@@ -487,6 +511,15 @@
 .contact .img-responsive{
 	margin-bottom: 2rem;
 }
+ 	  .cut .printPic{
+ display: none;
+ 	  }
+ 	  .cut .printPic:first-child{
+ 	  	display: block;
+ 	  }
+ 	video{
+ 		width: 100%;
+ 	}
 @media (max-width: 1400px){
 	.hardList{
 		padding: 2rem;
@@ -617,6 +650,10 @@
 	.contact .curTit img{
 		width: 40%;
 	}
+	.printPic .printImg:hover:after{
+	top:48%;
+	font-size: 2.5rem!important; 
+}
 }
 @media (max-width: 767px){
 	.abouts{
@@ -651,6 +688,10 @@
 	.curTit:before,.curTit:after{
 		width: 30%;
 	}
+			.printPic .printImg:hover:after{
+	top:50%;
+	font-size: 1rem; 
+}
 }
 @media (min-width: 768px){
 	.banner .carousel{
@@ -706,6 +747,10 @@
 	.curTit{
 		font-size: 5rem;
 	}
+		.printPic .printImg:hover:after{
+	top:48%;
+	font-size: 2.5rem; 
+}
 }
 @media (min-width: 1200px){
 	.aboutsCap{
@@ -725,6 +770,7 @@
 	.aboutsTitBottom{
 		height: 15%;
 	}
+
 }
 @media (min-width: 1400px){
 	.aboutsTitH1{
@@ -741,5 +787,6 @@
 	.aboutsTitBottom{
 		height: 15.5%;
 	}
+
 }
 

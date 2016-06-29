@@ -2,8 +2,27 @@ ul{
 	list-style: none;
 	padding: 0;
 }
+@font-face {
+    font-family: abc;
+    src: url(../fonts/HelveticaNeueLTPro-ThCn.otf);
+}
+@font-face {
+    font-family: FZLT;
+    src: url(../fonts/fzltzhk.TTF) format('truetype');
+}
+@font-face {
+    font-family: pingFang;
+    src: url(../fonts/pingFang.ttf) format('truetype');
+}
 body{
-	font-family: 'Microsoft YaHei';
+	font-family: 'abc','FZLT','pingFang'!important;
+}
+.lanting{
+	font-family: 'FZLT';
+}
+.pingfang{
+	font-family: 'pingFang'!important;
+	font-weight: 600!important;
 }
 a,a:link,a:visited,a:hover,a:active{
 	text-decoration:none;
@@ -60,6 +79,9 @@ a,a:link,a:visited,a:hover,a:active{
 .overflow-hidden{
 	overflow: hidden;
 }
+.activeCur{
+	border-bottom: 3px solid #ffe401!important;
+}
 footer.footer{
 	padding: 30px;
 	background-color: #181818;
@@ -104,6 +126,7 @@ footer.footer .flex1 span{
 	}
 	.curHead .navbar-nav li{
 		padding: 25px 0 15px;
+	   margin: 0 auto 0 25px;
 	}
 	.curHead .navbar-nav li a{
 		line-height: 30px;
@@ -121,6 +144,7 @@ footer.footer .flex1 span{
 	}
 	.curHead .navbar-nav li{
 		padding: 40px 0 15px;
+      margin: 0 auto 0 45px;
 	}
 	.curHead .navbar-nav li a{
 		line-height: 30px;
@@ -133,12 +157,14 @@ footer.footer .flex1 span{
 	}
 	.curHead .navbar-nav li{
 		padding: 40px 0 15px;
+		margin: 0 auto 0 60px;
 	}
 	.curHead .navbar-nav li a{
 		line-height: 60px;
 		padding: 0 20px;
 		font-size: 18px;
 	}
+
 }
 @media (min-width: 1400px){
 	.container{
