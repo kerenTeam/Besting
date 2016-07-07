@@ -88,7 +88,7 @@ h1,h2,h3,h4,h5,p{
 }
 /* 新闻 */
 .Jou_con{
-	padding: 0 21%;
+	padding: 5% 21% 0;
 	background-color: #fff;
 }
 .jou_logo{
@@ -204,7 +204,7 @@ footer.footer .flex1 span{
 	}
 	/* 新闻 */
 	.Jou_con{
-		padding: 0 2%;
+		padding: 10% 2% 0;
 	}
 	/* 新闻列表 */
 	.new_list ul{

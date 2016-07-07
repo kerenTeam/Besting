@@ -51,7 +51,7 @@ width: auto;
 }
 
 .containerDIY {
-    padding: 0 10%;
+    padding: 3% 10%;
     margin: auto;
 }
 
@@ -77,6 +77,7 @@ width: auto;
 }
 
 .dev .row div img {
+    display: block;
     height: 100%;
     width: 100%;
 }
@@ -112,7 +113,7 @@ width: auto;
     background-color: #fee600;
     text-align: center;
     font-size: 2.6rem;
-    line-height: 19rem;
+    line-height: 18.5rem;
 }
 
 .dev .row .relative:hover .discove {
@@ -215,6 +216,14 @@ font-size: 2.3rem;
 	 .brief img { 
     left: 30%;
  }
+.bgYellow {
+    line-height: 15.4rem;
+}
+.wordIcon{
+    top: 10%;
+    right: 0;
+    width: 10%;
+}
 }
 @media (max-width: 1200px){
 	 .briefIcon{
@@ -239,6 +248,9 @@ font-size: 2.3rem;
 .bgc h4 {
     margin: 5% 0 7%;
 }
+.bgYellow {
+    line-height: 12.6rem;
+}
 }
 @media (max-width: 991px){
 	  .briefIcon{
@@ -254,6 +266,16 @@ font-size: 2.3rem;
     left: 27%; 
     top: -112%;
 }
+.bgc{
+    width: auto;
+    background-color: rgba(254, 230, 0, 1);
+    position: static;
+    height: auto;
+    text-align: center;
+    padding: 1rem;
+    margin: 0 1rem;
+    float: none;
+}
 .bgc p {
     margin-left: 4%;
     font-size: 1.4rem;
@@ -261,6 +283,53 @@ font-size: 2.3rem;
 }
 .bgc h4 {
     margin: 4% 0 4%;
+}
+.bg{
+    padding: 0 1rem;
+}
+.dev .row div.bgYellow {
+    line-height: 12.6rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+.dev .row{
+    margin: 0;
+}
+.dev .row div img{
+    margin-bottom: 1rem;
+}
+.techTxt{
+    width: 100%;
+    height: auto;
+    position: static;
+    background-color: rgba(254, 230, 0, 1);
+    text-align: center;
+    padding: 1rem;
+}
+.wordIcon{
+    top: 2%;
+    right: 0;
+    width: 10%;
+}
+.HardwareP{
+    font-size: 1.6rem;
+}
+.yunweiBg{
+    background: none;
+    width: 100%;
+}
+.container-fluid{
+    padding: 0;
+}
+.yunweiBg .row{
+    margin: 0 -15px;
+}
+.yunweiBg .row div img{
+    margin: 0 0 1rem;
+    width: 100%;
+}
+.containerDIY{
+    margin-top: 8%;
 }
 }
 @media (max-width: 768px){
@@ -301,6 +370,18 @@ font-size: 2.3rem;
     font-size: 1.6rem;
     letter-spacing: 1px;
 }
+.techTxt h3{
+    font-size: 1.5rem !important;
+}
+.techTxt p{
+    font-size: 1.3rem;
+}
+.yunwei{
+    font-size: 1.6rem;
+}
+.HardwareP{
+    font-size: 1.4rem
+}
 }
 @media (max-width: 375px){
 .brief img {
@@ -313,6 +394,9 @@ font-size: 2.3rem;
 .brief div {
     font-size: 1.4rem;
     letter-spacing: 1px;
+}
+.yunwei:before,.yunwei:after{
+    width: 20% !important;
 }
 }
 @media (min-width: 768px){
