@@ -57,13 +57,37 @@ body{
 	margin-left: 10px;
 	width: 90px;
 }
-
+.contact{
+	padding: 10rem 0 0;
+}
+.bgYellow{
+	background-color: #ffe401;
+	padding: 2rem;
+	color: #2e2e2e;
+	margin-top: 7rem;
+}
+.send,.send:hover{
+	    margin-top: 2rem;
+    padding: 0.6rem 3rem;
+    background-color: rgb(255, 228, 1);
+    border-radius: 0px;
+    border: none;
+    line-height: 1.5;
+}
+@media (max-width: 997px){
+	.contact form{
+		margin-top: 1rem;
+	}
+}
 @media (max-width: 767px){
 	.contactCtt footer .borlr{
 		padding-left: 3rem;
 	}
 	.contactCtt footer .flex1{
 		width: 100%;
+	}
+	.contact{
+		padding: 3rem 0 0;
 	}
 }
 @media (min-width: 431px){

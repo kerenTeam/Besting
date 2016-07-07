@@ -1,10 +1,3 @@
-.banner .carousel{
-	background-color: #222;
-	padding-bottom: 60px;
-}
-.indexBanner{
-	/* margin-bottom: 5rem; */
-}
 .carousel-indicators li{
 	background-color: #989693;
 	border-radius: 0;
@@ -29,6 +22,8 @@
 	width: 520px;
 	height: 380px;
 	text-align: center;
+	font-family: 'abc';
+	font-weight: bold;
 }
 .aboutsTitH1 h1{
 	font-size: 9rem;
@@ -66,7 +61,7 @@
 .aboutsCap h3{
 	font-size: 1em;
 	font-weight: bold;
-	margin-bottom: 5rem;
+	margin-bottom: 3rem;
 }
 .aboutsCap h4{
 	font-size: .8em;
@@ -75,7 +70,7 @@
 .aboutsCap p{
 	font-size: .8em;
 	font-weight: bold;
-	line-height: 3rem;
+	line-height: 2.5rem;
 }
 .aboutsIcon1{
 	position: absolute;
@@ -92,6 +87,7 @@
 	right: 0;
 	width: 20%;
 	height: 100%;
+	z-index: -1;
 	/* background: url(../img/images/aboutsIcon_03.png) no-repeat center right; */
 }
 .curBottom{
@@ -119,6 +115,7 @@
 	font-size: 5rem;
 	color: #ffe401;
 	position: relative;
+	font-family: 'abc';
 }
 .curTit:before,.curTit:after{
 	content: '';
@@ -280,7 +277,7 @@
 	position: relative;
 }
 .hardList{
-	padding: 3rem;
+	padding: 3rem 3rem 0;
 	position: relative;
 	border-left: 8px solid #2e2e2e;
 	margin-bottom: 5rem;
@@ -331,8 +328,8 @@
 }
 .hardList .hardPic1{
 	position: absolute;
-	height: 80%;
-	top: 10%;
+	height: 90%;
+	bottom: 5%;
 	right: 3rem;
 	z-index: 5;
 }
@@ -340,9 +337,14 @@
 	width: auto;
 	height: 100%;
 }
+.hardList .hardPic1 img.hardImg1{
+	height: 80%;
+	margin-top: 20%;
+}
 .hardList .hardCap h2{
 	color: #dfc802;
-	margin-bottom: 3rem;
+	margin-bottom: 6rem;
+	margin-top: 0;
 	font-size: 2em;
 }
 .hardList .hardCap h4{
@@ -351,19 +353,23 @@
 }
 .hardList .hardCap p{
 	color: #aaaaaa;
-	padding-right: 20%;
-	min-height: 6rem;
+	min-height: 12rem;
+	line-height: 2.3rem;
 }
 .hardList .hardCap a{
 	display: inline-block;
 	font-size: 2rem;
 	position: relative;
-	bottom: -4rem;
+	bottom: -1rem;
 	color: #9f9f9f;
 }
 .hardList .hardCap a span{
 	background-color: #252525;
 	padding: 8px 10px;
+	font-family: 'abc';
+}
+.hardList .hardCap a:hover>span.hardl{
+	color: #f4dd04;
 }
 .hardList .hardCap a span.hardr{
 	background-color: #434343;
@@ -376,6 +382,7 @@
 	top: -8%;
 	right: 9%;
 	width: 10%;
+	z-index: 99;
 }
 .hardIcon2{
 	position: absolute;
@@ -396,6 +403,9 @@
 	margin-left: -12%;
 	margin-top: -3%;
 }
+.newsTit .curTit{
+	margin-top: 5%;
+}
 .newsCtt{
 	margin-top: -10rem;
 	overflow: hidden;
@@ -407,7 +417,7 @@
 	padding: 0;
 }
 .newsCap{
-	padding: 10% 20%;
+	padding: 8% 20%;
 }
 .newsCap h2{
 	color: #f1f1f1;
@@ -502,6 +512,7 @@
 	background-color: #2e2e2e;
 }
 .contact .curTit{
+	margin-top: 5%;
 	margin-bottom: 5rem;
 }
 .contact .curTit img{
@@ -511,15 +522,18 @@
 .contact .img-responsive{
 	margin-bottom: 2rem;
 }
- 	  .cut .printPic{
- display: none;
- 	  }
- 	  .cut .printPic:first-child{
- 	  	display: block;
- 	  }
- 	video{
- 		width: 100%;
- 	}
+.cut .printPic{
+ 	display: none;
+}
+.cut .printPic:first-child{
+ 	display: block;
+}
+video{
+ 	width: 100%;
+}
+.world{
+	padding: 6rem 0 10rem;
+}
 @media (max-width: 1400px){
 	.hardList{
 		padding: 2rem;
@@ -535,6 +549,7 @@
 	}
 	.newsCap{
 		padding: 5% 10%;
+		font-size: 1.3rem;
 	}
 }
 @media (max-width: 1200px){
@@ -554,7 +569,7 @@
 	}
 	.newsCap{
 		padding: 5% 10%;
-		font-size: 1.2rem;
+		font-size: 1rem;
 	}
 	.newsCap h2{
 		margin-bottom: 1em;
@@ -590,6 +605,44 @@
 	.contact .curTit img{
 		width: 35%;
 	}
+}
+@media (max-width: 767px){
+	.abouts{
+		padding: 1rem 0 1rem;
+	}
+	.aboutsCap{
+		font-size: 1.2rem;
+	}
+	.aboutsCtt{
+		padding: 1rem 0;
+	}
+	.aboutsIcon2{
+		z-index: -1;
+	}
+	.aboutsTitH1{
+		position: relative;
+		top: 0;
+		left: 0%;
+		border: none;
+		width: 100%;
+		height: auto;
+	}
+	.aboutsTitH1 h1{
+		font-size: 5rem;
+	}
+	.aboutsTitBottom{
+		height: 0;
+	}
+	.curTit{
+		font-size: 2rem;
+	}
+	.curTit:before,.curTit:after{
+		width: 25% !important;
+	}
+			.printPic .printImg:hover:after{
+	top:50%;
+	font-size: 1rem; 
+}
 }
 @media (max-width: 530px){
 	.hardList{
@@ -645,57 +698,31 @@
 		width: 45%;
 	}
 	.hardList .hardCap img{
-		margin: 0 auto;
+		margin: 0 auto 1rem;
+	}
+	.hardList .hardCap p{
+		min-height: auto;
 	}
 	.contact .curTit img{
 		width: 40%;
 	}
-	.printPic .printImg:hover:after{
-	top:48%;
-	font-size: 2.5rem!important; 
-}
-}
-@media (max-width: 767px){
-	.abouts{
-		padding: 1rem 0 1rem;
-	}
-	.aboutsCap{
-		font-size: 1.2rem;
-	}
-	.aboutsCtt{
-		padding: 1rem 0;
-	}
-	.aboutsIcon2{
-		z-index: -1;
-	}
-	.aboutsTitH1{
-		position: relative;
-		top: 0;
-		left: 0%;
-		border: none;
-		width: 100%;
-		height: auto;
-	}
-	.aboutsTitH1 h1{
-		font-size: 5rem;
-	}
-	.aboutsTitBottom{
-		height: 0;
-	}
-	.curTit{
-		font-size: 2rem;
-	}
 	.curTit:before,.curTit:after{
-		width: 30%;
+		width: 20%;
 	}
-			.printPic .printImg:hover:after{
-	top:50%;
-	font-size: 1rem; 
-}
+	.printPic .printImg:hover:after{
+		top:48%;
+		font-size: 2.5rem!important; 
+	}
+	.hardList .hardCap h2{
+		margin-bottom: 1rem;
+	}
+	.hardList .hardCap{
+		text-align: center;
+	}
 }
 @media (min-width: 768px){
 	.banner .carousel{
-		padding-bottom: 100px;
+		/* padding-bottom: 100px; */
 	}
 	.aboutsTitH1{
 		position: relative;
@@ -785,7 +812,7 @@
 		font-size: 9rem;
 	}
 	.aboutsTitBottom{
-		height: 15.1%;
+		height: 15%;
 	}
 
 }

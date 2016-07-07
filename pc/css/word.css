@@ -30,6 +30,21 @@
 	transform: translate(-50%);
 	-webkit-transform: translate(-50%);
 }
+.blue_con{
+	padding: 5rem 0;
+}
+.printSub{
+	margin: 2rem auto 5rem;
+	text-align: center;
+	font-size: 1.8rem;
+}
+.printSub li{
+	display: inline-block;
+	color: #333;
+}
+.printSubLi{
+	padding: 0 1rem;
+}
 .wordList li{
 	margin-bottom: 2rem;
 	position: relative;
@@ -107,6 +122,12 @@
 	}
 	.wordIcon{
 		display: none;
+	}
+	.blue_con{
+		padding: 1rem 0;
+	}
+	.printSub{
+		font-size: 1rem;
 	}
 }
 @media (max-width: 431px){

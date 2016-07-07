@@ -14,8 +14,12 @@ ul{
     font-family: pingFang;
     src: url(../fonts/pingFang.ttf) format('truetype');
 }
+@font-face {
+    font-family: FZLTX;
+    src: url(../fonts/fzltxhk.ttf) format('truetype');
+}
 body{
-	font-family: 'abc','FZLT','pingFang'!important;
+	font-family: 'FZLT','abc','pingFang'!important;
 }
 .lanting{
 	font-family: 'FZLT';
@@ -27,6 +31,13 @@ body{
 a,a:link,a:visited,a:hover,a:active{
 	text-decoration:none;
 	color: inherit;
+}
+.visible{
+	visibility: hidden;
+}
+.navbar{
+	margin: 0;
+	font-family: 'FZLT';
 }
 .bs-docs-nav .navbar-toggle .icon-bar {
     background-color: #101010;
@@ -51,6 +62,10 @@ a,a:link,a:visited,a:hover,a:active{
 	/* font-size: 18px; */
 	color: #101010;
 	border-bottom: 3px solid transparent;
+	text-align: center;
+}
+.curHead .navbar-nav li a small{
+	font-size: 70%;
 }
 .curHead .navbar-nav li a:hover{
 	border-bottom: 3px solid #ffe401;
@@ -89,7 +104,7 @@ footer.footer{
 }
 footer.footer .flex1{
 	display: inline-block;
-	vertical-align: middle;
+	vertical-align: bottom;
 	width: 49%;
 }
 footer.footer .flex1 span{
@@ -99,6 +114,27 @@ footer.footer .flex1 span{
 	font-size: 2rem;
 	margin-left: 15px;
 	vertical-align: top;
+}
+.curTitle{
+	padding: 9rem 0 4rem;
+	text-align: center;
+	background: url(../img/images/curTitle_03.png) no-repeat center;
+	background-size: auto 100%;
+	margin-top: -5rem;
+	margin-bottom: -4rem;
+	position: relative;
+	z-index: 999;
+	font-size: 1rem;
+	font-family: 'FZLTX';
+}
+.curTitle small{
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #333;
+}
+.curTitle span{
+	font-weight: normal;
+	font-size: 2em;
 }
 @media (max-width: 431px){
 	footer.footer .flex1 span{
@@ -119,36 +155,54 @@ footer.footer .flex1 span{
 	footer.footer .flex1.text-right{
 		text-align: center;
 	}
+	.curTitle{
+		font-size: .9rem;
+		padding: 3rem 0 1rem;
+		margin-top: -2rem;
+		margin-bottom: 0;
+	}
 }
 @media (min-width: 768px){
 	.curHead .navbar-brand{
-		width: 200px;
+		width: 150px;
 	}
 	.curHead .navbar-nav li{
-		padding: 25px 0 15px;
-	   margin: 0 auto 0 25px;
+		padding: 0 5px;
+	   	margin: 0;
 	}
 	.curHead .navbar-nav li a{
-		line-height: 30px;
 		font-size: 14px;
-		padding: 0 10px;
+		padding: 20px 10px;
 	}
-	.curHead .navbar-nav li{
-		margin: 0 .5rem;
+	.curHead .navbar-nav li a small{
+		display: none;
+	}
+	.curTitle{
+		font-size: .9rem;
+		padding: 5rem 0 2rem;
+		margin-top: -3rem;
 	}
 }
 
 @media (min-width: 992px){
 	.curHead .navbar-brand{
-		width: 250px;
+		width: 200px;
 	}
 	.curHead .navbar-nav li{
-		padding: 40px 0 15px;
-      margin: 0 auto 0 45px;
+		padding: 0;
+      	margin: 0;
 	}
 	.curHead .navbar-nav li a{
-		line-height: 30px;
-		font-size: 16px;
+		padding: 15px 10px;
+		font-size: 14px;
+	}
+	.curHead .navbar-nav li a small{
+		display: inline;
+	}
+	.curTitle{
+		font-size: .9rem;
+		padding: 5rem 0 2rem;
+		margin-top: -3rem;
 	}
 }
 @media (min-width: 1200px){
@@ -156,18 +210,33 @@ footer.footer .flex1 span{
 		width: auto;
 	}
 	.curHead .navbar-nav li{
-		padding: 40px 0 15px;
-		margin: 0 auto 0 60px;
+		padding: 0;
+		margin: 0 5px;
 	}
 	.curHead .navbar-nav li a{
-		line-height: 60px;
-		padding: 0 20px;
-		font-size: 18px;
+		line-height: 25px;
+		padding: 30px 5px 20px;
+		font-size: 16px;
+	}
+	.curTitle{
+		font-size: 1.8rem;
+		padding: 9rem 0 4rem;
+		margin-top: -5rem;
+		margin-bottom: -4rem;
 	}
 
 }
 @media (min-width: 1400px){
 	.container{
 		width: 1400px;
+	}
+	.curHead .navbar-nav li{
+		padding: 0;
+		margin: 0 15px;
+	}
+	.curHead .navbar-nav li a{
+		line-height: 25px;
+		padding: 30px 5px 20px;
+		font-size: 18px;
 	}
 }
