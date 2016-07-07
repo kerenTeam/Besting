@@ -23,12 +23,12 @@
 	margin: 0;
 	padding: 0;
 }
-h1,h2,h3,h4,h5{
+h1,h2,h3,h4,h5,p{
 	margin: 0;
 }
 /* 蓝图 */
 .blue_con{
-	padding: 0 13%;
+	
 	background-color: #fff;
 }
 .blue_logo{
@@ -38,11 +38,21 @@ h1,h2,h3,h4,h5{
 .blue_logo img{
 	width: 15%;
 }
-.blue_list li{
+.blue_list{
+	position: relative;
+}
+.huabian{
+	position: absolute;
+	right: 0;
+	top: 10%;
+	width: 10%;
+}
+.blue_list>li{
 	text-align: center;
+	padding: 0 13%;
 }
 .blue_list li h3{
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 1.5rem;
 }
 .blue_list li span{
@@ -108,17 +118,102 @@ h1,h2,h3,h4,h5{
 footer.footer .flex1 span{
 	font-size: 1.2rem;
 }
+.sunwukong{
+	position: relative;
+}
+.sunwukongbeijing{
+	position: absolute;
+	top: 51%;
+	left: 0;
+	height: 117%;
+}
+/* 新闻列表 */
+.new_list ul{
+	padding: 0 15%;
+} 
+.new_list ul li{
+	padding: 3% 0 3% 40%;
+	margin: 3% 0;
+	position: relative;
+	background: url(../img/images/xingwenbeijing.png) left center no-repeat;
+	background-size: contain;
+}
+.new_content h4{
+	font-size: 1.4rem;
+} 
+.new_content p{
+	font-size: 1.1rem;
+}
+.new_content{
+	padding: 4%;
+	background-color: #fff;
+   box-shadow: 0px 5px 40px #999;
+
+} 
+.new_content span{
+	display: inline-block;
+	width: 40px;
+	height: 3px;
+	background-color:#565656; 
+	margin: 2% 0;
+}
+.newdate{
+	position: absolute;
+	    width: 15%;
+	    height: 43%;
+	    left: 3%;
+	    top: 14%;
+}
+.newdate h3 ,.newdate p{
+	position: absolute;
+	text-align: center;
+	background: url(../img/images/xingwenbiejing_03.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+	color: #fee600;
+}
+.newdate h3{
+	left: 0;
+	top: 0;
+	padding: 15% 0;
+	width: 90%;
+	font-size: 2rem;
+
+}
+.newdate p{
+	right: 0;
+    bottom: 0;
+    width: 50%;
+	 padding: 11% 0;
+    font-size: 1rem;
+}
 
 
 
-
-@media(max-width: 800px){
+@media(max-width: 900px){
 	/* 蓝图 */
-	.blue_con{
+	.blue_list>li{
 		padding: 0;
 	}
 	/* 新闻 */
 	.Jou_con{
 		padding: 0 2%;
+	}
+	/* 新闻列表 */
+	.new_list ul{
+		padding: 2%;
+	}
+	.newdate{
+		left: 0;
+		top: 0;
+	}
+	.new_list ul li{
+		padding: 5% 0 5% 21%;
+	}
+	.new_content{
+		max-height: 150px;
+		    overflow: hidden;
+	}
+	.newdate h3 ,.newdate p{
+		width: 100%;
 	}
 }
