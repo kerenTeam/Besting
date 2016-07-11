@@ -108,11 +108,11 @@
 		<div class="container whiteB foundCtt">
 			<div class="row">
 				<div class="col-md-4">
-					<img class="img-responsive" src="img/images/founder_03.jpg" alt="">
+					<img class="img-responsive" id="foundInfoImg" src="img/images/founder_03.jpg" alt="">
 				</div>
 				<div class="col-md-8">
 					<div class="foundCap">
-						<h1>刘 垚<br><small>创始人兼CEO</small></h1>
+						<h1><span>刘 垚</span><br><small>创始人兼CEO</small></h1>
 						<p>
 							连续多次成功创业者。毕业于新西兰奥克兰理工大学，求学期间创立Hal BoTrading Ltd. 从事中国新西兰生物医学原料进出口贸易，同期正式创立Toching Entertainment Co., Ltd，涉足文娱影视产业；08年回国，后相继创立易佳物流、宝骏行汽车服务连锁；于15年正式创立百喜听文化传媒，正式迈入移动互联网泛娱乐产业。
 						</p>
@@ -151,7 +151,45 @@
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
-
+    <script type="text/javascript">
+    	function GetRequest() {   
+		   var url = location.search; //获取url中"?"符后的字串   
+		   var theRequest = new Object();   
+		   if (url.indexOf("?") != -1) {   
+		      var str = url.substr(1);   
+		      strs = str.split("&");   
+		      for(var i = 0; i < strs.length; i ++) {   
+		         theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);   
+		      }   
+		   }   
+		   return theRequest;   
+		}
+		console.log(GetRequest().id);
+		if(GetRequest().id == 1){
+			$('#foundInfoImg').attr('src','img/images/founder_03.jpg');
+			$('.foundCap h1 span').html('刘 垚');
+			$('.foundCap h1 small').html('创始人兼CEO');
+			$('.foundCap p').html('连续多次成功创业者。毕业于新西兰奥克兰理工大学，求学期间创立Hal BoTrading Ltd. 从事中国新西兰生物医学原料进出口贸易，同期正式创立Toching Entertainment Co., Ltd，涉足文娱影视产业；08年回国，后相继创立易佳物流、宝骏行汽车服务连锁；于15年正式创立百喜听文化传媒，正式迈入移动互联网泛娱乐产业。');
+		}
+		else if(GetRequest().id == 2){
+			$('#foundInfoImg').attr('src','img/images/founder_05.jpg');
+			$('.foundCap h1 span').html('吴一凡');
+			$('.foundCap h1 small').html('联合创始人兼CEO');
+			$('.foundCap p').html('新西兰Christchurch PIT综合视觉(Arts)及市场营销(Marketing)双学位,现任Besting Media COM,AdiWu Studio 创始人,成都一起的文化传播有限公司CEO.17岁进入创意产业, 多年致力于企业及产品的品牌建设, 市场营销, 公共关系管理.先后牵头百事可大中华区, 可口可乐冰露, 欧乐B, 摩登天空,虾米音乐, 香港九龙仓, 香港新世界, 成都万华, 南光地产,朗诗等企业的品牌, 公关及营销策划.');
+		}
+		else if(GetRequest().id == 3){
+			$('#foundInfoImg').attr('src','img/images/founder_07.jpg');
+			$('.foundCap h1 span').html('岳 栎');
+			$('.foundCap h1 small').html('联合创始人兼COO');
+			$('.foundCap p').html('英国The University of Liverpool商务学本科，英国Aston University国际商务硕士，法国EDHEC高等商学院市场营销硕士。曾人北京大德鑫臣集团副总裁，涉及地产开发、酒店、医药、金融、旅游等领域，负责集团战略规划新项目开发，和集团运营工作。多次独立完成集团20亿项目的开发及运营。现任成都清籁科技有限公司法人兼总经理，北京清籁科技有限公司联合创始合伙人。');
+		}
+		else if(GetRequest().id == 4){
+			$('#foundInfoImg').attr('src','img/images/founder_09.jpg');
+			$('.foundCap h1 span').html('李桦林');
+			$('.foundCap h1 small').html('联合创始人兼CSO');
+			$('.foundCap p').html('毕业于西南政法大学，New York University高层管理教育在读。重庆广告协会常务理事，铁广协理事，创建重庆金江文化传媒有限公司、重庆华铁广告有限公司及重庆八百星商贸有限公司，并担任多家企业公共关系顾问。');
+		}
+    </script>
 </body>
 
 

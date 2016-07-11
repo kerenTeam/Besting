@@ -1,0 +1,365 @@
+body,html{
+	font-family: 'pingfang';
+}
+header{
+	text-align: center;
+	background-color: #292929;
+	position: relative;
+}
+ul{
+	list-style: none;
+}
+@font-face { 
+font-family: pingfang;/*定义font的名字*/ 
+src: url('../fonts/pingfang.ttf');/*把下载的字体文件引入进来*/ 
+} 
+@font-face { 
+font-family: title;/*定义font的名字*/ 
+src: url('../fonts/SourceHanSansCN-Bold.otf');/*把下载的字体文件引入进来*/ 
+} 
+
+.curTit{
+	font-family: 'title';
+	position: absolute;
+	right: 5%;
+	top: 3.5rem;
+	margin: 0;
+}
+.headNav{
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: -70%;
+	z-index: 9999;
+}
+.headNav ul{
+	margin: 0 auto;
+	display: inline-block;
+}
+.headNav ul li{
+	float: left;
+}
+.headNav ul li a{
+	color: #fff;
+	background-color: #292929;
+	font-size: 1.7rem;
+	padding: 1rem 2.3rem;
+}
+.headNav ul li a.active{
+	background-color: #ccb08f;
+}
+.headNav ul li a:hover{
+	background-color: #D0BBA2;
+}
+.crrTit{
+	padding: 0 3rem;
+}
+.crrTit div{
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	background-color: #d8ba97;
+	color: #fff;
+	font-size: 4rem;
+}
+.crrTit img{
+	padding-top: .7rem;
+}
+.crrTit2{
+	font-family: 'title';
+	background: url(../images/titleBg_03.png) no-repeat;
+	background-size: auto 100%;
+	background-position: 6rem 0%;
+	padding: 2rem 0 2rem 2rem;
+	margin: 0;
+	font-size: 5rem;
+	font-weight: bold;
+	line-height: 6rem;
+}
+.crrTit2 span{
+	color: #d8ba97;
+}
+.nopadding{
+	padding: 0;
+}
+.curBor{
+	border-bottom: 1px solid #d8ba97;
+	border-left: 1px solid #d8ba97;
+	position: relative;
+}
+.curBor:before{
+	content: '';
+	display: block;
+	width: 120px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-top: 1px solid #d8ba97;
+}
+.indexA{
+	padding: 5rem 0 0;
+	background: url(../images/bgA_04_06.png) no-repeat right bottom;
+	margin-bottom: 5rem;
+}
+.Actt{
+	background: url(../images/bgA_02.png) no-repeat left center;
+	font-size: 0;
+}
+.Actt .nopadding{
+	display: inline-block;
+	float: none;
+	vertical-align: bottom;
+}
+.ActtText{
+	padding: 1rem 0 1rem 2rem;
+	margin-top: 4rem;
+	font-size: 1.5rem;
+	color: #626262;
+}
+.ActtText>h2{
+	font-size: 1.6em;
+	margin-top: 0;
+	font-weight: bold;
+	color: #333;
+}
+.ActtText span{
+	color: #d8ba97;
+}
+.ActtText>small{
+	font-size: 1em;
+	color: #c7c7c7;
+	margin-bottom: 2rem;
+	display: block;
+}
+.ActtText>h3{
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.ActtText>p{
+	font-size: 1.1em;
+	width: 70%;
+}
+.Acap{
+	margin-top: 2rem;
+	padding: 0 1rem 0 3rem;
+	background: url(../images/Aicon_03.png) no-repeat left center;
+}
+.Acap h4{
+	font-size: 1.3em;
+}
+.Acap p{
+	margin: 0;
+	font-size: 1.1em;
+	margin-bottom: .5rem;
+}
+.Aimg img{
+	margin: 0 auto;
+}
+
+.indexB{
+	padding: 3rem 0;
+	background: url(../images/bgB_02.jpg) no-repeat;
+	background-size: cover;
+}
+.whiteT{
+	color: #fff;
+}
+.Bctt{
+	padding: 2rem 5%;
+	font-size: 0;
+}
+.Bctt .nopadding{
+	display: inline-block;
+	float: none;
+
+	vertical-align: bottom;
+}
+.BcttText{
+	margin-top: 2rem;
+	color: #acacac;
+	min-height: 30rem;
+}
+.BcttText h2{
+	color: #fff;
+}
+.Bcenter p{
+	font-size: 1.2em;
+}
+.Bcap{
+	background: url(../images/Bicon_03.png) no-repeat left center;
+}
+.Blist{
+	background-color: rgba(255,255,255,.8);
+}
+.Bli{
+	padding: 5% 10% 5% 15%;
+	font-size: 1.5rem;
+}
+.Bli img{
+	height: 50px;
+}
+.Bli h3{
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.Bli small{
+	display: block;
+	color: #acacac;
+	font-size: 1em;
+}
+.Bli i{
+	display: block;
+	width: 25px;
+	border-bottom: 2px solid #d8ba97;
+	margin: 1em 0;
+}
+.Bli p{
+	color: #7b747e;
+	font-size: 1.1em;
+	line-height: 1.8em;
+}
+.indexC{
+	padding: 3rem 0 5rem;
+}
+.Cctt{
+	background: url(../images/bgC_06.png) no-repeat left center;
+	padding: 0 5% 0 20%;
+}
+.curBor1{
+	border: 1px solid #d8ba97;
+	border-left: 1px solid transparent;
+}
+.Cctt{
+	font-size: 0;
+}
+.Cctt .nopadding{
+	display: inline-block;
+	float: none;
+	vertical-align: bottom;
+}
+.Cpic img{
+	margin: 5rem 0;
+}
+.curBor.Ctext:before{
+	width: 80px;
+}
+.Ctext p{
+	font-size: 1.2em;
+}
+.Ctext{
+	padding-bottom: 4rem;
+}
+.indexD{
+	background: url(../images/bgD_02.jpg) no-repeat;
+	background-size: cover;
+	padding: 3rem 0;
+}
+.Dtext p{
+	margin-bottom: 2em;
+}
+.Dpic img{
+	width: 90%;
+	margin-top: 2rem;
+}
+.indexE{
+	padding: 3rem 0 5rem;
+}
+.Ectt{
+	padding-left: 20%;
+	background: url(../images/bgE_04.png) no-repeat left center;
+}
+.Etext p{
+	width: 100%;
+	margin: 5rem 0;
+	font-size: 1.3em;
+}
+.Ectt{
+	font-size: 0;
+}
+.Ectt .nopadding{
+	display: inline-block;
+	float: none;
+	vertical-align: bottom;
+}
+.Ecap{
+	padding: 0;
+	font-size: 1.5rem;
+	margin: 0;
+}
+.Ecap li{
+	padding-left: 4rem;
+	min-height: 14rem;
+	display: table;
+	width: 100%;
+}
+.Ecap li .Ecenter{
+	display: table-cell;
+	vertical-align: middle;
+	color: #fff;
+}
+.Ecap li .Ecenter h2{
+	font-size: 1.5em;
+	margin-bottom: 1em;
+}
+.Ecap li .Ecenter p{
+	color: #eeeeee;
+	font-size: 1em;
+}
+.cen h2{
+	color: #333;
+}
+.Ecap li .Ecenter.cen p{
+	color: #28242a;
+}
+.blackB{
+	background-color: #28242a;
+}
+.blackT{
+	color: #333;
+}
+.contact{
+	padding: 10rem 5% 5rem;
+	background: url(../images/footBg_03.jpg) no-repeat;
+	background-size: cover;
+}
+.contactCtt{
+	color: #a9a9a9;
+	padding-top: 3rem;
+	font-size: 1.5rem;
+}
+.contactCtt h2{
+	color: #b09a80;
+	font-size: 2.2em;
+	margin-bottom: 2.5rem;
+}
+.contactCtt p{
+	font-size: 1em;
+	margin-bottom: 2.5rem;
+}
+.contactBtm span{
+	display: inline-block;
+	vertical-align: bottom;
+}
+.contactBtm span.code{
+	color: #d8ba97;
+}
+.contactBtm span img{
+	margin-bottom: .5em;
+}
+.contactBtm span.contactCopy{
+	margin-left: 15rem;
+	font-size: 1em;
+}
+.top{
+	position: fixed;
+	right: 1rem;
+	bottom: 1rem;
+	width: 51px;
+	height: 51px;
+	background: url(../images/top.png) no-repeat;
+	background-size: 100% auto;
+}
+.top:hover{
+	background: url(../images/top.png) no-repeat left bottom;
+}

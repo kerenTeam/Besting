@@ -1,0 +1,132 @@
+
+@media (max-width: 1200px){
+	.Actt{
+		margin-top: 2rem;
+	}
+}
+@media (max-width: 991px){
+	.crrTit div{
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+	}
+	.crrTit img{
+		width: 50px;
+	}
+	.crrTit2{
+		font-size: 3rem;
+		padding: 0;
+	}
+	.indexD .col-md-5,.indexD .col-md-7{
+		width: 100%;
+	}
+	.indexE .col-md-6,.indexE .col-md-6{
+		width: 100%;
+	}
+	.Dpic img{
+		margin: 1rem auto;
+		width: 100%;
+	}
+	.Etext p{
+		margin: 1rem 0;
+	}
+	.contactBtm span.contactCopy{
+		margin-left: 5rem;
+	}
+}
+@media (max-width: 767px){
+	.headNav{
+		position: relative;
+		bottom: 0;
+	}
+	.headNav ul{
+		display: block;
+	}
+	.headNav ul li{
+		float: none;
+	}
+	.logo{
+		width: 250px;
+	}
+	.curTit{
+		top: 2rem;
+		width: 50px;
+	}
+	.crrTit div{
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		font-size: 3rem;
+	}
+	.crrTit img{
+		width: 35px;
+	}
+	.crrTit2{
+		font-size: 3rem;
+		line-height: 4rem;
+		padding: 0;
+	}
+	.ActtText{
+		font-size: 1.2rem;
+	}
+	.Acap{
+		padding: 0;
+		background: none;
+	}
+	.Aimg{
+		width: 100%;
+	}
+	.BcttText{
+		min-height: auto;
+		font-size: 1rem;
+	}
+	.Bli{
+		font-size: 1.2rem;
+		text-align: center;
+		padding: 2rem 1rem;
+	}
+	.Bli i{
+		margin: 1em auto;
+	}
+	.Bctt{
+		padding: 1rem;
+	}
+	.Cctt{
+		padding: 2rem 1rem;
+	}
+	.indexD{
+		padding: 2rem 1rem;
+	}
+	.indexD .nopadding{
+		width: 100%;
+	}
+	.Ectt{
+		padding: 3rem 0;
+	}
+	.Ecap{
+		font-size: 1.2rem;
+	}
+	.Ecap li{
+		padding: 0 1rem;
+	}
+	.contactBtm span{
+		display: block;
+		margin-bottom: .5rem;
+	}
+	.contactBtm span.contactCopy{
+		margin-left: 0;
+	}
+	.contactCtt{
+		font-size: 1.2rem;
+		text-align: center;
+	}
+	.contactCtt h2,.contactCtt p{
+		margin-bottom: 1.5rem;
+	}
+}
+
+@media (min-width: 1400px){
+	.container{
+		width: 1400px;
+	}
+}

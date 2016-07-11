@@ -57,6 +57,11 @@
 	height: 100%;
 	padding: 3rem 0 3rem 1.5rem;
 }
+.wordList .wordCap small{
+	font-size: 100%;
+	margin-top: 5%;
+	display: block;
+}
 .wordList .wordCap h1{
 	margin: 1rem 0 0 0;
 	font-size: 2em;
@@ -94,6 +99,8 @@
 	width: 12%;
 	z-index: -1;
 }
+
+
 @media (max-width: 767px){
 	.wordTit{
 		font-size: 2.5rem;
@@ -195,5 +202,22 @@
 	.wordIcon{
 		bottom: -5rem;
 		right: -5rem;
+	}
+}
+@media (max-width: 991px){
+	.wordList .wordCap small{
+		font-size: 12px;
+		margin-top: 0;
+		font-weight: normal;
+	}
+	.wordList .wordCap{
+		padding: .5rem 0 .5rem .5rem;
+	}
+	.wordList .wordCap h1 {
+	    margin: .5rem 0 0 0;
+	    font-size: 2em;
+	}
+	.wordList .wordCap p{
+		margin: 0 0 5px 0;
 	}
 }
