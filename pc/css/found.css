@@ -1,0 +1,84 @@
+.founding{
+	padding: 8% 0;
+}
+.founding .col-sm-6{
+	margin-bottom: 15px;
+}
+.founding img{
+	width: 100%;
+}
+.foundBtm{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 0 15px;
+}
+.foundBtmCap{
+	width: 100%;
+	padding: 5%;
+	color: #fff;
+	background-color: rgba(0,0,0,.3);
+}
+.foundBtm p{
+	font-size: 2em;
+	margin: 0;
+}
+.foundBtm small{
+	font-size: 1.4em;
+}
+.foundingInfo{
+	padding: 5% 0;
+}
+.foundCtt{
+	padding: 30px;
+}
+.foundCap{
+	padding: 0 10%;
+	font-size: 1rem;
+}
+.foundCap h1{
+	font-size: 4em;
+	color: #555555;
+	text-shadow: 2px 2px 5px #999;
+}
+.foundCap h1 small{
+	font-size: 60%;
+	color: #555555;
+}
+.foundCap p{
+	font-family: 'FZLTX';
+	color: #484848;
+	margin-top: 10%;
+	font-size: 2.5em;
+	line-height: 2.2em;
+}
+@media (max-width: 1200px){
+	.foundCap{
+		font-size: .7rem;
+	}
+	.foundBtmCap{
+		font-size: .9rem;
+	}
+}
+@media (max-width: 991px){
+	.foundCtt img{
+		margin: 0 auto;
+	}
+	.foundCtt{
+		padding: 15px;
+	}
+	.foundCap{
+		text-align: center;
+		font-size: .6rem;
+		padding: 0;
+	}
+	.foundBtmCap{
+		text-align: center;
+	}
+}
+@media (max-width: 768px){
+	.curTitle{
+		padding: 4rem 0 1rem;
+	}
+}

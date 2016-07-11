@@ -65,7 +65,8 @@ a,a:link,a:visited,a:hover,a:active{
 	text-align: center;
 }
 .curHead .navbar-nav li a small{
-	font-size: 70%;
+	font-size: 90%;
+	font-family: 'abc';
 }
 .curHead .navbar-nav li a:hover{
 	border-bottom: 3px solid #ffe401;
@@ -181,6 +182,9 @@ footer.footer .flex1 span{
 		font-size: .9rem;
 		padding: 5rem 0 2rem;
 		margin-top: -3rem;
+	}
+	.curHead .navbar-nav li a{
+		font-size: 13px;
 	}
 }
 
