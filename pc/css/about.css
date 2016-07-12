@@ -113,7 +113,7 @@ width: auto;
     background-color: #fee600;
     text-align: center;
     font-size: 2.6rem;
-    line-height: 18.5rem;
+    line-height: 221px;
 }
 
 .dev .row .relative:hover .discove {
@@ -217,7 +217,7 @@ font-size: 2.3rem;
     left: 30%;
  }
 .bgYellow {
-    line-height: 15.4rem;
+    line-height: 185px;
 }
 .wordIcon{
     top: 10%;
@@ -249,7 +249,7 @@ font-size: 2.3rem;
     margin: 5% 0 7%;
 }
 .bgYellow {
-    line-height: 12.6rem;
+    line-height: 152px;
 }
 }
 @media (max-width: 991px){

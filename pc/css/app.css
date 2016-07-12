@@ -98,6 +98,9 @@ a,a:link,a:visited,a:hover,a:active{
 .activeCur{
 	border-bottom: 3px solid #ffe401!important;
 }
+.banner{
+	margin-top: -1px;
+}
 footer.footer{
 	padding: 30px;
 	background-color: #181818;
